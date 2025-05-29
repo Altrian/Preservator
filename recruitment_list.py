@@ -2,6 +2,21 @@ import json
 import os
 import re
 
+KEYS_TO_IGNORE = ["char_512_aprot", "char_600_cpione", "char_601_cguard",
+                  "char_602_cdfend", "char_603_csnipe", "char_604_ccast",
+                  "char_605_cmedic", "char_606_csuppo", "char_607_cspec",
+                  "char_608_acpion", "char_609_acguad", "char_610_acfend",
+                  "char_611_acnipe", "char_612_accast", "char_613_acmedc",
+                  "char_614_acsupo", "char_615_acspec"]
+
+CHARA_NAME_SUBSTITUTIONS = {"'Justice Knight'": "Justice Knight"}
+
+RARITY_CONVERT = {"TIER_1": "支援机械", "TIER_2": "新手", 
+                  "TIER_5": "资深干员", "TIER_6": "高级资深干员"}
+
+PROFESSION_CONVERT = {"WARRIOR": "近卫干员", "SNIPER": "狙击干员", "TANK": "重装干员",
+                      "MEDIC": "医疗干员", "SUPPORT": "辅助干员", "CASTER": "术师干员", 
+                      "SPECIAL": "特种干员", "PIONEER": "先锋干员"}
 
 script_dir = os.path.dirname(__file__)  # <-- absolute dir the script is in
 
@@ -31,22 +46,30 @@ with open(en_gacha_table_path, encoding='utf-8') as f:
 with open(jp_gacha_table_path, encoding='utf-8') as f:
     jp_gacha_table = json.load(f)
 
+with open('recruitment.json', 'r', encoding='utf-8') as f:
+    recruitment = json.load(f)
 with open('recruitment_list.json', 'r', encoding='utf-8') as f:
     recruitment_list = json.load(f)
-with open('arknights_utilities.json', 'r', encoding='utf-8') as f:
+with open('recruitment_tags.json', 'r', encoding='utf-8') as f:
     arknights_utilities = json.load(f)
 
-KEYS_TO_IGNORE = ["char_512_aprot", "char_600_cpione", "char_601_cguard",
-                  "char_602_cdfend", "char_603_csnipe", "char_604_ccast",
-                  "char_605_cmedic", "char_606_csuppo", "char_607_cspec",
-                  "char_608_acpion", "char_609_acguad", "char_610_acfend",
-                  "char_611_acnipe", "char_612_accast", "char_613_acmedc",
-                  "char_614_acsupo", "char_615_acspec"]
+en_gacha_tags = {tag['tagId']: tag for tag in en_gacha_table['gachaTags']}
+jp_gacha_tags = {tag['tagId']: tag for tag in jp_gacha_table['gachaTags']}
 
-CHARA_NAME_SUBSTITUTIONS = {"'Justice Knight'": "Justice Knight"}
+tags_list = []
+for tag in cn_gacha_table['gachaTags']:
+    tag_id = tag['tagId']
+    tag_entry = {'id': tag_id, 'name_zh': tag['tagName']}
+    if tag_id in en_gacha_tags:
+        tag_entry['name_en'] = en_gacha_tags[tag_id]['tagName']
+        tag_entry['name_jp'] = jp_gacha_tags[tag_id]['tagName']
+    tags_list.append(tag_entry)
+recruitment['tags'] = tags_list
 
 filtered_cn_char_table = {data['name']: key for key, data in cn_char_table.items(    
 ) if "token" not in key and "trap" not in key and key not in KEYS_TO_IGNORE}
+
+filtered_cn_tag_names = {data['name_zh']: data['id'] for data in tags_list}
 
 cn_matches = list(re.finditer(
     r"(?<!>\s)<@rc\.eml>([^,，]*?)<\/>|(?:\/\s*|\n\s*|\\n\s*)((?!-)[^\r\/>★]+?(?<!-))(?=\/|$)",
@@ -57,6 +80,7 @@ en_matches = {(m.group(1) or m.group(2)).strip() for m in re.finditer(
     en_gacha_table['recruitDetail'], flags=re.IGNORECASE | re.MULTILINE
 )} # Create a set of English names from the matches
 
+recruitment_list = []
 for match in cn_matches:
     # Extract the character name from the match
     name_zh = match.group(1) if match.group(
@@ -68,33 +92,36 @@ for match in cn_matches:
         charaId = filtered_cn_char_table[name_zh]
         if charaId in recruitment_list:
             continue
-        recruitment_list[charaId] = {"name_zh": name_zh, "IsRecruitOnly": recruit_only}
+        character_dict = {}
+        cn_chara = cn_char_table[charaId]
+        character_dict = {"id": charaId, "appellation": cn_chara['appellation'], 
+                                     "name_zh": cn_chara['name'], "name_ja": "", "name_en": "", 
+                                     "IsRecruitOnly": recruit_only, "tags": []}
         name_en = en_char_table.get(charaId, {}).get('name', None)
-        name_en = CHARA_NAME_SUBSTITUTIONS.get(name_en, name_en)
-
+        name_en = CHARA_NAME_SUBSTITUTIONS.get(name_en, name_en) # Apply substitutions if necessary
         if name_en is not None and name_en in en_matches:
-            recruitment_list[charaId]["name_en"] = name_en
-            recruitment_list[charaId]["name_jp"] = jp_char_table[charaId]['name']
+            character_dict["name_en"] = name_en
+            character_dict["name_ja"] = jp_char_table[charaId]['name']
+        tag_list = []
+        # Append tag based on character position
+        tag_list.append(
+            filtered_cn_tag_names["近战位"] if cn_chara['position'] == "MELEE" else filtered_cn_tag_names["远程位"])
+        # Append tag based on character rarity
+        if cn_chara['rarity'] in RARITY_CONVERT:
+            tag_list.append(filtered_cn_tag_names[RARITY_CONVERT[cn_chara['rarity']]])
+        # Append tag based on character profession
+        if (tag := filtered_cn_tag_names.get(PROFESSION_CONVERT.get(cn_chara['profession']))) is not None:
+            tag_list.append(tag)
+        # Append tags from character's tagList
+        for tag in cn_char_table[charaId]['tagList']:
+            tag_id = filtered_cn_tag_names[tag]
+            tag_list.append(tag_id)
+        character_dict["tags"] = tag_list
+        recruitment_list.append(character_dict)
+recruitment['recruitment_list'] = recruitment_list
 
-with open('recruitment_list.json', 'w', encoding='utf-8') as f:
-    json.dump(recruitment_list, f, ensure_ascii=False, indent=4)
+with open('recruitment.json', 'w', encoding='utf-8') as f:
+    json.dump(recruitment, f, ensure_ascii=False, indent=4)
 
 
-if 'gacha_tags' not in arknights_utilities:
-    arknights_utilities['gacha_tags'] = {} 
 
-en_gacha_tags = {tag['tagId']: tag for tag in en_gacha_table['gachaTags']}
-jp_gacha_tags = {tag['tagId']: tag for tag in jp_gacha_table['gachaTags']}
-
-tags_dict = {}
-for tag in cn_gacha_table['gachaTags']:
-    tag_id = tag['tagId']
-    tag_entry = {'name_zh': tag['tagName']}
-    if tag_id in en_gacha_tags:
-        tag_entry['name_en'] = en_gacha_tags[tag_id]['tagName']
-        tag_entry['name_jp'] = jp_gacha_tags[tag_id]['tagName']
-    tags_dict[tag_id] = tag_entry
-arknights_utilities['gacha_tags'] = tags_dict
-
-with open('arknights_utilities.json', 'w', encoding='utf-8') as f:
-    json.dump(arknights_utilities, f, ensure_ascii=False, indent=4)

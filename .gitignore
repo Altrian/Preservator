@@ -172,3 +172,19 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# VS Code settings
+.vscode/
+
+# VS Code workspace settings
+.vscode-test/
+
+# Json files
+*.json
+
+# GZIP files
+*.gz
+
+# Database folder
+cn_data/
+global_data/
