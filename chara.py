@@ -6,6 +6,10 @@ from chara_skills import replace_substrings
 
 pp = pprint.PrettyPrinter(indent=4)
 
+SUBPROFESSIONS = ['physician', 'fearless', 'executor', 'fastshot', 'bombarder', 'bard', 'protector', 'ritualist', 'pioneer', 'corecaster', 'splashcaster', 'charger', 'centurion', 'guardian', 'slower', 'funnel', 'mystic', 'chain', 'aoesniper', 'reaperrange', 'longrange', 'closerange', 'siegesniper', 'loopshooter', 'bearer', 'tactician', 'instructor', 'lord', 'artsfghter', 'sword', 'musha', 'crusher', 'reaper',
+                  'merchant', 'hookmaster', 'ringhealer', 'healer', 'wandermedic', 'unyield', 'artsprotector', 'summoner', 'craftsman', 'stalker', 'pusher', 'dollkeeper', 'skywalker', 'agent', 'fighter', 'librator', 'hammer', 'phalanx', 'blastcaster', 'primcaster', 'incantationmedic', 'chainhealer', 'shotprotector', 'fortress', 'duelist', 'primprotector', 'hunter', 'geek', 'underminer', 'blessing', 'traper', 
+                  'alchemist','soulcaster','primguard']
+
 STAT_CONVERT = {'maxHp': "hp", "magicResistance": "res", "attackSpeed": "aspd",
                 "moveSpeed": "ms", "respawnTime": "respawnTime", "atk": 'atk', "def": "def", "cost": "cost"}
 
@@ -56,7 +60,7 @@ with open('tokens.json', encoding='utf-8') as f:
 with open('chara_imple_dates.json', encoding='utf-8') as f:
     imple_dates = json.load(f)
 
-data = []
+data = {}
 
 KEYS_TO_IGNORE = ["char_512_aprot", "char_600_cpione", "char_601_cguard",
                   "char_602_cdfend", "char_603_csnipe", "char_604_ccast",
@@ -99,7 +103,7 @@ for id, character_dict in filtered_cn_char_table.items():
                 "prefabKey": maxed_talent['prefabKey'],
                 "name_zh": maxed_talent["name"], "name_ja": "", "name_en": "",
                 "desc_zh": chara_talents[id]['talents'][talent_index]["desc_zh"], "desc_ja": "", "desc_en": ""}
-            if id in in_global:
+            if in_global:
                 talent_dict["name_ja"] = jp_char_table[id]['talents'][talent_index]['candidates'][max_candidate_index]["name"]
                 talent_dict["desc_ja"] = chara_talents[id]['talents'][talent_index]["desc_ja"]
                 talent_dict["name_en"] = en_char_table[id]['talents'][talent_index]['candidates'][max_candidate_index]["name"]
@@ -156,7 +160,7 @@ for id, character_dict in filtered_cn_char_table.items():
             "desc_en": ""
         }
         
-        if id in in_global and potential_index < len(jp_char_table[id]['potentialRanks']):
+        if in_global and potential_index < len(jp_char_table[id]['potentialRanks']):
             potential_dict["desc_ja"] = jp_char_table[id]['potentialRanks'][potential_index]['description']
             potential_dict["desc_en"] = en_char_table[id]['potentialRanks'][potential_index]['description']
             
@@ -209,7 +213,7 @@ for id, character_dict in filtered_cn_char_table.items():
                    "stats": stats_list, "potential": potential_list, "favorData": favor_data, "tokens": tokens,
                    "skills": skills, "talents": talents, "uniequip": uniequip_list}
     
-    if id in in_global:
+    if in_global:
         desc_ja = jp_char_table[id]['description'].replace("<$ba", "<ba")
         desc_en = en_char_table[id]['description'].replace("<$ba", "<ba")
         if character_dict['subProfessionId'] in ['librator', 'healer', 'musha']:
@@ -225,7 +229,7 @@ for id, character_dict in filtered_cn_char_table.items():
         result_dict["name_en"] = en_char_table[id]['name']
         result_dict["desc_ja"] = desc_ja
         result_dict["desc_en"] = desc_en
-    data.append(result_dict)
+    data[id] = result_dict
 
 # Patch table for Amiya
 for id, character_dict in cn_patch_table['patchChars'].items():
@@ -360,7 +364,14 @@ for id, character_dict in cn_patch_table['patchChars'].items():
         result_dict["name_en"] = en_patch_table['patchChars'][id]['name']
         result_dict["desc_ja"] = jp_patch_table['patchChars'][id]['description'].replace("<$ba", "<ba")
         result_dict["desc_en"] = en_patch_table['patchChars'][id]['description'].replace("<$ba", "<ba")
-    data.append(result_dict)
+    data[id] = result_dict
 
 with open('characters_read.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=4)
+
+with open('characters.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
+
+for id in subProfessionIds:
+    if id not in SUBPROFESSIONS:
+        print(id,' (new!)')

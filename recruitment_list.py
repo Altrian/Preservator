@@ -48,10 +48,6 @@ with open(jp_gacha_table_path, encoding='utf-8') as f:
 
 with open('recruitment.json', 'r', encoding='utf-8') as f:
     recruitment = json.load(f)
-with open('recruitment_list.json', 'r', encoding='utf-8') as f:
-    recruitment_list = json.load(f)
-with open('recruitment_tags.json', 'r', encoding='utf-8') as f:
-    arknights_utilities = json.load(f)
 
 en_gacha_tags = {tag['tagId']: tag for tag in en_gacha_table['gachaTags']}
 jp_gacha_tags = {tag['tagId']: tag for tag in jp_gacha_table['gachaTags']}
@@ -60,7 +56,7 @@ tags_list = []
 for tag in cn_gacha_table['gachaTags']:
     tag_id = tag['tagId']
     tag_entry = {'id': tag_id, 'name_zh': tag['tagName']}
-    if tag_id in en_gacha_tags:
+    if tag_id in en_gacha_tags: # Check if the tag exists in Global
         tag_entry['name_en'] = en_gacha_tags[tag_id]['tagName']
         tag_entry['name_jp'] = jp_gacha_tags[tag_id]['tagName']
     tags_list.append(tag_entry)
@@ -90,13 +86,15 @@ for match in cn_matches:
     
     if name_zh in filtered_cn_char_table:
         charaId = filtered_cn_char_table[name_zh]
-        if charaId in recruitment_list:
-            continue
         character_dict = {}
         cn_chara = cn_char_table[charaId]
-        character_dict = {"id": charaId, "appellation": cn_chara['appellation'], 
-                                     "name_zh": cn_chara['name'], "name_ja": "", "name_en": "", 
-                                     "IsRecruitOnly": recruit_only, "tags": []}
+        character_dict = {"id": charaId, "appellation": cn_chara['appellation'],
+                          "name_zh": cn_chara['name'], "name_ja": "", "name_en": "",
+                          "rarity": cn_chara['rarity'],
+                          "profession": cn_chara['profession'],
+                          "subProfessionId": cn_chara['subProfessionId'],
+                          "IsRecruitOnly": recruit_only, "tags": []}
+        # Check if the character exists in the Global character table
         name_en = en_char_table.get(charaId, {}).get('name', None)
         name_en = CHARA_NAME_SUBSTITUTIONS.get(name_en, name_en) # Apply substitutions if necessary
         if name_en is not None and name_en in en_matches:
