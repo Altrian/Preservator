@@ -16,11 +16,30 @@ STAT_CONVERT = {'maxHp': "hp", "magicResistance": "res", "attackSpeed": "aspd",
 ATTRIBUTE_TRANSLATE_TABLE = {'COST': "cost", "RESPAWN_TIME": 'respawnTime', 'ATK': "atk",
                              "MAX_HP": "hp", "ATTACK_SPEED": "aspd", "DEF": "def", "MAGIC_RESISTANCE": "res"}
 
+HANDBOOK_INFO_TABLE = {
+    "gender": {
+        "zh": ["【性别】", "【设定性别】", "【语音类型】"],
+        "ja": ["【性別】", "【性別設定】"],
+        "en": ["[Gender]", "[Gender Assignment]"],
+    },
+    "birthplace": {
+        "zh": ["【出身地】", "【产地】"],
+        "ja": ["【出身地】", "【産地】"],
+        "en": ["[Place of Birth]", "[Place of Production]"],
+    },
+    "race": {"zh": ["【种族】"], "ja": ["【種族】"], "en": ["[Race]"]},
+}
 
 script_dir = os.path.dirname(__file__)  # <-- Absolute directory for the script
 
 cn_char_table_path = os.path.join(
     script_dir, "cn_data/zh_CN/gamedata/excel/character_table.json")
+cn_handbook_info_table_path = os.path.join(
+    script_dir, "cn_data/zh_CN/gamedata/excel/handbook_info_table.json")
+jp_handbook_info_table_path = os.path.join(
+    script_dir, "global_data/ja_JP/gamedata/excel/handbook_info_table.json")
+en_handbook_info_table_path = os.path.join(
+    script_dir, "global_data/en_US/gamedata/excel/handbook_info_table.json")
 cn_skill_table_path = os.path.join(
     script_dir, "cn_data/zh_CN/gamedata/excel/skill_table.json")
 en_char_table_path = os.path.join(
@@ -42,6 +61,12 @@ with open(en_char_table_path, encoding='utf-8') as f:
     en_char_table = json.load(f)
 with open(jp_char_table_path, encoding='utf-8') as f:
     jp_char_table = json.load(f)
+with open(cn_handbook_info_table_path, encoding='utf-8') as f:
+    cn_handbook_info_table = json.load(f)
+with open(jp_handbook_info_table_path, encoding='utf-8') as f:
+    jp_handbook_info_table = json.load(f)
+with open(en_handbook_info_table_path, encoding='utf-8') as f:
+    en_handbook_info_table = json.load(f)
 with open(cn_patch_table_path, encoding='utf-8') as f:
     cn_patch_table = json.load(f)
 with open(en_patch_table_path, encoding='utf-8') as f:
@@ -204,10 +229,64 @@ for id, character_dict in filtered_cn_char_table.items():
         if power['teamId'] is not None: 
             powers.append(power['teamId'])
 
+    # Handle gender, birthplace, race from handbook
+    gender = {}
+    birthplace = {}
+    race = {}
+    if cn_handbook_info_table['handbookDict'].get(id) is None:
+        print(f"Warning: {id} has no handbook info")
+    else:
+        cn_handbook_info = cn_handbook_info_table['handbookDict'][id]['storyTextAudio'][0]['stories'][0]['storyText']
+        jp_handbook_info = jp_handbook_info_table['handbookDict'][id]['storyTextAudio'][0]['stories'][0]['storyText'] if id in jp_handbook_info_table['handbookDict'] else ""
+        en_handbook_info = en_handbook_info_table['handbookDict'][id]['storyTextAudio'][0]['stories'][0]['storyText'] if id in en_handbook_info_table['handbookDict'] else ""
+        # Gender
+        if "【性别】" in cn_handbook_info: # Check for [Gender]
+            gender['zh'] = cn_handbook_info.split("【性别】")[1].split("\n")[0].strip()
+            if in_global:
+                gender['ja'] = jp_handbook_info.split("【性別】")[1].split("\n")[0].strip()
+                gender['en'] = en_handbook_info.split("[Gender]")[1].split("\n")[0].strip()
+        elif "【设定性别】" in cn_handbook_info: # Check for [Gender Assignment] 
+            gender['zh'] = cn_handbook_info.split("【设定性别】")[1].split("\n")[0].strip()
+            if in_global:
+                gender['ja'] = jp_handbook_info.split("【性別設定】")[1].split("\n")[0].strip()
+                gender['en'] = en_handbook_info.split("[Gender Assignment]")[1].split("\n")[0].strip()
+        elif "【语音类型】" in cn_handbook_info: # Check for [Voice Type]
+            gender['zh'] = cn_handbook_info.split("【语音类型】")[1].split("\n")[0].strip()
+        else:
+            print(f"Warning: Gender information is missing for character ID {id}")
+        # Birthplace
+        if "【出身地】" in cn_handbook_info: # Check for [Place of Birth]
+            birthplace['zh'] = cn_handbook_info.split("【出身地】")[1].split("\n")[0].strip()
+            if in_global:
+                birthplace['ja'] = jp_handbook_info.split("【出身地】")[1].split("\n")[0].strip()
+                birthplace['en'] = en_handbook_info.split("[Place of Birth]")[1].split("\n")[0].strip()
+        elif "【产地】" in cn_handbook_info: # Check for [Place of Production]
+            birthplace['zh'] = cn_handbook_info.split("【产地】")[1].split("\n")[0].strip()
+            if in_global:
+                birthplace['ja'] = jp_handbook_info.split("【産地】")[1].split("\n")[0].strip()
+                birthplace['en'] = en_handbook_info.split("[Place of Production]")[1].split("\n")[0].strip()
+        else:
+            print(f"Warning: Birthplace information is missing for character ID {id}")
+
+        # Race
+        if "种族" not in cn_handbook_info:
+            race['zh'] = "其他"
+            race['ja'] = "その他"
+            race['en'] = "Others"
+        else:
+            race['zh'] = cn_handbook_info.split("【种族】")[1].split("\n")[0].strip()
+            if in_global:
+                race['ja'] = jp_handbook_info.split("【種族】")[1].split("\n")[0].strip()
+                race['en'] = en_handbook_info.split("[Race]")[1].split("\n")[0].strip()
+
+
+
+
+
     result_dict = {"id": id, "appellation": character_dict['appellation'],
                    "name_zh": character_dict['name'], "name_ja": "", "name_en": "",
                    "desc_zh": desc_zh, "desc_ja": "", "desc_en": "",
-                   "releaseDate": imple_dates.get(id, 0), "powers": powers,
+                   "releaseDate": imple_dates.get(id, 0), "gender": gender, "birthplace": birthplace, "race": race, "powers": powers,
                    "position": character_dict['position'], "isSpChar": character_dict['isSpChar'],
                    "rarity": character_dict['rarity'], "profession": character_dict['profession'], "subProfessionId": character_dict['subProfessionId'],
                    "stats": stats_list, "potential": potential_list, "favorData": favor_data, "tokens": tokens,
