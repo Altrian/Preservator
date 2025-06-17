@@ -16,7 +16,7 @@ STAT_CONVERT = {'maxHp': "hp", "magicResistance": "res", "attackSpeed": "aspd",
 ATTRIBUTE_TRANSLATE_TABLE = {'COST': "cost", "RESPAWN_TIME": 'respawnTime', 'ATK': "atk",
                              "MAX_HP": "hp", "ATTACK_SPEED": "aspd", "DEF": "def", "MAGIC_RESISTANCE": "res"}
 
-HANDBOOK_INFO_TABLE = {
+HANDBOOK_INFO_EXTRACT_TABLE = {
     "gender": {
         "zh": ["【性别】", "【设定性别】", "【语音类型】"],
         "ja": ["【性別】", "【性別設定】"],
@@ -84,6 +84,8 @@ with open('tokens.json', encoding='utf-8') as f:
     tokens_dict = json.load(f)
 with open('chara_imple_dates.json', encoding='utf-8') as f:
     imple_dates = json.load(f)
+with open('recruitment_table.json', encoding='utf-8') as f:
+    recruitment_dict = json.load(f)
 
 data = {}
 
@@ -230,65 +232,61 @@ for id, character_dict in filtered_cn_char_table.items():
             powers.append(power['teamId'])
 
     # Handle gender, birthplace, race from handbook
-    gender = {}
-    birthplace = {}
-    race = {}
+    gender = {"zh": "", "ja": "", "en": ""}
+    birthplace = {"zh": "", "ja": "", "en": ""}
+    race = {"zh": "", "ja": "", "en": ""}
+    def extract_handbook_info(text, keys):
+        """Extracts the value of the first matching key in text."""
+        for key in keys:
+            if key in text:
+                return text.split(key)[1].split("\n")[0].strip()
+        return None
     if cn_handbook_info_table['handbookDict'].get(id) is None:
         print(f"Warning: {id} has no handbook info")
     else:
         cn_handbook_info = cn_handbook_info_table['handbookDict'][id]['storyTextAudio'][0]['stories'][0]['storyText']
         jp_handbook_info = jp_handbook_info_table['handbookDict'][id]['storyTextAudio'][0]['stories'][0]['storyText'] if id in jp_handbook_info_table['handbookDict'] else ""
         en_handbook_info = en_handbook_info_table['handbookDict'][id]['storyTextAudio'][0]['stories'][0]['storyText'] if id in en_handbook_info_table['handbookDict'] else ""
-        # Gender
-        if "【性别】" in cn_handbook_info: # Check for [Gender]
-            gender['zh'] = cn_handbook_info.split("【性别】")[1].split("\n")[0].strip()
-            if in_global:
-                gender['ja'] = jp_handbook_info.split("【性別】")[1].split("\n")[0].strip()
-                gender['en'] = en_handbook_info.split("[Gender]")[1].split("\n")[0].strip()
-        elif "【设定性别】" in cn_handbook_info: # Check for [Gender Assignment] 
-            gender['zh'] = cn_handbook_info.split("【设定性别】")[1].split("\n")[0].strip()
-            if in_global:
-                gender['ja'] = jp_handbook_info.split("【性別設定】")[1].split("\n")[0].strip()
-                gender['en'] = en_handbook_info.split("[Gender Assignment]")[1].split("\n")[0].strip()
-        elif "【语音类型】" in cn_handbook_info: # Check for [Voice Type]
-            gender['zh'] = cn_handbook_info.split("【语音类型】")[1].split("\n")[0].strip()
-        else:
+        # Extract gender
+        gender['zh'] = extract_handbook_info(cn_handbook_info, HANDBOOK_INFO_EXTRACT_TABLE['gender']['zh'])
+        if in_global:
+            gender['ja'] = extract_handbook_info(jp_handbook_info, HANDBOOK_INFO_EXTRACT_TABLE['gender']['ja'])
+            gender['en'] = extract_handbook_info(en_handbook_info, HANDBOOK_INFO_EXTRACT_TABLE['gender']['en'])
+        if not gender['zh']:
             print(f"Warning: Gender information is missing for character ID {id}")
-        # Birthplace
-        if "【出身地】" in cn_handbook_info: # Check for [Place of Birth]
-            birthplace['zh'] = cn_handbook_info.split("【出身地】")[1].split("\n")[0].strip()
-            if in_global:
-                birthplace['ja'] = jp_handbook_info.split("【出身地】")[1].split("\n")[0].strip()
-                birthplace['en'] = en_handbook_info.split("[Place of Birth]")[1].split("\n")[0].strip()
-        elif "【产地】" in cn_handbook_info: # Check for [Place of Production]
-            birthplace['zh'] = cn_handbook_info.split("【产地】")[1].split("\n")[0].strip()
-            if in_global:
-                birthplace['ja'] = jp_handbook_info.split("【産地】")[1].split("\n")[0].strip()
-                birthplace['en'] = en_handbook_info.split("[Place of Production]")[1].split("\n")[0].strip()
-        else:
+        # Extract birthplace
+        birthplace['zh'] = extract_handbook_info(cn_handbook_info, HANDBOOK_INFO_EXTRACT_TABLE['birthplace']['zh'])
+        if in_global:
+            birthplace['ja'] = extract_handbook_info(jp_handbook_info, HANDBOOK_INFO_EXTRACT_TABLE['birthplace']['ja'])
+            birthplace['en'] = extract_handbook_info(en_handbook_info, HANDBOOK_INFO_EXTRACT_TABLE['birthplace']['en'])
+        if not birthplace['zh']:
             print(f"Warning: Birthplace information is missing for character ID {id}")
-
-        # Race
+        # Extract race
         if "种族" not in cn_handbook_info:
             race['zh'] = "其他"
             race['ja'] = "その他"
             race['en'] = "Others"
         else:
-            race['zh'] = cn_handbook_info.split("【种族】")[1].split("\n")[0].strip()
+            race['zh'] = extract_handbook_info(cn_handbook_info, HANDBOOK_INFO_EXTRACT_TABLE['race']['zh'])
             if in_global:
-                race['ja'] = jp_handbook_info.split("【種族】")[1].split("\n")[0].strip()
-                race['en'] = en_handbook_info.split("[Race]")[1].split("\n")[0].strip()
+                race['ja'] = extract_handbook_info(jp_handbook_info, HANDBOOK_INFO_EXTRACT_TABLE['race']['ja'])
+                race['en'] = extract_handbook_info(en_handbook_info, HANDBOOK_INFO_EXTRACT_TABLE['race']['en'])
 
-
-
-
+    # Handle recruitment if applicable
+    recruitment = None
+    recruitment_info = recruitment_dict.get(id, None)
+    if recruitment_info is not None:
+        recruitment = {"IsRecruitOnly": recruitment_info['IsRecruitOnly'],
+                       "tags": recruitment_info['tags']}
 
     result_dict = {"id": id, "appellation": character_dict['appellation'],
-                   "name_zh": character_dict['name'], "name_ja": "", "name_en": "",
-                   "desc_zh": desc_zh, "desc_ja": "", "desc_en": "",
-                   "releaseDate": imple_dates.get(id, 0), "gender": gender, "birthplace": birthplace, "race": race, "powers": powers,
+                   "releaseDate": imple_dates.get(id, 0),
+                   "name": {"zh": character_dict['name'], "ja": "", "en": ""},
+                   "desc": {"zh": desc_zh, "ja": "", "en": ""},  
+                   "gender": gender, "birthplace": birthplace, "race": race, "powers": powers,
                    "position": character_dict['position'], "isSpChar": character_dict['isSpChar'],
                    "rarity": character_dict['rarity'], "profession": character_dict['profession'], "subProfessionId": character_dict['subProfessionId'],
+                   "recruitment": recruitment,
                    "stats": stats_list, "potential": potential_list, "favorData": favor_data, "tokens": tokens,
                    "skills": skills, "talents": talents, "uniequip": uniequip_list}
     
@@ -304,10 +302,10 @@ for id, character_dict in filtered_cn_char_table.items():
                 en_char_table[id]['trait']['candidates'][-1]['blackboard'])
         desc_en = re.sub(r'<([A-Z][^>]*)>', r'&lt;\1&gt;', desc_en)
 
-        result_dict["name_ja"] = jp_char_table[id]['name']
-        result_dict["name_en"] = en_char_table[id]['name']
-        result_dict["desc_ja"] = desc_ja
-        result_dict["desc_en"] = desc_en
+        result_dict["name"]["ja"] = jp_char_table[id]['name']
+        result_dict["name"]["en"] = en_char_table[id]['name']
+        result_dict["desc"]['ja'] = desc_ja
+        result_dict["desc"]["en"] = desc_en
     data[id] = result_dict
 
 # Patch table for Amiya
@@ -429,10 +427,47 @@ for id, character_dict in cn_patch_table['patchChars'].items():
         if power['teamId'] is not None: 
             powers.append(power['teamId'])
 
+    # Handle gender, birthplace, race from handbook
+    gender = {}
+    birthplace = {}
+    race = {}
+    def extract_story_text(story_text_audio, story_title):
+        story_texts = [
+            story['storyText'] 
+            for item in story_text_audio if item.get('storyTitle') == story_title 
+            for story in item.get('stories', []) if id in story.get('patchIdList', [])
+        ]
+        return story_texts[0] if story_texts else None
+
+    cn_story_text_audio = cn_handbook_info_table['handbookDict']['char_002_amiya']['storyTextAudio']
+    jp_story_text_audio = jp_handbook_info_table['handbookDict']['char_002_amiya']['storyTextAudio'] 
+    en_story_text_audio = en_handbook_info_table['handbookDict']['char_002_amiya']['storyTextAudio']
+    cn_story_text = extract_story_text(cn_story_text_audio, '基础档案')
+    if cn_story_text:
+        gender['zh'] = cn_story_text.split("【性别】")[1].split("\n")[0].strip()
+        if in_global:
+            gender['ja'] = extract_story_text(jp_story_text_audio, '基礎情報').split("【性別】")[1].split("\n")[0].strip()
+            gender['en'] = extract_story_text(en_story_text_audio, 'Basic Info').split("[Gender]")[1].split("\n")[0].strip()
+        birthplace['zh'] = cn_story_text.split("【出身地】")[1].split("\n")[0].strip()
+        if in_global:
+            birthplace['ja'] = extract_story_text(jp_story_text_audio, '基礎情報').split("【出身地】")[1].split("\n")[0].strip()
+            birthplace['en'] = extract_story_text(en_story_text_audio, 'Basic Info').split("[Place of Birth]")[1].split("\n")[0].strip()
+        if "种族" not in cn_story_text:
+            race['zh'] = "其他"
+            race['ja'] = "その他"
+            race['en'] = "Others"
+        else:
+            race['zh'] = cn_story_text.split("【种族】")[1].split("\n")[0].strip()
+            if in_global:
+                race['ja'] = extract_story_text(jp_story_text_audio, '基礎情報').split("【種族】")[1].split("\n")[0].strip()
+                race['en'] = extract_story_text(en_story_text_audio, 'Basic Info').split("[Race]")[1].split("\n")[0].strip()
+
+
     result_dict = {"id": id, "appellation": character_dict['appellation'],
                    "name_zh": character_dict['name'], "name_ja": "", "name_en": "",
                    "desc_zh": desc_zh, "desc_ja": "", "desc_en": "",
-                   "releaseDate": imple_dates.get(id, 0), "powers": powers,
+                   "releaseDate": imple_dates.get(id, 0), 
+                   "gender": gender, "birthplace": birthplace, "race": race, "powers": powers,
                    "position": character_dict['position'], "isSpChar": character_dict['isSpChar'],
                    "rarity": character_dict['rarity'], "profession": character_dict['profession'], "subProfessionId": character_dict['subProfessionId'],
                    "stats": stats_list, "potential": potential_list, "favorData": favor_data, "tokens": tokens,

@@ -1,6 +1,11 @@
 import json
 import os
 import re
+from datetime import datetime
+
+
+now = datetime.now()
+date_str = now.strftime("%Y-%m-%d")
 
 KEYS_TO_IGNORE = ["char_512_aprot", "char_600_cpione", "char_601_cguard",
                   "char_602_cdfend", "char_603_csnipe", "char_604_ccast",
@@ -49,6 +54,16 @@ with open(jp_gacha_table_path, encoding='utf-8') as f:
 with open('recruitment.json', 'r', encoding='utf-8') as f:
     recruitment = json.load(f)
 
+with open('recruitment_table.json', 'r', encoding='utf-8') as f:
+    recruitment_dict = json.load(f)
+
+# If the recruitment file is empty, initialize it
+if not recruitment:
+    recruitment = {
+        "tags": {"updatedAt": date_str, "data": []},
+        "recruitment_list": {"updatedAt": date_str, "data": []}
+    }
+
 en_gacha_tags = {tag['tagId']: tag for tag in en_gacha_table['gachaTags']}
 jp_gacha_tags = {tag['tagId']: tag for tag in jp_gacha_table['gachaTags']}
 
@@ -60,7 +75,11 @@ for tag in cn_gacha_table['gachaTags']:
         tag_entry['name_en'] = en_gacha_tags[tag_id]['tagName']
         tag_entry['name_jp'] = jp_gacha_tags[tag_id]['tagName']
     tags_list.append(tag_entry)
-recruitment['tags'] = tags_list
+if not (recruitment['tags'].get('data', []) == tags_list):
+    # If the tags have changed, update the recruitment tags
+    recruitment['tags'] = {"updatedAt": date_str, 
+                           "data": tags_list}
+
 
 filtered_cn_char_table = {data['name']: key for key, data in cn_char_table.items(    
 ) if "token" not in key and "trap" not in key and key not in KEYS_TO_IGNORE}
@@ -100,26 +119,29 @@ for match in cn_matches:
         if name_en is not None and name_en in en_matches:
             character_dict["name_en"] = name_en
             character_dict["name_ja"] = jp_char_table[charaId]['name']
-        tag_list = []
+        tag_list = set()
         # Append tag based on character position
-        tag_list.append(
+        tag_list.add(
             filtered_cn_tag_names["近战位"] if cn_chara['position'] == "MELEE" else filtered_cn_tag_names["远程位"])
         # Append tag based on character rarity
         if cn_chara['rarity'] in RARITY_CONVERT:
-            tag_list.append(filtered_cn_tag_names[RARITY_CONVERT[cn_chara['rarity']]])
+            tag_list.add(filtered_cn_tag_names[RARITY_CONVERT[cn_chara['rarity']]])
         # Append tag based on character profession
         if (tag := filtered_cn_tag_names.get(PROFESSION_CONVERT.get(cn_chara['profession']))) is not None:
-            tag_list.append(tag)
+            tag_list.add(tag)
         # Append tags from character's tagList
         for tag in cn_char_table[charaId]['tagList']:
             tag_id = filtered_cn_tag_names[tag]
-            tag_list.append(tag_id)
-        character_dict["tags"] = tag_list
+            tag_list.add(tag_id)
+        character_dict["tags"] = list(tag_list)
+        recruitment_dict[charaId] = character_dict
         recruitment_list.append(character_dict)
-recruitment['recruitment_list'] = recruitment_list
+recruitment['recruitment_list'] = {"updatedAt": date_str, 
+                                   "data": recruitment_list}
 
 with open('recruitment.json', 'w', encoding='utf-8') as f:
     json.dump(recruitment, f, ensure_ascii=False, indent=4)
 
-
+with open('recruitment_table.json', 'w', encoding='utf-8') as f:
+    json.dump(recruitment_dict, f, ensure_ascii=False, indent=4)
 
