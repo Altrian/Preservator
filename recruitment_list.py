@@ -19,9 +19,13 @@ CHARA_NAME_SUBSTITUTIONS = {"'Justice Knight'": "Justice Knight"}
 RARITY_CONVERT = {"TIER_1": "支援机械", "TIER_2": "新手", 
                   "TIER_5": "资深干员", "TIER_6": "高级资深干员"}
 
+RARITY_CONVERT_INV = {cn_name: rarity_code for rarity_code, cn_name in RARITY_CONVERT.items()}
+
 PROFESSION_CONVERT = {"WARRIOR": "近卫干员", "SNIPER": "狙击干员", "TANK": "重装干员",
                       "MEDIC": "医疗干员", "SUPPORT": "辅助干员", "CASTER": "术师干员", 
                       "SPECIAL": "特种干员", "PIONEER": "先锋干员"}
+
+PROFESSION_CONVERT_INV = {class_code: cn_name for cn_name, class_code in PROFESSION_CONVERT.items()}
 
 script_dir = os.path.dirname(__file__)  # <-- absolute dir the script is in
 
@@ -37,6 +41,12 @@ en_gacha_table_path = os.path.join(
     script_dir, "global_data/en_US/gamedata/excel/gacha_table.json")
 jp_gacha_table_path = os.path.join(
     script_dir, "global_data/ja_JP/gamedata/excel/gacha_table.json")
+cn_handbook_team_table_path = os.path.join(
+    script_dir, "cn_data/zh_CN/gamedata/excel/handbook_team_table.json")
+en_handbook_team_table_path = os.path.join(
+    script_dir, "global_data/en_US/gamedata/excel/handbook_team_table.json")
+jp_handbook_team_table_path = os.path.join(
+    script_dir, "global_data/ja_JP/gamedata/excel/handbook_team_table.json")
 
 with open(cn_char_table_path, encoding='utf-8') as f:
     cn_char_table = json.load(f)
@@ -50,6 +60,12 @@ with open(en_gacha_table_path, encoding='utf-8') as f:
     en_gacha_table = json.load(f)
 with open(jp_gacha_table_path, encoding='utf-8') as f:
     jp_gacha_table = json.load(f)
+with open(cn_handbook_team_table_path, encoding='utf-8') as f:
+    cn_handbook_team_table = json.load(f)
+with open(en_handbook_team_table_path, encoding='utf-8') as f:
+    en_handbook_team_table = json.load(f)
+with open(jp_handbook_team_table_path, encoding='utf-8') as f:
+    jp_handbook_team_table = json.load(f)
 
 with open('recruitment.json', 'r', encoding='utf-8') as f:
     recruitment = json.load(f)
@@ -61,19 +77,30 @@ with open('recruitment_table.json', 'r', encoding='utf-8') as f:
 if not recruitment:
     recruitment = {
         "tags": {"updatedAt": date_str, "data": []},
-        "recruitment_list": {"updatedAt": date_str, "data": []}
+        "branch": {"updatedAt": date_str, "data": {}},
+        "powers": {"updatedAt": date_str, "data": []}
     }
 
 en_gacha_tags = {tag['tagId']: tag for tag in en_gacha_table['gachaTags']}
 jp_gacha_tags = {tag['tagId']: tag for tag in jp_gacha_table['gachaTags']}
 
+existing_tags = {tag['id'] for tag in recruitment['tags'].get('data', [])}
 tags_list = []
 for tag in cn_gacha_table['gachaTags']:
     tag_id = tag['tagId']
-    tag_entry = {'id': tag_id, 'name_zh': tag['tagName']}
-    if tag_id in en_gacha_tags: # Check if the tag exists in Global
-        tag_entry['name_en'] = en_gacha_tags[tag_id]['tagName']
-        tag_entry['name_jp'] = jp_gacha_tags[tag_id]['tagName']
+    if tag_id in existing_tags:
+        tag_entry = existing_tags[tag_id]
+    else:
+        tag_entry = {'id': tag['tagName'], 'name': {'zh': tag['tagName'], 'ja': '', 'en': ''}}
+        if (class_code := PROFESSION_CONVERT_INV.get(tag['tagName'])) is not None:
+            tag_entry['id'] = class_code
+        if (rarity_code := RARITY_CONVERT_INV.get(tag['tagName'])) is not None:
+            tag_entry['id'] = rarity_code
+        if tag_id in en_gacha_tags: # Check if the tag exists in Global
+            tag_entry['name']['en'] = en_gacha_tags[tag_id]['tagName']
+            tag_entry['name']['ja'] = jp_gacha_tags[tag_id]['tagName']
+        if tag_entry['name']['en'] == "Ranged" or tag_entry['name']['en'] == "Melee":
+            tag_entry['id'] = tag_entry['name']['en'].upper()  # Convert to uppercase for consistency
     tags_list.append(tag_entry)
 if not (recruitment['tags'].get('data', []) == tags_list):
     # If the tags have changed, update the recruitment tags
@@ -84,7 +111,7 @@ if not (recruitment['tags'].get('data', []) == tags_list):
 filtered_cn_char_table = {data['name']: key for key, data in cn_char_table.items(    
 ) if "token" not in key and "trap" not in key and key not in KEYS_TO_IGNORE}
 
-filtered_cn_tag_names = {data['name_zh']: data['id'] for data in tags_list}
+filtered_cn_tag_names = {data['name']['zh']: data['id'] for data in tags_list}
 
 cn_matches = list(re.finditer(
     r"(?<!>\s)<@rc\.eml>([^,，]*?)<\/>|(?:\/\s*|\n\s*|\\n\s*)((?!-)[^\r\/>★]+?(?<!-))(?=\/|$)",
@@ -108,7 +135,7 @@ for match in cn_matches:
         character_dict = {}
         cn_chara = cn_char_table[charaId]
         character_dict = {"id": charaId, "appellation": cn_chara['appellation'],
-                          "name_zh": cn_chara['name'], "name_ja": "", "name_en": "",
+                          "name": {"zh": cn_chara['name'], "ja": "", "en": "",},
                           "rarity": cn_chara['rarity'],
                           "profession": cn_chara['profession'],
                           "subProfessionId": cn_chara['subProfessionId'],
@@ -117,8 +144,8 @@ for match in cn_matches:
         name_en = en_char_table.get(charaId, {}).get('name', None)
         name_en = CHARA_NAME_SUBSTITUTIONS.get(name_en, name_en) # Apply substitutions if necessary
         if name_en is not None and name_en in en_matches:
-            character_dict["name_en"] = name_en
-            character_dict["name_ja"] = jp_char_table[charaId]['name']
+            character_dict["name"]['en'] = name_en
+            character_dict["name"]['ja'] = jp_char_table[charaId]['name']
         tag_list = set()
         # Append tag based on character position
         tag_list.add(
@@ -136,8 +163,23 @@ for match in cn_matches:
         character_dict["tags"] = list(tag_list)
         recruitment_dict[charaId] = character_dict
         recruitment_list.append(character_dict)
-recruitment['recruitment_list'] = {"updatedAt": date_str, 
-                                   "data": recruitment_list}
+
+powers_list = []
+for id, power_data in cn_handbook_team_table.items():
+    power_dict = {
+        "id": power_data['powerId'],
+        "orderNum": power_data['orderNum'],
+        "powerLevel": power_data['powerLevel'],
+        "name": {"zh": power_data['powerName'], "ja": "", "en": ""},
+        "isLimited": power_data['isLimited'],
+        "isRaw": power_data['isRaw'],
+    }
+    if id in jp_handbook_team_table:
+        power_dict["name"]["ja"] = jp_handbook_team_table[id]['powerName']
+        power_dict["name"]["en"] = en_handbook_team_table[id]['powerName']
+    powers_list.append(power_dict)
+recruitment['powers'] = {"updatedAt": date_str, "data": powers_list}
+
 
 with open('recruitment.json', 'w', encoding='utf-8') as f:
     json.dump(recruitment, f, ensure_ascii=False, indent=4)
