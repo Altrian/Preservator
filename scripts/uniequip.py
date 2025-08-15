@@ -1,62 +1,24 @@
 import json
-import os
-import requests
+from pathlib import Path
+from fetch import get
 from chara_skills import replace_substrings
 
 
-def update_uniequip(
-    use_remote=True,
-    cn_uniequip_table=None,
-    jp_uniequip_table=None,
-    en_uniequip_table=None,
-    cn_battle_equip_table=None,
-    jp_battle_equip_table=None,
-    en_battle_equip_table=None,
-    uniequip_path='uniequip.json'
-):
-    
-    def fetch_json_from_github(raw_url):
-        resp = requests.get(raw_url)
-        resp.raise_for_status()
-        return resp.json()
+def update_uniequip():
 
-    script_dir = os.path.dirname(__file__)
+    script_dir = Path(__file__).parent
+    json_dir = script_dir.parent / 'json'
+    uniequip_path = output_path = json_dir / 'uniequip.json'
 
-    # Fetch/load all files if not provided
-    if (
-        cn_uniequip_table is None or cn_battle_equip_table is None or
-        jp_uniequip_table is None or jp_battle_equip_table is None or
-        en_uniequip_table is None or en_battle_equip_table is None
-    ):
-        if use_remote:
-            base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
-            base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
-            cn_uniequip_table = fetch_json_from_github(f"{base_url_cn}/zh_CN/gamedata/excel/uniequip_table.json")
-            jp_uniequip_table = fetch_json_from_github(f"{base_url_global}/ja_JP/gamedata/excel/uniequip_table.json")
-            en_uniequip_table = fetch_json_from_github(f"{base_url_global}/en_US/gamedata/excel/uniequip_table.json")
-            cn_battle_equip_table = fetch_json_from_github(f"{base_url_cn}/zh_CN/gamedata/excel/battle_equip_table.json")
-            jp_battle_equip_table = fetch_json_from_github(f"{base_url_global}/ja_JP/gamedata/excel/battle_equip_table.json")
-            en_battle_equip_table = fetch_json_from_github(f"{base_url_global}/en_US/gamedata/excel/battle_equip_table.json")
-        else:
-            cn_uniequip_path = os.path.join(script_dir, "cn_data/zh_CN/gamedata/excel/uniequip_table.json")
-            cn_battle_equip_path = os.path.join(script_dir, "cn_data/zh_CN/gamedata/excel/battle_equip_table.json")
-            jp_uniequip_path = os.path.join(script_dir, "global_data/ja_JP/gamedata/excel/uniequip_table.json")
-            jp_battle_equip_path = os.path.join(script_dir, "global_data/ja_JP/gamedata/excel/battle_equip_table.json")
-            en_uniequip_path = os.path.join(script_dir, "global_data/en_US/gamedata/excel/uniequip_table.json")
-            en_battle_equip_path = os.path.join(script_dir, "global_data/en_US/gamedata/excel/battle_equip_table.json")
-            
-            with open(cn_uniequip_path, encoding='utf-8') as f:
-                cn_uniequip_table = json.load(f)
-            with open(cn_battle_equip_path, encoding='utf-8') as f:
-                cn_battle_equip_table = json.load(f)
-            with open(jp_uniequip_path, encoding='utf-8') as f:
-                jp_uniequip_table = json.load(f)
-            with open(jp_battle_equip_path, encoding='utf-8') as f:
-                jp_battle_equip_table = json.load(f)
-            with open(en_uniequip_path, encoding='utf-8') as f:
-                en_uniequip_table = json.load(f)
-            with open(en_battle_equip_path, encoding='utf-8') as f:
-                en_battle_equip_table = json.load(f)
+    base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
+    base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
+
+    cn_uniequip_table = get("cn_uniequip_table", f"{base_url_cn}/zh_CN/gamedata/excel/uniequip_table.json")
+    jp_uniequip_table = get("jp_uniequip_table", f"{base_url_global}/ja_JP/gamedata/excel/uniequip_table.json")
+    en_uniequip_table = get("en_uniequip_table", f"{base_url_global}/en_US/gamedata/excel/uniequip_table.json")
+    cn_battle_equip_table = get("cn_battle_equip_table", f"{base_url_cn}/zh_CN/gamedata/excel/battle_equip_table.json")
+    jp_battle_equip_table = get("jp_battle_equip_table", f"{base_url_global}/ja_JP/gamedata/excel/battle_equip_table.json")
+    en_battle_equip_table = get("en_battle_equip_table", f"{base_url_global}/en_US/gamedata/excel/battle_equip_table.json")
 
     with open(uniequip_path, encoding='utf-8') as f:
         curr_uniequip = json.load(f)
@@ -156,5 +118,10 @@ def update_uniequip(
 
     return_dict = curr_uniequip | return_dict
 
-    with open(uniequip_path, 'w', encoding='utf-8') as f:
+    with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(return_dict, f, ensure_ascii=False, indent=4)
+
+if __name__ == "__main__":
+    from main import setup
+    setup()
+    update_uniequip()

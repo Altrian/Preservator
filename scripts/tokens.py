@@ -1,61 +1,24 @@
 import json
-import os
-import requests
+from pathlib import Path
+from fetch import get
 from chara_skills import replace_substrings
 
 
-def update_tokens(
-    use_remote=True,
-    cn_char_table=None,
-    en_char_table=None,
-    jp_char_table=None,
-    cn_skill_table=None,
-    en_skill_table=None,
-    jp_skill_table=None,
-    tokens_path='tokens.json'
-):
+def update_tokens():
 
-    def fetch_json_from_github(raw_url):
-        resp = requests.get(raw_url)
-        resp.raise_for_status()
-        return resp.json()
+    script_dir = Path(__file__).parent
+    json_dir = script_dir.parent / 'json'
+    output_path = json_dir / 'tokens.json'
 
-    script_dir = os.path.dirname(__file__)
+    base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
+    base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
 
-    # Fetch/load all files if not provided
-    if (
-        cn_char_table is None or en_char_table is None or jp_char_table is None or
-        cn_skill_table is None or en_skill_table is None or jp_skill_table is None
-    ):
-        if use_remote:
-            base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
-            base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
-            cn_char_table = fetch_json_from_github(f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
-            jp_char_table = fetch_json_from_github(f"{base_url_global}/ja_JP/gamedata/excel/character_table.json")
-            en_char_table = fetch_json_from_github(f"{base_url_global}/en_US/gamedata/excel/character_table.json")
-            cn_skill_table = fetch_json_from_github(f"{base_url_cn}/zh_CN/gamedata/excel/skill_table.json")
-            jp_skill_table = fetch_json_from_github(f"{base_url_global}/ja_JP/gamedata/excel/skill_table.json")
-            en_skill_table = fetch_json_from_github(f"{base_url_global}/en_US/gamedata/excel/skill_table.json")
-        else:
-            cn_char_table_path = os.path.join(script_dir, "cn_data/zh_CN/gamedata/excel/character_table.json")
-            jp_char_table_path = os.path.join(script_dir, "global_data/ja_JP/gamedata/excel/character_table.json")
-            en_char_table_path = os.path.join(script_dir, "global_data/en_US/gamedata/excel/character_table.json") 
-            cn_skill_table_path = os.path.join(script_dir, "cn_data/zh_CN/gamedata/excel/skill_table.json")
-            jp_skill_table_path = os.path.join(script_dir, "global_data/ja_JP/gamedata/excel/skill_table.json")
-            en_skill_table_path = os.path.join(script_dir, "global_data/en_US/gamedata/excel/skill_table.json")
-            
-            with open(cn_char_table_path, encoding='utf-8') as f:
-                cn_char_table = json.load(f)
-            with open(jp_char_table_path, encoding='utf-8') as f:
-                jp_char_table = json.load(f)
-            with open(en_char_table_path, encoding='utf-8') as f:
-                en_char_table = json.load(f)
-            with open(cn_skill_table_path, encoding='utf-8') as f:
-                cn_skill_table = json.load(f)
-            with open(jp_skill_table_path, encoding='utf-8') as f:
-                jp_skill_table = json.load(f)
-            with open(en_skill_table_path, encoding='utf-8') as f:
-                en_skill_table = json.load(f)
+    cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
+    jp_char_table = get("jp_char_table", f"{base_url_global}/ja_JP/gamedata/excel/character_table.json")
+    en_char_table = get("en_char_table", f"{base_url_global}/en_US/gamedata/excel/character_table.json")
+    cn_skill_table = get("cn_skill_table", f"{base_url_cn}/zh_CN/gamedata/excel/skill_table.json")
+    jp_skill_table = get("jp_skill_table", f"{base_url_global}/ja_JP/gamedata/excel/skill_table.json")
+    en_skill_table = get("en_skill_table", f"{base_url_global}/en_US/gamedata/excel/skill_table.json")
 
     filtered_cn_char_table = {key: cn_char_table[key] for key in cn_char_table.keys()
                               if "token" not in key and "trap" not in key}
@@ -153,5 +116,10 @@ def update_tokens(
                 "<$ba", "<ba")
         data[id] = return_dict
 
-    with open(tokens_path, 'w', encoding='utf-8') as f:
+    with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
+
+if __name__ == "__main__":
+    from main import setup
+    setup()
+    update_tokens()
