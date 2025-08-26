@@ -1,7 +1,7 @@
 import re
 import json
 from pathlib import Path
-from fetch import get
+from util import get, Report
 from datetime import datetime
 
 KEYS_TO_IGNORE = ["char_512_aprot", "char_600_cpione", "char_601_cguard",
@@ -49,6 +49,9 @@ def update_recruitment():
     now = datetime.now()
     date_str = now.strftime("%Y-%m-%d")
 
+    recruitment_report = {}
+    recruitment_table_report = {}
+
     if recruitment_path.exists():
         with open(recruitment_path, 'r', encoding='utf-8') as f:
             recruitment = json.load(f)
@@ -80,15 +83,17 @@ def update_recruitment():
             tag_entry = existing_tags[tag_id]
         else:
             tag_entry = {'id': tag['tagName'], 'orderNum': tag['tagId'], 'name': {'zh': tag['tagName'], 'ja': '', 'en': ''}}
+            recruitment_report['new tags added'].append(tag_entry['name']['zh'])
             if (class_code := PROFESSION_CONVERT_INV.get(tag['tagName'])) is not None:
                 tag_entry['id'] = class_code
             if (rarity_code := RARITY_CONVERT_INV.get(tag['tagName'])) is not None:
                 tag_entry['id'] = rarity_code
-            if tag_id in en_gacha_tags:
-                tag_entry['name']['en'] = en_gacha_tags[tag_id]['tagName']
-                tag_entry['name']['ja'] = jp_gacha_tags[tag_id]['tagName']
-            if tag_entry['name']['en'] == "Ranged" or tag_entry['name']['en'] == "Melee":
-                tag_entry['id'] = tag_entry['name']['en'].upper()
+        if tag_id in en_gacha_tags and tag_entry['name']['en'] == "":
+            tag_entry['name']['en'] = en_gacha_tags[tag_id]['tagName']
+            tag_entry['name']['ja'] = jp_gacha_tags[tag_id]['tagName']
+            recruitment_report['tags updated'].append(tag_entry['name']['zh'])
+        if tag_entry['name']['en'] == "Ranged" or tag_entry['name']['en'] == "Melee":
+            tag_entry['id'] = tag_entry['name']['en'].upper()
         tags_list.append(tag_entry)
     if not (recruitment['tags'].get('data', []) == tags_list):
         recruitment['tags'] = {"updatedAt": date_str, "data": tags_list}
@@ -176,7 +181,11 @@ def update_recruitment():
     with open(output_recruitment_table_path, 'w', encoding='utf-8') as f:
         json.dump(recruitment_dict, f, ensure_ascii=False, indent=4)
 
+    return {"name": "recruitment", "updatedAt": date_str, "records": len(recruitment_list)}
+
 if __name__ == "__main__":
-    from main import setup
-    setup()
-    update_recruitment()
+    script_dir = Path(__file__).parent
+    json_dir = script_dir.parent / 'json'
+    report_path = json_dir / 'report.json'
+    latest_path = json_dir / 'latest_report.json'
+    Report.singular(update_recruitment(), path=report_path, latest_path=latest_path)
