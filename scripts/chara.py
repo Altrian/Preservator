@@ -1,7 +1,7 @@
 import re
 import json
 from pathlib import Path
-from fetch import get
+from util import get, Report
 from chara_skills import replace_substrings
 
 
@@ -57,6 +57,8 @@ def update_characters():
     jp_handbook_info_table = get("jp_handbook_info_table", f"{base_url_global}/ja_JP/gamedata/excel/handbook_info_table.json")
     en_handbook_info_table = get("en_handbook_info_table", f"{base_url_global}/en_US/gamedata/excel/handbook_info_table.json")
     
+    with open(output_read_path, 'r', encoding='utf-8') as f:
+        existing_data = json.load(f)
     with open(chara_skills_path, encoding='utf-8') as f:
         chara_skills = json.load(f)
     with open(chara_talents_path, encoding='utf-8') as f:
@@ -73,6 +75,7 @@ def update_characters():
         recruitment_utilities = json.load(f)
 
     data = {}
+    character_report = {}
 
     KEYS_TO_IGNORE = ["char_512_aprot", "char_600_cpione", "char_601_cguard",
                       "char_602_cdfend", "char_603_csnipe", "char_604_ccast",
@@ -84,12 +87,15 @@ def update_characters():
     filtered_cn_char_table = {key: cn_char_table[key] for key in cn_char_table.keys(
     ) if "token" not in key and "trap" not in key and key not in KEYS_TO_IGNORE}
 
-    subProfessionIds = []
-
     for id, character_dict in filtered_cn_char_table.items():
         in_global = id in en_char_table
-        if character_dict['subProfessionId'] not in subProfessionIds:
-            subProfessionIds.append(character_dict['subProfessionId'])
+        if id not in existing_data:
+            character_report.setdefault("new characters added", []).append(character_dict['appellation'])
+        if id in existing_data and not in_global:
+            character_report.setdefault("characters exclusive in China", []).append(character_dict['appellation'])
+        if id in existing_data and in_global and existing_data[id]['name']['en'] == "":
+            character_report.setdefault("characters arrived in Global", []).append(character_dict['appellation'])
+
         skills = []
         talents = []
         for skill in character_dict['skills']:
@@ -260,9 +266,11 @@ def update_characters():
 
         if recruitment_utilities['branch']['data'].get(character_dict['profession']) is None:
             recruitment_utilities['branch']['data'][character_dict['profession']] = []
+            character_report.setdefault("new profession added", []).append(character_dict['profession'])
         if not (any(branch['id'] == character_dict['subProfessionId'] for branch in recruitment_utilities['branch']['data'][character_dict['profession']])):
             recruitment_utilities['branch']['data'][character_dict['profession']].append(
                 {"id": character_dict['subProfessionId'], "name": {"zh": "", "ja": "", "en": ""}})
+            character_report.setdefault("new subprofession added", []).append(f"{character_dict['subProfessionId']} ({character_dict['profession']})")
 
         result_dict = {"id": id, "appellation": character_dict['appellation'],
                        "releaseDate": imple_dates.get(id, 0),
@@ -482,11 +490,13 @@ def update_characters():
     with open(output_recruitment_path, 'w', encoding='utf-8') as f:
         json.dump(recruitment_utilities, f, ensure_ascii=False, indent=4)
 
-    for id in subProfessionIds:
-        if id not in SUBPROFESSIONS:
-            print(id,' (new!)')
+    return {"name": "characters", "records":character_report}
+
 
 if __name__ == "__main__":
-    from main import setup
-    setup()
-    update_characters()
+    script_dir = Path(__file__).parent
+    json_dir = script_dir.parent / 'json'
+    report_path = json_dir / 'report.json'
+    latest_path = json_dir / 'latest_report.json'
+    Report.singular(update_characters(), path=report_path, latest_path=latest_path)
+    

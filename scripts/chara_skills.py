@@ -1,7 +1,7 @@
 import re
 import json
 from pathlib import Path
-from fetch import get
+from util import get
 
 
 def replace_key(string):
@@ -134,6 +134,7 @@ def update_chara_skills():
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(return_dict, f, ensure_ascii=False, indent=4)
 
+    return {"name": "chara_skills", "newSkills": len(new_skill_list)}
 
 if __name__ == "__main__":
     from main import setup

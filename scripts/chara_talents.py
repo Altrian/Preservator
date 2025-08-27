@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from fetch import get
+from util import get
 from chara_skills import replace_substrings
 
 
@@ -101,6 +101,8 @@ def update_chara_talents():
 
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(return_dict, f, ensure_ascii=False, indent=4)
+
+    return {"name": "chara_talents", "newCharas": len(new_chara_list)}
 
 if __name__ == "__main__":
     from main import setup
