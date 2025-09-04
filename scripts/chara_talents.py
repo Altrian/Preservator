@@ -105,6 +105,4 @@ def update_chara_talents():
     return {"name": "chara_talents", "newCharas": len(new_chara_list)}
 
 if __name__ == "__main__":
-    from main import setup
-    setup()
     update_chara_talents()
