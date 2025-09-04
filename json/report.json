@@ -1,0 +1,63 @@
+{
+  "recruitment": {
+    "timestamp": "2025-08-27T18:53:58.806930+00:00",
+    "name": "recruitment",
+    "updatedAt": "2025-08-27",
+    "records": {}
+  },
+  "recruitment_table": {
+    "timestamp": "2025-08-27T18:53:58.806930+00:00",
+    "name": "recruitment_table",
+    "updatedAt": "2025-08-27",
+    "records": {}
+  },
+  "chara_skills": {
+    "timestamp": "2025-08-27T18:53:58.806930+00:00",
+    "name": "chara_skills",
+    "newSkills": 573
+  },
+  "chara_talents": {
+    "timestamp": "2025-08-27T18:53:58.806930+00:00",
+    "name": "chara_talents",
+    "newCharas": 0
+  },
+  "uniequip": {
+    "timestamp": "2025-08-27T18:53:58.806930+00:00",
+    "name": "uniequip",
+    "newEquips": 0
+  },
+  "tokens": {
+    "timestamp": "2025-08-27T18:53:58.806930+00:00",
+    "name": "tokens",
+    "newTokens": 53
+  },
+  "characters": {
+    "timestamp": "2025-08-27T19:12:49.087639+00:00",
+    "name": "characters",
+    "records": {
+      "characters exclusive in China": [
+        "CONFESS-47",
+        "Windscoot",
+        "Matsukiri",
+        "Gracebearer",
+        "Kichisei",
+        "Miss.Christine",
+        "Record Keeper",
+        "Brigid",
+        "Alanna",
+        "Wulfenite",
+        "Tippi",
+        "Lemuen",
+        "Necrass",
+        "Raidian",
+        "Haruka",
+        "Tragodia",
+        "Exusiai the New Covenant",
+        "Mon3tr",
+        "Sankta Miksaparato",
+        "Hoshiguma the Breacher",
+        "Leizi the Thunderbringer"
+      ]
+    }
+  }
+}

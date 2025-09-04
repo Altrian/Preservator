@@ -1,0 +1,2912 @@
+{
+    "char_285_medic2": {
+        "id": "char_285_medic2",
+        "appellation": "Lancet-2",
+        "name": {
+            "zh": "Lancet-2",
+            "ja": "Lancet-2",
+            "en": "Lancet-2"
+        },
+        "rarity": "TIER_1",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "IsRecruitOnly": true,
+        "tags": [
+            "RANGED",
+            "TIER_1",
+            "MEDIC",
+            "治疗"
+        ]
+    },
+    "char_286_cast3": {
+        "id": "char_286_cast3",
+        "appellation": "Castle-3",
+        "name": {
+            "zh": "Castle-3",
+            "ja": "Castle-3",
+            "en": "Castle-3"
+        },
+        "rarity": "TIER_1",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "IsRecruitOnly": true,
+        "tags": [
+            "MELEE",
+            "TIER_1",
+            "WARRIOR",
+            "支援"
+        ]
+    },
+    "char_376_therex": {
+        "id": "char_376_therex",
+        "appellation": "Thermal-EX",
+        "name": {
+            "zh": "THRM-EX",
+            "ja": "THRM-EX",
+            "en": "THRM-EX"
+        },
+        "rarity": "TIER_1",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "IsRecruitOnly": true,
+        "tags": [
+            "MELEE",
+            "TIER_1",
+            "SPECIAL",
+            "爆发"
+        ]
+    },
+    "char_4000_jnight": {
+        "id": "char_4000_jnight",
+        "appellation": "\"Justice Knight\"",
+        "name": {
+            "zh": "正义骑士号",
+            "ja": "ジャスティスナイト",
+            "en": "Justice Knight"
+        },
+        "rarity": "TIER_1",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": true,
+        "tags": [
+            "RANGED",
+            "TIER_1",
+            "SNIPER",
+            "支援"
+        ]
+    },
+    "char_4093_frston": {
+        "id": "char_4093_frston",
+        "appellation": "Friston-3",
+        "name": {
+            "zh": "Friston-3",
+            "ja": "Friston-3",
+            "en": "Friston-3"
+        },
+        "rarity": "TIER_1",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "IsRecruitOnly": true,
+        "tags": [
+            "MELEE",
+            "TIER_1",
+            "TANK",
+            "防护"
+        ]
+    },
+    "char_4136_phonor": {
+        "id": "char_4136_phonor",
+        "appellation": "PhonoR-0",
+        "name": {
+            "zh": "PhonoR-0",
+            "ja": "PhonoR-0",
+            "en": "PhonoR-0"
+        },
+        "rarity": "TIER_1",
+        "profession": "SUPPORT",
+        "subProfessionId": "ritualist",
+        "IsRecruitOnly": true,
+        "tags": [
+            "RANGED",
+            "TIER_1",
+            "SUPPORT",
+            "元素"
+        ]
+    },
+    "char_4188_confes": {
+        "id": "char_4188_confes",
+        "appellation": "CONFESS-47",
+        "name": {
+            "zh": "CONFESS-47",
+            "ja": "",
+            "en": ""
+        },
+        "rarity": "TIER_1",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "IsRecruitOnly": true,
+        "tags": [
+            "MELEE",
+            "TIER_1",
+            "PIONEER",
+            "控场"
+        ]
+    },
+    "char_502_nblade": {
+        "id": "char_502_nblade",
+        "appellation": "Yato",
+        "name": {
+            "zh": "夜刀",
+            "ja": "ヤトウ",
+            "en": "Yato"
+        },
+        "rarity": "TIER_2",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "IsRecruitOnly": true,
+        "tags": [
+            "MELEE",
+            "TIER_2",
+            "PIONEER"
+        ]
+    },
+    "char_500_noirc": {
+        "id": "char_500_noirc",
+        "appellation": "Noir Corne",
+        "name": {
+            "zh": "黑角",
+            "ja": "ノイルホーン",
+            "en": "Noir Corne"
+        },
+        "rarity": "TIER_2",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "IsRecruitOnly": true,
+        "tags": [
+            "MELEE",
+            "TIER_2",
+            "TANK"
+        ]
+    },
+    "char_503_rang": {
+        "id": "char_503_rang",
+        "appellation": "Rangers",
+        "name": {
+            "zh": "巡林者",
+            "ja": "レンジャー",
+            "en": "Rangers"
+        },
+        "rarity": "TIER_2",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": true,
+        "tags": [
+            "RANGED",
+            "TIER_2",
+            "SNIPER"
+        ]
+    },
+    "char_501_durin": {
+        "id": "char_501_durin",
+        "appellation": "Durin",
+        "name": {
+            "zh": "杜林",
+            "ja": "ドゥリン",
+            "en": "Durin"
+        },
+        "rarity": "TIER_2",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "IsRecruitOnly": true,
+        "tags": [
+            "RANGED",
+            "TIER_2",
+            "CASTER"
+        ]
+    },
+    "char_009_12fce": {
+        "id": "char_009_12fce",
+        "appellation": "12F",
+        "name": {
+            "zh": "12F",
+            "ja": "12F",
+            "en": "12F"
+        },
+        "rarity": "TIER_2",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "IsRecruitOnly": true,
+        "tags": [
+            "RANGED",
+            "TIER_2",
+            "CASTER"
+        ]
+    },
+    "char_211_adnach": {
+        "id": "char_211_adnach",
+        "appellation": "Adnachiel",
+        "name": {
+            "zh": "安德切尔",
+            "ja": "アドナキエル",
+            "en": "Adnachiel"
+        },
+        "rarity": "TIER_3",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": true,
+        "tags": [
+            "RANGED",
+            "SNIPER",
+            "输出"
+        ]
+    },
+    "char_123_fang": {
+        "id": "char_123_fang",
+        "appellation": "Fang",
+        "name": {
+            "zh": "芬",
+            "ja": "フェン",
+            "en": "Fang"
+        },
+        "rarity": "TIER_3",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "PIONEER",
+            "费用回复"
+        ]
+    },
+    "char_240_wyvern": {
+        "id": "char_240_wyvern",
+        "appellation": "Vanilla",
+        "name": {
+            "zh": "香草",
+            "ja": "バニラ",
+            "en": "Vanilla"
+        },
+        "rarity": "TIER_3",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "PIONEER",
+            "费用回复"
+        ]
+    },
+    "char_192_falco": {
+        "id": "char_192_falco",
+        "appellation": "Plume",
+        "name": {
+            "zh": "翎羽",
+            "ja": "プリュム",
+            "en": "Plume"
+        },
+        "rarity": "TIER_3",
+        "profession": "PIONEER",
+        "subProfessionId": "charger",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "PIONEER",
+            "输出",
+            "费用回复"
+        ]
+    },
+    "char_208_melan": {
+        "id": "char_208_melan",
+        "appellation": "Melantha",
+        "name": {
+            "zh": "玫兰莎",
+            "ja": "メランサ",
+            "en": "Melantha"
+        },
+        "rarity": "TIER_3",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "输出",
+            "生存"
+        ]
+    },
+    "char_122_beagle": {
+        "id": "char_122_beagle",
+        "appellation": "Beagle",
+        "name": {
+            "zh": "米格鲁",
+            "ja": "ビーグル",
+            "en": "Beagle"
+        },
+        "rarity": "TIER_3",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TANK",
+            "防护"
+        ]
+    },
+    "char_124_kroos": {
+        "id": "char_124_kroos",
+        "appellation": "Kroos",
+        "name": {
+            "zh": "克洛丝",
+            "ja": "クルース",
+            "en": "Kroos"
+        },
+        "rarity": "TIER_3",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SNIPER",
+            "输出"
+        ]
+    },
+    "char_121_lava": {
+        "id": "char_121_lava",
+        "appellation": "Lava",
+        "name": {
+            "zh": "炎熔",
+            "ja": "ラヴァ",
+            "en": "Lava"
+        },
+        "rarity": "TIER_3",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "CASTER",
+            "群攻"
+        ]
+    },
+    "char_120_hibisc": {
+        "id": "char_120_hibisc",
+        "appellation": "Hibiscus",
+        "name": {
+            "zh": "芙蓉",
+            "ja": "ハイビスカス",
+            "en": "Hibiscus"
+        },
+        "rarity": "TIER_3",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "MEDIC",
+            "治疗"
+        ]
+    },
+    "char_212_ansel": {
+        "id": "char_212_ansel",
+        "appellation": "Ansel",
+        "name": {
+            "zh": "安赛尔",
+            "ja": "アンセル",
+            "en": "Ansel"
+        },
+        "rarity": "TIER_3",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "MEDIC",
+            "治疗"
+        ]
+    },
+    "char_210_stward": {
+        "id": "char_210_stward",
+        "appellation": "Steward",
+        "name": {
+            "zh": "史都华德",
+            "ja": "スチュワード",
+            "en": "Steward"
+        },
+        "rarity": "TIER_3",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "CASTER",
+            "输出"
+        ]
+    },
+    "char_278_orchid": {
+        "id": "char_278_orchid",
+        "appellation": "Orchid",
+        "name": {
+            "zh": "梓兰",
+            "ja": "オーキッド",
+            "en": "Orchid"
+        },
+        "rarity": "TIER_3",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SUPPORT",
+            "减速"
+        ]
+    },
+    "char_282_catap": {
+        "id": "char_282_catap",
+        "appellation": "Catapult",
+        "name": {
+            "zh": "空爆",
+            "ja": "カタパルト",
+            "en": "Catapult"
+        },
+        "rarity": "TIER_3",
+        "profession": "SNIPER",
+        "subProfessionId": "aoesniper",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SNIPER",
+            "群攻"
+        ]
+    },
+    "char_283_midn": {
+        "id": "char_283_midn",
+        "appellation": "Midnight",
+        "name": {
+            "zh": "月见夜",
+            "ja": "ミッドナイト",
+            "en": "Midnight"
+        },
+        "rarity": "TIER_3",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "输出"
+        ]
+    },
+    "char_281_popka": {
+        "id": "char_281_popka",
+        "appellation": "Popukar",
+        "name": {
+            "zh": "泡普卡",
+            "ja": "ポプカル",
+            "en": "Popukar"
+        },
+        "rarity": "TIER_3",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "群攻",
+            "生存"
+        ]
+    },
+    "char_127_estell": {
+        "id": "char_127_estell",
+        "appellation": "Estelle",
+        "name": {
+            "zh": "艾丝黛尔",
+            "ja": "エステル",
+            "en": "Estelle"
+        },
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "IsRecruitOnly": true,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "群攻",
+            "生存"
+        ]
+    },
+    "char_385_finlpp": {
+        "id": "char_385_finlpp",
+        "appellation": "Purestream",
+        "name": {
+            "zh": "清流",
+            "ja": "セイリュウ",
+            "en": "Purestream"
+        },
+        "rarity": "TIER_4",
+        "profession": "MEDIC",
+        "subProfessionId": "healer",
+        "IsRecruitOnly": true,
+        "tags": [
+            "RANGED",
+            "MEDIC",
+            "治疗",
+            "支援"
+        ]
+    },
+    "char_141_nights": {
+        "id": "char_141_nights",
+        "appellation": "Haze",
+        "name": {
+            "zh": "夜烟",
+            "ja": "ヘイズ",
+            "en": "Haze"
+        },
+        "rarity": "TIER_4",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "CASTER",
+            "输出",
+            "削弱"
+        ]
+    },
+    "char_109_fmout": {
+        "id": "char_109_fmout",
+        "appellation": "Gitano",
+        "name": {
+            "zh": "远山",
+            "ja": "ギターノ",
+            "en": "Gitano"
+        },
+        "rarity": "TIER_4",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "CASTER",
+            "群攻"
+        ]
+    },
+    "char_235_jesica": {
+        "id": "char_235_jesica",
+        "appellation": "Jessica",
+        "name": {
+            "zh": "杰西卡",
+            "ja": "ジェシカ",
+            "en": "Jessica"
+        },
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SNIPER",
+            "输出",
+            "生存"
+        ]
+    },
+    "char_126_shotst": {
+        "id": "char_126_shotst",
+        "appellation": "Meteor",
+        "name": {
+            "zh": "流星",
+            "ja": "メテオ",
+            "en": "Meteor"
+        },
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SNIPER",
+            "输出",
+            "削弱"
+        ]
+    },
+    "char_118_yuki": {
+        "id": "char_118_yuki",
+        "appellation": "ShiraYuki",
+        "name": {
+            "zh": "白雪",
+            "ja": "シラユキ",
+            "en": "Shirayuki"
+        },
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "aoesniper",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SNIPER",
+            "群攻",
+            "减速"
+        ]
+    },
+    "char_149_scave": {
+        "id": "char_149_scave",
+        "appellation": "Scavenger",
+        "name": {
+            "zh": "清道夫",
+            "ja": "スカベンジャー",
+            "en": "Scavenger"
+        },
+        "rarity": "TIER_4",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "PIONEER",
+            "费用回复",
+            "输出"
+        ]
+    },
+    "char_290_vigna": {
+        "id": "char_290_vigna",
+        "appellation": "Vigna",
+        "name": {
+            "zh": "红豆",
+            "ja": "ヴィグナ",
+            "en": "Vigna"
+        },
+        "rarity": "TIER_4",
+        "profession": "PIONEER",
+        "subProfessionId": "charger",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "PIONEER",
+            "输出",
+            "费用回复"
+        ]
+    },
+    "char_130_doberm": {
+        "id": "char_130_doberm",
+        "appellation": "Dobermann",
+        "name": {
+            "zh": "杜宾",
+            "ja": "ドーベルマン",
+            "en": "Dobermann"
+        },
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "instructor",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "输出",
+            "支援"
+        ]
+    },
+    "char_289_gyuki": {
+        "id": "char_289_gyuki",
+        "appellation": "Matoimaru",
+        "name": {
+            "zh": "缠丸",
+            "ja": "マトイマル",
+            "en": "Matoimaru"
+        },
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "生存",
+            "输出"
+        ]
+    },
+    "char_193_frostl": {
+        "id": "char_193_frostl",
+        "appellation": "Frostleaf",
+        "name": {
+            "zh": "霜叶",
+            "ja": "フロストリーフ",
+            "en": "Frostleaf"
+        },
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "减速",
+            "输出"
+        ]
+    },
+    "char_185_frncat": {
+        "id": "char_185_frncat",
+        "appellation": "Mousse",
+        "name": {
+            "zh": "慕斯",
+            "ja": "ムース",
+            "en": "Mousse"
+        },
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "artsfghter",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "输出"
+        ]
+    },
+    "char_237_gravel": {
+        "id": "char_237_gravel",
+        "appellation": "Gravel",
+        "name": {
+            "zh": "砾",
+            "ja": "グラベル",
+            "en": "Gravel"
+        },
+        "rarity": "TIER_4",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "SPECIAL",
+            "快速复活",
+            "防护"
+        ]
+    },
+    "char_236_rope": {
+        "id": "char_236_rope",
+        "appellation": "Rope",
+        "name": {
+            "zh": "暗索",
+            "ja": "ロープ",
+            "en": "Rope"
+        },
+        "rarity": "TIER_4",
+        "profession": "SPECIAL",
+        "subProfessionId": "hookmaster",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "SPECIAL",
+            "位移"
+        ]
+    },
+    "char_117_myrrh": {
+        "id": "char_117_myrrh",
+        "appellation": "Myrrh",
+        "name": {
+            "zh": "末药",
+            "ja": "ミルラ",
+            "en": "Myrrh"
+        },
+        "rarity": "TIER_4",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "MEDIC",
+            "治疗"
+        ]
+    },
+    "char_181_flower": {
+        "id": "char_181_flower",
+        "appellation": "Perfumer",
+        "name": {
+            "zh": "调香师",
+            "ja": "パフューマー",
+            "en": "Perfumer"
+        },
+        "rarity": "TIER_4",
+        "profession": "MEDIC",
+        "subProfessionId": "ringhealer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "MEDIC",
+            "治疗"
+        ]
+    },
+    "char_199_yak": {
+        "id": "char_199_yak",
+        "appellation": "Matterhorn",
+        "name": {
+            "zh": "角峰",
+            "ja": "マッターホルン",
+            "en": "Matterhorn"
+        },
+        "rarity": "TIER_4",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TANK",
+            "防护"
+        ]
+    },
+    "char_150_snakek": {
+        "id": "char_150_snakek",
+        "appellation": "Cuora",
+        "name": {
+            "zh": "蛇屠箱",
+            "ja": "クオーラ",
+            "en": "Cuora"
+        },
+        "rarity": "TIER_4",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TANK",
+            "防护"
+        ]
+    },
+    "char_196_sunbr": {
+        "id": "char_196_sunbr",
+        "appellation": "Гум",
+        "name": {
+            "zh": "古米",
+            "ja": "グム",
+            "en": "Gummy"
+        },
+        "rarity": "TIER_4",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TANK",
+            "防护",
+            "治疗"
+        ]
+    },
+    "char_183_skgoat": {
+        "id": "char_183_skgoat",
+        "appellation": "Earthspirit",
+        "name": {
+            "zh": "地灵",
+            "ja": "アーススピリット",
+            "en": "Earthspirit"
+        },
+        "rarity": "TIER_4",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SUPPORT",
+            "减速"
+        ]
+    },
+    "char_277_sqrrel": {
+        "id": "char_277_sqrrel",
+        "appellation": "Shaw",
+        "name": {
+            "zh": "阿消",
+            "ja": "ショウ",
+            "en": "Shaw"
+        },
+        "rarity": "TIER_4",
+        "profession": "SPECIAL",
+        "subProfessionId": "pusher",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "SPECIAL",
+            "位移"
+        ]
+    },
+    "char_137_brownb": {
+        "id": "char_137_brownb",
+        "appellation": "Beehunter",
+        "name": {
+            "zh": "猎蜂",
+            "ja": "ビーハンター",
+            "en": "Beehunter"
+        },
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "fighter",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "输出"
+        ]
+    },
+    "char_253_greyy": {
+        "id": "char_253_greyy",
+        "appellation": "Greyy",
+        "name": {
+            "zh": "格雷伊",
+            "ja": "グレイ",
+            "en": "Greyy"
+        },
+        "rarity": "TIER_4",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "CASTER",
+            "群攻",
+            "减速"
+        ]
+    },
+    "char_298_susuro": {
+        "id": "char_298_susuro",
+        "appellation": "Sussurro",
+        "name": {
+            "zh": "苏苏洛",
+            "ja": "ススーロ",
+            "en": "Sussurro"
+        },
+        "rarity": "TIER_4",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "MEDIC",
+            "治疗"
+        ]
+    },
+    "char_151_myrtle": {
+        "id": "char_151_myrtle",
+        "appellation": "Myrtle",
+        "name": {
+            "zh": "桃金娘",
+            "ja": "テンニンカ",
+            "en": "Myrtle"
+        },
+        "rarity": "TIER_4",
+        "profession": "PIONEER",
+        "subProfessionId": "bearer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "PIONEER",
+            "费用回复",
+            "治疗"
+        ]
+    },
+    "char_190_clour": {
+        "id": "char_190_clour",
+        "appellation": "Vermeil",
+        "name": {
+            "zh": "红云",
+            "ja": "ヴァーミル",
+            "en": "Vermeil"
+        },
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SNIPER",
+            "输出"
+        ]
+    },
+    "char_133_mm": {
+        "id": "char_133_mm",
+        "appellation": "May",
+        "name": {
+            "zh": "梅",
+            "ja": "メイ",
+            "en": "May"
+        },
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SNIPER",
+            "输出",
+            "减速"
+        ]
+    },
+    "char_302_glaze": {
+        "id": "char_302_glaze",
+        "appellation": "Ambriel",
+        "name": {
+            "zh": "安比尔",
+            "ja": "アンブリエル",
+            "en": "Ambriel"
+        },
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "longrange",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SNIPER",
+            "输出",
+            "减速"
+        ]
+    },
+    "char_337_utage": {
+        "id": "char_337_utage",
+        "appellation": "Utage",
+        "name": {
+            "zh": "宴",
+            "ja": "ウタゲ",
+            "en": "Utage"
+        },
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "musha",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "输出",
+            "生存"
+        ]
+    },
+    "char_301_cutter": {
+        "id": "char_301_cutter",
+        "appellation": "Cutter",
+        "name": {
+            "zh": "刻刀",
+            "ja": "カッター",
+            "en": "Cutter"
+        },
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "sword",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "爆发",
+            "输出"
+        ]
+    },
+    "char_258_podego": {
+        "id": "char_258_podego",
+        "appellation": "Podenco",
+        "name": {
+            "zh": "波登可",
+            "ja": "ポデンコ",
+            "en": "Podenco"
+        },
+        "rarity": "TIER_4",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SUPPORT",
+            "减速",
+            "治疗"
+        ]
+    },
+    "char_328_cammou": {
+        "id": "char_328_cammou",
+        "appellation": "Click",
+        "name": {
+            "zh": "卡达",
+            "ja": "カシャ",
+            "en": "Click"
+        },
+        "rarity": "TIER_4",
+        "profession": "CASTER",
+        "subProfessionId": "funnel",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "CASTER",
+            "输出",
+            "控场"
+        ]
+    },
+    "char_272_strong": {
+        "id": "char_272_strong",
+        "appellation": "Jaye",
+        "name": {
+            "zh": "孑",
+            "ja": "ジェイ",
+            "en": "Jaye"
+        },
+        "rarity": "TIER_4",
+        "profession": "SPECIAL",
+        "subProfessionId": "merchant",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "SPECIAL",
+            "快速复活",
+            "输出"
+        ]
+    },
+    "char_366_acdrop": {
+        "id": "char_366_acdrop",
+        "appellation": "Aciddrop",
+        "name": {
+            "zh": "酸糖",
+            "ja": "アシッドドロップ",
+            "en": "Aciddrop"
+        },
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "closerange",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SNIPER",
+            "输出"
+        ]
+    },
+    "char_271_spikes": {
+        "id": "char_271_spikes",
+        "appellation": "Arene",
+        "name": {
+            "zh": "芳汀",
+            "ja": "アレーン",
+            "en": "Arene"
+        },
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "输出"
+        ]
+    },
+    "char_381_bubble": {
+        "id": "char_381_bubble",
+        "appellation": "Bubble",
+        "name": {
+            "zh": "泡泡",
+            "ja": "バブル",
+            "en": "Bubble"
+        },
+        "rarity": "TIER_4",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TANK",
+            "防护"
+        ]
+    },
+    "char_347_jaksel": {
+        "id": "char_347_jaksel",
+        "appellation": "Jackie",
+        "name": {
+            "zh": "杰克",
+            "ja": "ジャッキー",
+            "en": "Jackie"
+        },
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "fighter",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "WARRIOR",
+            "输出"
+        ]
+    },
+    "char_440_pinecn": {
+        "id": "char_440_pinecn",
+        "appellation": "Pinecone",
+        "name": {
+            "zh": "松果",
+            "ja": "パインコーン",
+            "en": "Pinecone"
+        },
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "reaperrange",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "SNIPER",
+            "群攻",
+            "输出"
+        ]
+    },
+    "char_155_tiger": {
+        "id": "char_155_tiger",
+        "appellation": "Indra",
+        "name": {
+            "zh": "因陀罗",
+            "ja": "インドラ",
+            "en": "Indra"
+        },
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "fighter",
+        "IsRecruitOnly": true,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "WARRIOR",
+            "输出",
+            "生存"
+        ]
+    },
+    "char_163_hpsts": {
+        "id": "char_163_hpsts",
+        "appellation": "Vulcan",
+        "name": {
+            "zh": "火神",
+            "ja": "ヴァルカン",
+            "en": "Vulcan"
+        },
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "unyield",
+        "IsRecruitOnly": true,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "TANK",
+            "生存",
+            "防护",
+            "输出"
+        ]
+    },
+    "char_128_plosis": {
+        "id": "char_128_plosis",
+        "appellation": "Ptilopsis",
+        "name": {
+            "zh": "白面鸮",
+            "ja": "フィリオプシス",
+            "en": "Ptilopsis"
+        },
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "ringhealer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "MEDIC",
+            "治疗",
+            "支援"
+        ]
+    },
+    "char_115_headbr": {
+        "id": "char_115_headbr",
+        "appellation": "Зима",
+        "name": {
+            "zh": "凛冬",
+            "ja": "ズィマー",
+            "en": "Zima"
+        },
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "PIONEER",
+            "费用回复",
+            "支援"
+        ]
+    },
+    "char_102_texas": {
+        "id": "char_102_texas",
+        "appellation": "Texas",
+        "name": {
+            "zh": "德克萨斯",
+            "ja": "テキサス",
+            "en": "Texas"
+        },
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "PIONEER",
+            "费用回复",
+            "控场"
+        ]
+    },
+    "char_143_ghost": {
+        "id": "char_143_ghost",
+        "appellation": "Specter",
+        "name": {
+            "zh": "幽灵鲨",
+            "ja": "スペクター",
+            "en": "Specter"
+        },
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "WARRIOR",
+            "群攻",
+            "生存"
+        ]
+    },
+    "char_129_bluep": {
+        "id": "char_129_bluep",
+        "appellation": "Blue Poison",
+        "name": {
+            "zh": "蓝毒",
+            "ja": "アズリウス",
+            "en": "Blue Poison"
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "输出"
+        ]
+    },
+    "char_204_platnm": {
+        "id": "char_204_platnm",
+        "appellation": "Platinum",
+        "name": {
+            "zh": "白金",
+            "ja": "プラチナ",
+            "en": "Platinum"
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "输出"
+        ]
+    },
+    "char_219_meteo": {
+        "id": "char_219_meteo",
+        "appellation": "Meteorite",
+        "name": {
+            "zh": "陨星",
+            "ja": "メテオリーテ",
+            "en": "Meteorite"
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "aoesniper",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "群攻",
+            "削弱"
+        ]
+    },
+    "char_242_otter": {
+        "id": "char_242_otter",
+        "appellation": "Mayer",
+        "name": {
+            "zh": "梅尔",
+            "ja": "メイヤー",
+            "en": "Mayer"
+        },
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "summoner",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SUPPORT",
+            "召唤",
+            "控场"
+        ]
+    },
+    "char_108_silent": {
+        "id": "char_108_silent",
+        "appellation": "Silence",
+        "name": {
+            "zh": "赫默",
+            "ja": "サイレンス",
+            "en": "Silence"
+        },
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "MEDIC",
+            "治疗"
+        ]
+    },
+    "char_171_bldsk": {
+        "id": "char_171_bldsk",
+        "appellation": "Warfarin",
+        "name": {
+            "zh": "华法琳",
+            "ja": "ワルファリン",
+            "en": "Warfarin"
+        },
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "MEDIC",
+            "治疗",
+            "支援"
+        ]
+    },
+    "char_148_nearl": {
+        "id": "char_148_nearl",
+        "appellation": "Nearl",
+        "name": {
+            "zh": "临光",
+            "ja": "ニアール",
+            "en": "Nearl"
+        },
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "TANK",
+            "防护",
+            "治疗"
+        ]
+    },
+    "char_144_red": {
+        "id": "char_144_red",
+        "appellation": "Projekt Red",
+        "name": {
+            "zh": "红",
+            "ja": "レッド",
+            "en": "Projekt Red"
+        },
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "SPECIAL",
+            "快速复活",
+            "控场"
+        ]
+    },
+    "char_107_liskam": {
+        "id": "char_107_liskam",
+        "appellation": "Liskarm",
+        "name": {
+            "zh": "雷蛇",
+            "ja": "リスカム",
+            "en": "Liskarm"
+        },
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "shotprotector",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "TANK",
+            "防护",
+            "输出"
+        ]
+    },
+    "char_201_moeshd": {
+        "id": "char_201_moeshd",
+        "appellation": "Croissant",
+        "name": {
+            "zh": "可颂",
+            "ja": "クロワッサン",
+            "en": "Croissant"
+        },
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "TANK",
+            "防护",
+            "位移"
+        ]
+    },
+    "char_145_prove": {
+        "id": "char_145_prove",
+        "appellation": "Provence",
+        "name": {
+            "zh": "普罗旺斯",
+            "ja": "プロヴァンス",
+            "en": "Provence"
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "closerange",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "输出"
+        ]
+    },
+    "char_158_milu": {
+        "id": "char_158_milu",
+        "appellation": "Firewatch",
+        "name": {
+            "zh": "守林人",
+            "ja": "ファイヤーウォッチ",
+            "en": "Firewatch"
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "longrange",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "输出",
+            "爆发"
+        ]
+    },
+    "char_173_slchan": {
+        "id": "char_173_slchan",
+        "appellation": "Cliffheart",
+        "name": {
+            "zh": "崖心",
+            "ja": "クリフハート",
+            "en": "Cliffheart"
+        },
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "hookmaster",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "SPECIAL",
+            "位移",
+            "输出"
+        ]
+    },
+    "char_174_slbell": {
+        "id": "char_174_slbell",
+        "appellation": "Pramanix",
+        "name": {
+            "zh": "初雪",
+            "ja": "プラマニクス",
+            "en": "Pramanix"
+        },
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "underminer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SUPPORT",
+            "削弱"
+        ]
+    },
+    "char_195_glassb": {
+        "id": "char_195_glassb",
+        "appellation": "Истина",
+        "name": {
+            "zh": "真理",
+            "ja": "イースチナ",
+            "en": "Istina"
+        },
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SUPPORT",
+            "减速",
+            "输出"
+        ]
+    },
+    "char_215_mantic": {
+        "id": "char_215_mantic",
+        "appellation": "Manticore",
+        "name": {
+            "zh": "狮蝎",
+            "ja": "マンティコア",
+            "en": "Manticore"
+        },
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "stalker",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "SPECIAL",
+            "输出",
+            "生存"
+        ]
+    },
+    "char_241_panda": {
+        "id": "char_241_panda",
+        "appellation": "FEater",
+        "name": {
+            "zh": "食铁兽",
+            "ja": "エフイーター",
+            "en": "FEater"
+        },
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "pusher",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "SPECIAL",
+            "位移",
+            "减速"
+        ]
+    },
+    "char_164_nightm": {
+        "id": "char_164_nightm",
+        "appellation": "Nightmare",
+        "name": {
+            "zh": "夜魔",
+            "ja": "ナイトメア",
+            "en": "Nightmare"
+        },
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "CASTER",
+            "输出",
+            "治疗",
+            "减速"
+        ]
+    },
+    "char_308_swire": {
+        "id": "char_308_swire",
+        "appellation": "Swire",
+        "name": {
+            "zh": "诗怀雅",
+            "ja": "スワイヤー",
+            "en": "Swire"
+        },
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "instructor",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "WARRIOR",
+            "输出",
+            "支援"
+        ]
+    },
+    "char_326_glacus": {
+        "id": "char_326_glacus",
+        "appellation": "Glaucus",
+        "name": {
+            "zh": "格劳克斯",
+            "ja": "グラウコス",
+            "en": "Glaucus"
+        },
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SUPPORT",
+            "减速",
+            "控场"
+        ]
+    },
+    "char_274_astesi": {
+        "id": "char_274_astesi",
+        "appellation": "Astesia",
+        "name": {
+            "zh": "星极",
+            "ja": "アステシア",
+            "en": "Astesia"
+        },
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "artsfghter",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "WARRIOR",
+            "输出",
+            "防护"
+        ]
+    },
+    "char_279_excu": {
+        "id": "char_279_excu",
+        "appellation": "Executor",
+        "name": {
+            "zh": "送葬人",
+            "ja": "イグゼキュター",
+            "en": "Executor"
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "reaperrange",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "群攻"
+        ]
+    },
+    "char_243_waaifu": {
+        "id": "char_243_waaifu",
+        "appellation": "Waai Fu",
+        "name": {
+            "zh": "槐琥",
+            "ja": "ワイフー",
+            "en": "Waai Fu"
+        },
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "SPECIAL",
+            "快速复活",
+            "削弱"
+        ]
+    },
+    "char_367_swllow": {
+        "id": "char_367_swllow",
+        "appellation": "GreyThroat",
+        "name": {
+            "zh": "灰喉",
+            "ja": "グレースロート",
+            "en": "GreyThroat"
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "输出"
+        ]
+    },
+    "char_261_sddrag": {
+        "id": "char_261_sddrag",
+        "appellation": "Reed",
+        "name": {
+            "zh": "苇草",
+            "ja": "リード",
+            "en": "Reed"
+        },
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "charger",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "PIONEER",
+            "费用回复",
+            "输出"
+        ]
+    },
+    "char_356_broca": {
+        "id": "char_356_broca",
+        "appellation": "Broca",
+        "name": {
+            "zh": "布洛卡",
+            "ja": "ブローカ",
+            "en": "Broca"
+        },
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "WARRIOR",
+            "群攻",
+            "生存"
+        ]
+    },
+    "char_226_hmau": {
+        "id": "char_226_hmau",
+        "appellation": "Hung",
+        "name": {
+            "zh": "吽",
+            "ja": "ウン",
+            "en": "Hung"
+        },
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "TANK",
+            "防护",
+            "治疗"
+        ]
+    },
+    "char_306_leizi": {
+        "id": "char_306_leizi",
+        "appellation": "Leizi",
+        "name": {
+            "zh": "惊蛰",
+            "ja": "レイズ",
+            "en": "Leizi"
+        },
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "chain",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "CASTER",
+            "输出"
+        ]
+    },
+    "char_379_sesa": {
+        "id": "char_379_sesa",
+        "appellation": "Sesa",
+        "name": {
+            "zh": "慑砂",
+            "ja": "シェーシャ",
+            "en": "Sesa"
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "aoesniper",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "群攻",
+            "削弱"
+        ]
+    },
+    "char_254_vodfox": {
+        "id": "char_254_vodfox",
+        "appellation": "Shamare",
+        "name": {
+            "zh": "巫恋",
+            "ja": "シャマレ",
+            "en": "Shamare"
+        },
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "underminer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SUPPORT",
+            "削弱"
+        ]
+    },
+    "char_401_elysm": {
+        "id": "char_401_elysm",
+        "appellation": "Elysium",
+        "name": {
+            "zh": "极境",
+            "ja": "エリジウム",
+            "en": "Elysium"
+        },
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "bearer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "PIONEER",
+            "费用回复",
+            "支援"
+        ]
+    },
+    "char_378_asbest": {
+        "id": "char_378_asbest",
+        "appellation": "Asbestos",
+        "name": {
+            "zh": "石棉",
+            "ja": "アスベストス",
+            "en": "Asbestos"
+        },
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "artsprotector",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "TANK",
+            "防护",
+            "输出"
+        ]
+    },
+    "char_343_tknogi": {
+        "id": "char_343_tknogi",
+        "appellation": "Tsukinogi",
+        "name": {
+            "zh": "月禾",
+            "ja": "ツキノギ",
+            "en": "Tsukinogi"
+        },
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "blessing",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SUPPORT",
+            "支援",
+            "生存"
+        ]
+    },
+    "char_373_lionhd": {
+        "id": "char_373_lionhd",
+        "appellation": "Leonhardt",
+        "name": {
+            "zh": "莱恩哈特",
+            "ja": "レオンハルト",
+            "en": "Leonhardt"
+        },
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "CASTER",
+            "群攻",
+            "爆发"
+        ]
+    },
+    "char_294_ayer": {
+        "id": "char_294_ayer",
+        "appellation": "Ayerscarpe",
+        "name": {
+            "zh": "断崖",
+            "ja": "エアースカーペ",
+            "en": "Ayerscarpe"
+        },
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "WARRIOR",
+            "输出",
+            "群攻"
+        ]
+    },
+    "char_218_cuttle": {
+        "id": "char_218_cuttle",
+        "appellation": "Andreana",
+        "name": {
+            "zh": "安哲拉",
+            "ja": "アンドレアナ",
+            "en": "Andreana"
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "longrange",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "输出",
+            "减速"
+        ]
+    },
+    "char_349_chiave": {
+        "id": "char_349_chiave",
+        "appellation": "Chiave",
+        "name": {
+            "zh": "贾维",
+            "ja": "キアーベ",
+            "en": "Chiave"
+        },
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "PIONEER",
+            "费用回复",
+            "输出"
+        ]
+    },
+    "char_344_beewax": {
+        "id": "char_344_beewax",
+        "appellation": "Beeswax",
+        "name": {
+            "zh": "蜜蜡",
+            "ja": "ビーズワクス",
+            "en": "Beeswax"
+        },
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "phalanx",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "CASTER",
+            "群攻",
+            "防护"
+        ]
+    },
+    "char_415_flint": {
+        "id": "char_415_flint",
+        "appellation": "Flint",
+        "name": {
+            "zh": "燧石",
+            "ja": "フリント",
+            "en": "Flint"
+        },
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "fighter",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "WARRIOR",
+            "输出"
+        ]
+    },
+    "char_365_aprl": {
+        "id": "char_365_aprl",
+        "appellation": "April",
+        "name": {
+            "zh": "四月",
+            "ja": "エイプリル",
+            "en": "April"
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "输出"
+        ]
+    },
+    "char_346_aosta": {
+        "id": "char_346_aosta",
+        "appellation": "Aosta",
+        "name": {
+            "zh": "奥斯塔",
+            "ja": "アオスタ",
+            "en": "Aosta"
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "reaperrange",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "群攻"
+        ]
+    },
+    "char_436_whispr": {
+        "id": "char_436_whispr",
+        "appellation": "Whisperain",
+        "name": {
+            "zh": "絮雨",
+            "ja": "ウィスパーレイン",
+            "en": "Whisperain"
+        },
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "healer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "MEDIC",
+            "治疗"
+        ]
+    },
+    "char_214_kafka": {
+        "id": "char_214_kafka",
+        "appellation": "Kafka",
+        "name": {
+            "zh": "卡夫卡",
+            "ja": "カフカ",
+            "en": "Kafka"
+        },
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "SPECIAL",
+            "快速复活",
+            "控场"
+        ]
+    },
+    "char_338_iris": {
+        "id": "char_338_iris",
+        "appellation": "Iris",
+        "name": {
+            "zh": "爱丽丝",
+            "ja": "アイリス",
+            "en": "Iris"
+        },
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "mystic",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "CASTER",
+            "输出"
+        ]
+    },
+    "char_455_nothin": {
+        "id": "char_455_nothin",
+        "appellation": "Mr.Nothing",
+        "name": {
+            "zh": "乌有",
+            "ja": "",
+            "en": ""
+        },
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "merchant",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_5",
+            "SPECIAL",
+            "快速复活",
+            "输出"
+        ]
+    },
+    "char_103_angel": {
+        "id": "char_103_angel",
+        "appellation": "Exusiai",
+        "name": {
+            "zh": "能天使",
+            "ja": "エクシア",
+            "en": "Exusiai"
+        },
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "SNIPER",
+            "输出"
+        ]
+    },
+    "char_112_siege": {
+        "id": "char_112_siege",
+        "appellation": "Siege",
+        "name": {
+            "zh": "推进之王",
+            "ja": "シージ",
+            "en": "Siege"
+        },
+        "rarity": "TIER_6",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "PIONEER",
+            "费用回复",
+            "输出"
+        ]
+    },
+    "char_134_ifrit": {
+        "id": "char_134_ifrit",
+        "appellation": "Ifrit",
+        "name": {
+            "zh": "伊芙利特",
+            "ja": "イフリータ",
+            "en": "Ifrit"
+        },
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "blastcaster",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "CASTER",
+            "群攻",
+            "削弱"
+        ]
+    },
+    "char_147_shining": {
+        "id": "char_147_shining",
+        "appellation": "Shining",
+        "name": {
+            "zh": "闪灵",
+            "ja": "シャイニング",
+            "en": "Shining"
+        },
+        "rarity": "TIER_6",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "MEDIC",
+            "治疗",
+            "支援"
+        ]
+    },
+    "char_179_cgbird": {
+        "id": "char_179_cgbird",
+        "appellation": "Nightingale",
+        "name": {
+            "zh": "夜莺",
+            "ja": "ナイチンゲール",
+            "en": "Nightingale"
+        },
+        "rarity": "TIER_6",
+        "profession": "MEDIC",
+        "subProfessionId": "ringhealer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "MEDIC",
+            "治疗",
+            "支援"
+        ]
+    },
+    "char_136_hsguma": {
+        "id": "char_136_hsguma",
+        "appellation": "Hoshiguma",
+        "name": {
+            "zh": "星熊",
+            "ja": "ホシグマ",
+            "en": "Hoshiguma"
+        },
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "TANK",
+            "防护",
+            "输出"
+        ]
+    },
+    "char_202_demkni": {
+        "id": "char_202_demkni",
+        "appellation": "Saria",
+        "name": {
+            "zh": "塞雷娅",
+            "ja": "サリア",
+            "en": "Saria"
+        },
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "TANK",
+            "防护",
+            "治疗",
+            "支援"
+        ]
+    },
+    "char_172_svrash": {
+        "id": "char_172_svrash",
+        "appellation": "SilverAsh",
+        "name": {
+            "zh": "银灰",
+            "ja": "シルバーアッシュ",
+            "en": "SilverAsh"
+        },
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "WARRIOR",
+            "输出",
+            "支援"
+        ]
+    },
+    "char_263_skadi": {
+        "id": "char_263_skadi",
+        "appellation": "Skadi",
+        "name": {
+            "zh": "斯卡蒂",
+            "ja": "スカジ",
+            "en": "Skadi"
+        },
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "WARRIOR",
+            "输出",
+            "生存"
+        ]
+    },
+    "char_010_chen": {
+        "id": "char_010_chen",
+        "appellation": "Ch'en",
+        "name": {
+            "zh": "陈",
+            "ja": "チェン",
+            "en": "Ch'en"
+        },
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "sword",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "WARRIOR",
+            "爆发",
+            "输出"
+        ]
+    },
+    "char_340_shwaz": {
+        "id": "char_340_shwaz",
+        "appellation": "Schwarz",
+        "name": {
+            "zh": "黑",
+            "ja": "シュヴァルツ",
+            "en": "Schwarz"
+        },
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "closerange",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "SNIPER",
+            "输出"
+        ]
+    },
+    "char_188_helage": {
+        "id": "char_188_helage",
+        "appellation": "Hellagur",
+        "name": {
+            "zh": "赫拉格",
+            "ja": "ヘラグ",
+            "en": "Hellagur"
+        },
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "musha",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "WARRIOR",
+            "输出",
+            "生存"
+        ]
+    },
+    "char_248_mgllan": {
+        "id": "char_248_mgllan",
+        "appellation": "Magallan",
+        "name": {
+            "zh": "麦哲伦",
+            "ja": "マゼラン",
+            "en": "Magallan"
+        },
+        "rarity": "TIER_6",
+        "profession": "SUPPORT",
+        "subProfessionId": "summoner",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "SUPPORT",
+            "支援",
+            "减速",
+            "输出"
+        ]
+    },
+    "char_213_mostma": {
+        "id": "char_213_mostma",
+        "appellation": "Mostima",
+        "name": {
+            "zh": "莫斯提马",
+            "ja": "モスティマ",
+            "en": "Mostima"
+        },
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "CASTER",
+            "群攻",
+            "支援",
+            "控场"
+        ]
+    },
+    "char_017_huang": {
+        "id": "char_017_huang",
+        "appellation": "Blaze",
+        "name": {
+            "zh": "煌",
+            "ja": "ブレイズ",
+            "en": "Blaze"
+        },
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "WARRIOR",
+            "输出",
+            "生存"
+        ]
+    },
+    "char_225_haak": {
+        "id": "char_225_haak",
+        "appellation": "Aak",
+        "name": {
+            "zh": "阿",
+            "ja": "ア",
+            "en": "Aak"
+        },
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "geek",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "SPECIAL",
+            "支援",
+            "输出"
+        ]
+    },
+    "char_2013_cerber": {
+        "id": "char_2013_cerber",
+        "appellation": "Ceobe",
+        "name": {
+            "zh": "刻俄柏",
+            "ja": "ケオベ",
+            "en": "Ceobe"
+        },
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "CASTER",
+            "输出",
+            "控场"
+        ]
+    },
+    "char_222_bpipe": {
+        "id": "char_222_bpipe",
+        "appellation": "Bagpipe",
+        "name": {
+            "zh": "风笛",
+            "ja": "バグパイプ",
+            "en": "Bagpipe"
+        },
+        "rarity": "TIER_6",
+        "profession": "PIONEER",
+        "subProfessionId": "charger",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "PIONEER",
+            "费用回复",
+            "输出"
+        ]
+    },
+    "char_250_phatom": {
+        "id": "char_250_phatom",
+        "appellation": "Phantom",
+        "name": {
+            "zh": "傀影",
+            "ja": "ファントム",
+            "en": "Phantom"
+        },
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "SPECIAL",
+            "快速复活",
+            "控场",
+            "输出"
+        ]
+    },
+    "char_400_weedy": {
+        "id": "char_400_weedy",
+        "appellation": "Weedy",
+        "name": {
+            "zh": "温蒂",
+            "ja": "ウィーディ",
+            "en": "Weedy"
+        },
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "pusher",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "SPECIAL",
+            "位移",
+            "输出",
+            "控场"
+        ]
+    },
+    "char_197_poca": {
+        "id": "char_197_poca",
+        "appellation": "Роса",
+        "name": {
+            "zh": "早露",
+            "ja": "ロサ",
+            "en": "Rosa"
+        },
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "siegesniper",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "SNIPER",
+            "输出",
+            "控场"
+        ]
+    },
+    "char_358_lisa": {
+        "id": "char_358_lisa",
+        "appellation": "Suzuran",
+        "name": {
+            "zh": "铃兰",
+            "ja": "スズラン",
+            "en": "Suzuran"
+        },
+        "rarity": "TIER_6",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "SUPPORT",
+            "减速",
+            "支援",
+            "输出"
+        ]
+    },
+    "char_293_thorns": {
+        "id": "char_293_thorns",
+        "appellation": "Thorns",
+        "name": {
+            "zh": "棘刺",
+            "ja": "ソーンズ",
+            "en": "Thorns"
+        },
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "WARRIOR",
+            "输出",
+            "防护"
+        ]
+    },
+    "char_416_zumama": {
+        "id": "char_416_zumama",
+        "appellation": "Eunectes",
+        "name": {
+            "zh": "森蚺",
+            "ja": "ユーネクテス",
+            "en": "Eunectes"
+        },
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "duelist",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "TANK",
+            "输出",
+            "生存",
+            "防护"
+        ]
+    },
+    "char_350_surtr": {
+        "id": "char_350_surtr",
+        "appellation": "Surtr",
+        "name": {
+            "zh": "史尔特尔",
+            "ja": "スルト",
+            "en": "Surtr"
+        },
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "artsfghter",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "WARRIOR",
+            "输出"
+        ]
+    },
+    "char_423_blemsh": {
+        "id": "char_423_blemsh",
+        "appellation": "Blemishine",
+        "name": {
+            "zh": "瑕光",
+            "ja": "ブレミシャイン",
+            "en": "Blemishine"
+        },
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "TANK",
+            "防护",
+            "治疗",
+            "输出"
+        ]
+    },
+    "char_311_mudrok": {
+        "id": "char_311_mudrok",
+        "appellation": "Mudrock",
+        "name": {
+            "zh": "泥岩",
+            "ja": "マドロック",
+            "en": "Mudrock"
+        },
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "unyield",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "TANK",
+            "生存",
+            "防护",
+            "输出"
+        ]
+    },
+    "char_264_f12yin": {
+        "id": "char_264_f12yin",
+        "appellation": "Mountain",
+        "name": {
+            "zh": "山",
+            "ja": "マウンテン",
+            "en": "Mountain"
+        },
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "fighter",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "WARRIOR",
+            "输出",
+            "生存"
+        ]
+    },
+    "char_332_archet": {
+        "id": "char_332_archet",
+        "appellation": "Archetto",
+        "name": {
+            "zh": "空弦",
+            "ja": "アルケット",
+            "en": "Archetto"
+        },
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "SNIPER",
+            "输出"
+        ]
+    },
+    "char_362_saga": {
+        "id": "char_362_saga",
+        "appellation": "Saga",
+        "name": {
+            "zh": "嵯峨",
+            "ja": "",
+            "en": ""
+        },
+        "rarity": "TIER_6",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "IsRecruitOnly": false,
+        "tags": [
+            "MELEE",
+            "TIER_6",
+            "PIONEER",
+            "费用回复",
+            "输出"
+        ]
+    },
+    "char_472_pasngr": {
+        "id": "char_472_pasngr",
+        "appellation": "Passenger",
+        "name": {
+            "zh": "异客",
+            "ja": "",
+            "en": ""
+        },
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "chain",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "CASTER",
+            "输出"
+        ]
+    },
+    "char_284_spot": {
+        "id": "char_284_spot",
+        "appellation": "Spot",
+        "name": {
+            "zh": "斑点",
+            "ja": "スポット",
+            "en": "Spot"
+        },
+        "rarity": "TIER_3",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "IsRecruitOnly": true,
+        "tags": [
+            "MELEE",
+            "TANK",
+            "防护",
+            "治疗"
+        ]
+    },
+    "char_452_bstalk": {
+        "id": "char_452_bstalk",
+        "appellation": "Beanstalk",
+        "name": {
+            "zh": "豆苗",
+            "ja": "ビーンストーク",
+            "en": "Beanstalk"
+        },
+        "rarity": "TIER_4",
+        "profession": "PIONEER",
+        "subProfessionId": "tactician",
+        "IsRecruitOnly": true,
+        "tags": [
+            "RANGED",
+            "PIONEER",
+            "费用回复",
+            "召唤"
+        ]
+    },
+    "char_363_toddi": {
+        "id": "char_363_toddi",
+        "appellation": "Toddifons",
+        "name": {
+            "zh": "熔泉",
+            "ja": "",
+            "en": ""
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "siegesniper",
+        "IsRecruitOnly": true,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "输出"
+        ]
+    }
+}

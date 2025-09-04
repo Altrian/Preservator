@@ -48,10 +48,15 @@ jobs:
           git config user.name "json-bot"
           git config user.email "json-bot@users.noreply.github.com"
           
-          FILES=$(git status --porcelain | awk '{print $2}' | grep -E '\.(json|gz)$' | grep -v 'latest.json' | grep -v 'reports.json' || true)
-          if [ -n "$FILES" ]; then
-            git add $FILES
-            git commit -m "Update JSON files: $FILES"
+          # Get all changed JSON or GZ files
+          ALL_FILES=$(git status --porcelain | awk '{print $2}' | grep -E '\.(json|gz)$' || true)
+
+          # Get relevant files for commit message (exclude latest.json and reports.json)
+          FILES_FOR_MSG=$(echo "$ALL_FILES" | grep -v 'latest.json' | grep -v 'reports.json' || true)
+          
+          if [ -n "$ALL_FILES" ]; then
+            git add $ALL_FILES
+            git commit -m "Update JSON files: $FILES_FOR_MSG"
             git push origin HEAD:${GITHUB_REF}
           else
             echo "No relevant JSON files to commit."
