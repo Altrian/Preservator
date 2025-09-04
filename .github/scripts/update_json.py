@@ -1,10 +1,10 @@
-from chara import update_characters
-from chara_talents import update_chara_talents
-from chara_skills import update_chara_skills
-from uniequip import update_uniequip
-from tokens import update_tokens
-from recruitment import update_recruitment
-from util import Report, split_characters_by_language
+from scripts.chara import update_characters
+from scripts.chara_talents import update_chara_talents
+from scripts.chara_skills import update_chara_skills
+from scripts.uniequip import update_uniequip
+from scripts.tokens import update_tokens
+from scripts.recruitment import update_recruitment
+from scripts.util import Report, split_characters_by_language
 from pathlib import Path
 
 def main():
