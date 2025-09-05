@@ -1,7 +1,7 @@
 [
   {
     "name": "chara_skills",
-    "newSkills": 585
+    "newSkills": 574
   },
   {
     "name": "chara_talents",
@@ -9,7 +9,7 @@
   },
   {
     "name": "uniequip",
-    "newEquips": 12
+    "newEquips": 0
   },
   {
     "name": "tokens",
@@ -18,11 +18,7 @@
   {
     "name": "recruitment",
     "updatedAt": "2025-09-05",
-    "records": {
-      "new powers added": [
-        "mujica"
-      ]
-    }
+    "records": {}
   },
   {
     "name": "recruitment_table",
@@ -37,12 +33,16 @@
         "Windscoot",
         "Matsukiri",
         "Gracebearer",
+        "Yūtenji Nyamu",
         "Kichisei",
         "Miss.Christine",
         "Record Keeper",
         "Brigid",
         "Alanna",
+        "Misumi Uika",
+        "Yahata Umiri",
         "Wulfenite",
+        "Wakaba Mutsumi",
         "Tippi",
         "Lemuen",
         "Necrass",
@@ -53,14 +53,8 @@
         "Mon3tr",
         "Sankta Miksaparato",
         "Hoshiguma the Breacher",
+        "Togawa Sakiko",
         "Leizi the Thunderbringer"
-      ],
-      "new characters added": [
-        "Yūtenji Nyamu",
-        "Misumi Uika",
-        "Yahata Umiri",
-        "Wakaba Mutsumi",
-        "Togawa Sakiko"
       ]
     }
   }

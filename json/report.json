@@ -1,42 +1,38 @@
 {
   "recruitment": {
-    "timestamp": "2025-09-05T19:08:52.648936+00:00",
+    "timestamp": "2025-09-05T19:27:14.349318+00:00",
     "name": "recruitment",
     "updatedAt": "2025-09-05",
-    "records": {
-      "new powers added": [
-        "mujica"
-      ]
-    }
+    "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-09-05T19:08:52.648939+00:00",
+    "timestamp": "2025-09-05T19:27:14.349321+00:00",
     "name": "recruitment_table",
     "updatedAt": "2025-09-05",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-09-05T19:08:52.648908+00:00",
+    "timestamp": "2025-09-05T19:27:14.349289+00:00",
     "name": "chara_skills",
-    "newSkills": 585
+    "newSkills": 574
   },
   "chara_talents": {
-    "timestamp": "2025-09-05T19:08:52.648927+00:00",
+    "timestamp": "2025-09-05T19:27:14.349308+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-09-05T19:08:52.648931+00:00",
+    "timestamp": "2025-09-05T19:27:14.349313+00:00",
     "name": "uniequip",
-    "newEquips": 12
+    "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2025-09-05T19:08:52.648934+00:00",
+    "timestamp": "2025-09-05T19:27:14.349315+00:00",
     "name": "tokens",
     "newTokens": 53
   },
   "characters": {
-    "timestamp": "2025-09-05T19:08:52.648942+00:00",
+    "timestamp": "2025-09-05T19:27:14.349324+00:00",
     "name": "characters",
     "records": {
       "characters exclusive in China": [
@@ -44,12 +40,16 @@
         "Windscoot",
         "Matsukiri",
         "Gracebearer",
+        "Yūtenji Nyamu",
         "Kichisei",
         "Miss.Christine",
         "Record Keeper",
         "Brigid",
         "Alanna",
+        "Misumi Uika",
+        "Yahata Umiri",
         "Wulfenite",
+        "Wakaba Mutsumi",
         "Tippi",
         "Lemuen",
         "Necrass",
@@ -60,14 +60,8 @@
         "Mon3tr",
         "Sankta Miksaparato",
         "Hoshiguma the Breacher",
+        "Togawa Sakiko",
         "Leizi the Thunderbringer"
-      ],
-      "new characters added": [
-        "Yūtenji Nyamu",
-        "Misumi Uika",
-        "Yahata Umiri",
-        "Wakaba Mutsumi",
-        "Togawa Sakiko"
       ]
     }
   }
