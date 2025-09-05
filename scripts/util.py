@@ -114,7 +114,6 @@ def split_characters_by_language(input_file='characters.json', languages=None, o
                                "durationType": skill['durationType'],
                                'spType': skill['spType'],
                                "levels": levels,
-                               "tags": skill['tags'],
                                "blackboard": skill['blackboard']})
             if chara_dict['talents']:
                 for talent in chara_dict['talents']:
@@ -151,7 +150,7 @@ def split_characters_by_language(input_file='characters.json', languages=None, o
                         phases.append(
                             {"parts": concise_parts, "attributeBlackboard": phase['attributeBlackboard'], "tokenAttributeBlackboard": phase['tokenAttributeBlackboard']})
                     new_equip['combatData'] = {
-                        "phases": phases, "tags": combatData['tags'], "blackboard": combatData['blackboard']}
+                        "phases": phases, "blackboard": combatData['blackboard']}
                 uniequip_list.append(new_equip)
             uniequip_list.sort(key=lambda equip: equip['uniEquipId'])
             stats = chara_dict['stats']
@@ -195,7 +194,7 @@ def split_characters_by_language(input_file='characters.json', languages=None, o
                               "desc": token.get(f'desc_{lang}') or token.get('desc_zh'),
                               "position": token['position'],
                               "stats": token['stats'],
-                              "tags": token['tags'], "blackboard": token['blackboard'],
+                              "blackboard": token['blackboard'],
                               "skills": token_skills,
                               "talents": token_talents}
                 tokens.append(token_dict)
