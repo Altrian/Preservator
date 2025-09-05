@@ -849,7 +849,7 @@
         }
     },
     "powers": {
-        "updatedAt": "2025-08-26",
+        "updatedAt": "2025-09-05",
         "data": [
             {
                 "id": "none",
@@ -1387,6 +1387,18 @@
                     "zh": "莱欧斯小队",
                     "ja": "ライオスパーティー",
                     "en": "Laios's Party"
+                },
+                "isLimited": false,
+                "isRaw": true
+            },
+            {
+                "id": "mujica",
+                "orderNum": 47,
+                "powerLevel": 2,
+                "name": {
+                    "zh": "Ave Mujica",
+                    "ja": "",
+                    "en": ""
                 },
                 "isLimited": false,
                 "isRaw": true

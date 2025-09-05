@@ -1,5 +1,35 @@
 [
   {
+    "name": "chara_skills",
+    "newSkills": 585
+  },
+  {
+    "name": "chara_talents",
+    "newCharas": 0
+  },
+  {
+    "name": "uniequip",
+    "newEquips": 12
+  },
+  {
+    "name": "tokens",
+    "newTokens": 53
+  },
+  {
+    "name": "recruitment",
+    "updatedAt": "2025-09-05",
+    "records": {
+      "new powers added": [
+        "mujica"
+      ]
+    }
+  },
+  {
+    "name": "recruitment_table",
+    "updatedAt": "2025-09-05",
+    "records": {}
+  },
+  {
     "name": "characters",
     "records": {
       "characters exclusive in China": [
@@ -24,6 +54,13 @@
         "Sankta Miksaparato",
         "Hoshiguma the Breacher",
         "Leizi the Thunderbringer"
+      ],
+      "new characters added": [
+        "Yūtenji Nyamu",
+        "Misumi Uika",
+        "Yahata Umiri",
+        "Wakaba Mutsumi",
+        "Togawa Sakiko"
       ]
     }
   }
