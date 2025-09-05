@@ -182,6 +182,9 @@ cython_debug/
 # Json files
 *.json
 
+# Except JSON files in the "json" folder
+!json/*.json
+
 # GZIP files
 *.gz
 

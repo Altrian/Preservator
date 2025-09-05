@@ -124,7 +124,6 @@ def split_characters_by_language(input_file='characters.json', languages=None, o
                         "desc": talent.get(f'desc_{lang}') or talent.get('desc_zh'),
                     }
                     talent_holder['rangeId'] = talent.get('rangeId')
-                    talent_holder['tags'] = talent['tags']
                     talent_holder['blackboard'] = talent['blackboard']
                     talents.append(talent_holder)
             uniequip_list = []
@@ -202,8 +201,6 @@ def split_characters_by_language(input_file='characters.json', languages=None, o
                 tokens.append(token_dict)
 
             tags = chara_dict['tags'][:]
-            if not chara_dict.get('name_en'):
-                tags.append("not_in_global")
 
             return_dict = {"id": chara_dict['id'], "appellation": chara_dict['appellation'],
                            "name": chara_dict.get(f'name_{lang}') or chara_dict.get('name_zh'),
