@@ -200,16 +200,20 @@ def split_characters_by_language(input_file='characters.json', languages=None, o
                               "talents": token_talents}
                 tokens.append(token_dict)
 
-            tags = chara_dict['tags'][:]
+            tags = chara_dict['tagList']
 
             return_dict = {"id": chara_dict['id'], "appellation": chara_dict['appellation'],
-                           "name": chara_dict.get(f'name_{lang}') or chara_dict.get('name_zh'),
-                           "desc": chara_dict.get(f'desc_{lang}') or chara_dict.get('desc_zh'),
-                           "release_time": chara_dict['release_time'],
-                           "tags": tags, "blackboard": chara_dict['blackboard'],
+                           "releaseDate": chara_dict['releaseDate'],
+                           "name": chara_dict['name'].get(lang) or chara_dict['name'].get('zh'),
+                           "desc": chara_dict['desc'].get(lang) or chara_dict['desc'].get('zh'),
+                           "gender": chara_dict['gender'].get(lang) or chara_dict['gender'].get('zh'),
+                           "birthplace": chara_dict['birthplace'].get(lang) or chara_dict['birthplace'].get('zh'),
+                           "race": chara_dict['race'].get(lang) or chara_dict['race'].get('zh'),
                            "powers": chara_dict['powers'], "position": chara_dict['position'],
                            "isSpChar": chara_dict['isSpChar'], "rarity": chara_dict['rarity'],
-                           "profession": chara_dict['profession'], "subProfessionId": chara_dict['subProfessionId'], "stats": stats,
+                           "profession": chara_dict['profession'], "subProfessionId": chara_dict['subProfessionId'],
+                           "recruitment": chara_dict['recruitment'], "tagList": tags,
+                           "stats": stats,
                            'potential': potential, "favorData": favor_data, "tokens": tokens,
                            "skills": skills, "talents": talents, 'uniequip': uniequip_list, }
             data.append(return_dict)
