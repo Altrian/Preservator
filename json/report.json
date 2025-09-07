@@ -1,38 +1,38 @@
 {
   "recruitment": {
-    "timestamp": "2025-09-06T06:11:48.101585+00:00",
+    "timestamp": "2025-09-07T06:11:54.066074+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-09-06",
+    "updatedAt": "2025-09-07",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-09-06T06:11:48.101588+00:00",
+    "timestamp": "2025-09-07T06:11:54.066076+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-09-06",
+    "updatedAt": "2025-09-07",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-09-06T06:11:48.101556+00:00",
+    "timestamp": "2025-09-07T06:11:54.066038+00:00",
     "name": "chara_skills",
     "newSkills": 574
   },
   "chara_talents": {
-    "timestamp": "2025-09-06T06:11:48.101575+00:00",
+    "timestamp": "2025-09-07T06:11:54.066064+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-09-06T06:11:48.101580+00:00",
+    "timestamp": "2025-09-07T06:11:54.066068+00:00",
     "name": "uniequip",
     "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2025-09-06T06:11:48.101582+00:00",
+    "timestamp": "2025-09-07T06:11:54.066071+00:00",
     "name": "tokens",
     "newTokens": 53
   },
   "characters": {
-    "timestamp": "2025-09-06T06:11:48.101590+00:00",
+    "timestamp": "2025-09-07T06:11:54.066079+00:00",
     "name": "characters",
     "records": {
       "characters exclusive in China": [
