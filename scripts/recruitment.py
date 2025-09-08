@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 from util import get, Report
 from datetime import datetime
+from urls import cn_urls, jp_urls, en_urls
 
 KEYS_TO_IGNORE = ["char_512_aprot", "char_600_cpione", "char_601_cguard",
                   "char_602_cdfend", "char_603_csnipe", "char_604_ccast",
@@ -32,19 +33,29 @@ def update_recruitment():
     recruitment_path = output_recruitment_path = json_dir / 'recruitment.json'
     recruitment_table_path = output_recruitment_table_path = json_dir / 'recruitment_table.json'
 
-    base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
-    base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
+    # base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
+    # base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
 
-    cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
-    jp_char_table = get("jp_char_table", f"{base_url_global}/ja_JP/gamedata/excel/character_table.json")
-    en_char_table = get("en_char_table", f"{base_url_global}/en_US/gamedata/excel/character_table.json")
-    cn_gacha_table = get("cn_gacha_table", f"{base_url_cn}/zh_CN/gamedata/excel/gacha_table.json")
-    jp_gacha_table = get("jp_gacha_table", f"{base_url_global}/ja_JP/gamedata/excel/gacha_table.json")
-    en_gacha_table = get("en_gacha_table", f"{base_url_global}/en_US/gamedata/excel/gacha_table.json")
-    cn_handbook_team_table = get("cn_handbook_team_table", f"{base_url_cn}/zh_CN/gamedata/excel/handbook_team_table.json")
-    jp_handbook_team_table = get("jp_handbook_team_table", f"{base_url_global}/ja_JP/gamedata/excel/handbook_team_table.json")
-    en_handbook_team_table = get("en_handbook_team_table", f"{base_url_global}/en_US/gamedata/excel/handbook_team_table.json")
+    # cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
+    # jp_char_table = get("jp_char_table", f"{base_url_global}/ja_JP/gamedata/excel/character_table.json")
+    # en_char_table = get("en_char_table", f"{base_url_global}/en_US/gamedata/excel/character_table.json")
+    # cn_gacha_table = get("cn_gacha_table", f"{base_url_cn}/zh_CN/gamedata/excel/gacha_table.json")
+    # jp_gacha_table = get("jp_gacha_table", f"{base_url_global}/ja_JP/gamedata/excel/gacha_table.json")
+    # en_gacha_table = get("en_gacha_table", f"{base_url_global}/en_US/gamedata/excel/gacha_table.json")
+    # cn_handbook_team_table = get("cn_handbook_team_table", f"{base_url_cn}/zh_CN/gamedata/excel/handbook_team_table.json")
+    # jp_handbook_team_table = get("jp_handbook_team_table", f"{base_url_global}/ja_JP/gamedata/excel/handbook_team_table.json")
+    # en_handbook_team_table = get("en_handbook_team_table", f"{base_url_global}/en_US/gamedata/excel/handbook_team_table.json")
     
+    cn_char_table = get("cn_char_table", cn_urls.char_table)
+    jp_char_table = get("jp_char_table", jp_urls.char_table)
+    en_char_table = get("en_char_table", en_urls.char_table)
+    cn_gacha_table = get("cn_gacha_table", cn_urls.gacha_table)
+    jp_gacha_table = get("jp_gacha_table", jp_urls.gacha_table)
+    en_gacha_table = get("en_gacha_table", en_urls.gacha_table)
+    cn_handbook_team_table = get("cn_handbook_team_table", cn_urls.handbook_team_table)
+    jp_handbook_team_table = get("jp_handbook_team_table", jp_urls.handbook_team_table)
+    en_handbook_team_table = get("en_handbook_team_table", en_urls.handbook_team_table)
+
     # Current date for updates
     now = datetime.now()
     date_str = now.strftime("%Y-%m-%d")

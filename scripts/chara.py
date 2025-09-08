@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 from util import get, Report
 from chara_skills import replace_substrings
+from urls import cn_urls, jp_urls, en_urls
 
 
 SUBPROFESSIONS = ['physician', 'fearless', 'executor', 'fastshot', 'bombarder', 'bard', 'protector', 'ritualist', 'pioneer', 'corecaster', 'splashcaster', 'charger', 'centurion', 'guardian', 'slower', 'funnel', 'mystic', 'chain', 'aoesniper', 'reaperrange', 'longrange', 'closerange', 'siegesniper', 'loopshooter', 'bearer', 'tactician', 'instructor', 'lord', 'artsfghter', 'sword', 'musha', 'crusher', 'reaper',
@@ -44,18 +45,28 @@ def update_characters():
     recruitment_table_path = json_dir / 'recruitment_table.json'
     recruitment_path = output_recruitment_path = json_dir / 'recruitment.json'
 
-    base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
-    base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
+    # base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
+    # base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
 
-    cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
-    jp_char_table = get("jp_char_table", f"{base_url_global}/ja_JP/gamedata/excel/character_table.json")
-    en_char_table = get("en_char_table", f"{base_url_global}/en_US/gamedata/excel/character_table.json")
-    cn_patch_table = get("cn_patch_table", f"{base_url_cn}/zh_CN/gamedata/excel/char_patch_table.json")
-    jp_patch_table = get("jp_patch_table", f"{base_url_global}/ja_JP/gamedata/excel/char_patch_table.json")
-    en_patch_table = get("en_patch_table", f"{base_url_global}/en_US/gamedata/excel/char_patch_table.json")
-    cn_handbook_info_table = get("cn_handbook_info_table", f"{base_url_cn}/zh_CN/gamedata/excel/handbook_info_table.json")
-    jp_handbook_info_table = get("jp_handbook_info_table", f"{base_url_global}/ja_JP/gamedata/excel/handbook_info_table.json")
-    en_handbook_info_table = get("en_handbook_info_table", f"{base_url_global}/en_US/gamedata/excel/handbook_info_table.json")
+    # cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
+    # jp_char_table = get("jp_char_table", f"{base_url_global}/ja_JP/gamedata/excel/character_table.json")
+    # en_char_table = get("en_char_table", f"{base_url_global}/en_US/gamedata/excel/character_table.json")
+    # cn_patch_table = get("cn_patch_table", f"{base_url_cn}/zh_CN/gamedata/excel/char_patch_table.json")
+    # jp_patch_table = get("jp_patch_table", f"{base_url_global}/ja_JP/gamedata/excel/char_patch_table.json")
+    # en_patch_table = get("en_patch_table", f"{base_url_global}/en_US/gamedata/excel/char_patch_table.json")
+    # cn_handbook_info_table = get("cn_handbook_info_table", f"{base_url_cn}/zh_CN/gamedata/excel/handbook_info_table.json")
+    # jp_handbook_info_table = get("jp_handbook_info_table", f"{base_url_global}/ja_JP/gamedata/excel/handbook_info_table.json")
+    # en_handbook_info_table = get("en_handbook_info_table", f"{base_url_global}/en_US/gamedata/excel/handbook_info_table.json")
+
+    cn_char_table = get("cn_char_table", cn_urls.char_table)
+    jp_char_table = get("jp_char_table", jp_urls.char_table)
+    en_char_table = get("en_char_table", en_urls.char_table)
+    cn_patch_table = get("cn_patch_table", cn_urls.char_patch_table)
+    jp_patch_table = get("jp_patch_table", jp_urls.char_patch_table)
+    en_patch_table = get("en_patch_table", en_urls.char_patch_table)
+    cn_handbook_info_table = get("cn_handbook_info_table", cn_urls.handbook_info_table)
+    jp_handbook_info_table = get("jp_handbook_info_table", jp_urls.handbook_info_table)
+    en_handbook_info_table = get("en_handbook_info_table", en_urls.handbook_info_table)
     
     with open(output_read_path, 'r', encoding='utf-8') as f:
         existing_data = json.load(f)

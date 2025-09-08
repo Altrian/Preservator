@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 from util import get
 from chara_skills import replace_substrings
+from urls import cn_urls, jp_urls, en_urls
 
 
 def update_chara_talents():
@@ -10,15 +11,22 @@ def update_chara_talents():
     json_dir = script_dir.parent / 'json'
     chara_talents_path = output_path = json_dir / 'chara_talents.json'
     
-    base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
-    base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
+    # base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
+    # base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
 
-    cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
-    jp_char_table = get("jp_char_table", f"{base_url_global}/ja_JP/gamedata/excel/character_table.json")
-    en_char_table = get("en_char_table", f"{base_url_global}/en_US/gamedata/excel/character_table.json")
-    cn_patch_table = get("cn_patch_table", f"{base_url_cn}/zh_CN/gamedata/excel/char_patch_table.json")
-    jp_patch_table = get("jp_patch_table", f"{base_url_global}/ja_JP/gamedata/excel/char_patch_table.json")
-    en_patch_table = get("en_patch_table", f"{base_url_global}/en_US/gamedata/excel/char_patch_table.json")
+    # cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
+    # jp_char_table = get("jp_char_table", f"{base_url_global}/ja_JP/gamedata/excel/character_table.json")
+    # en_char_table = get("en_char_table", f"{base_url_global}/en_US/gamedata/excel/character_table.json")
+    # cn_patch_table = get("cn_patch_table", f"{base_url_cn}/zh_CN/gamedata/excel/char_patch_table.json")
+    # jp_patch_table = get("jp_patch_table", f"{base_url_global}/ja_JP/gamedata/excel/char_patch_table.json")
+    # en_patch_table = get("en_patch_table", f"{base_url_global}/en_US/gamedata/excel/char_patch_table.json")
+
+    cn_char_table = get("cn_char_table", cn_urls.char_table)
+    jp_char_table = get("jp_char_table", jp_urls.char_table)
+    en_char_table = get("en_char_table", en_urls.char_table)
+    cn_patch_table = get("cn_patch_table", cn_urls.patch_table)
+    jp_patch_table = get("jp_patch_table", jp_urls.patch_table)
+    en_patch_table = get("en_patch_table", en_urls.patch_table)
 
     with open(chara_talents_path, encoding='utf-8') as f:
         chara_talents = json.load(f)

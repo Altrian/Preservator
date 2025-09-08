@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 from util import get
 from chara_skills import replace_substrings
+from urls import cn_urls, jp_urls, en_urls
 
 
 def update_tokens():
@@ -10,15 +11,22 @@ def update_tokens():
     json_dir = script_dir.parent / 'json'
     output_path = json_dir / 'tokens.json'
 
-    base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
-    base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
+    # base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
+    # base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
 
-    cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
-    jp_char_table = get("jp_char_table", f"{base_url_global}/ja_JP/gamedata/excel/character_table.json")
-    en_char_table = get("en_char_table", f"{base_url_global}/en_US/gamedata/excel/character_table.json")
-    cn_skill_table = get("cn_skill_table", f"{base_url_cn}/zh_CN/gamedata/excel/skill_table.json")
-    jp_skill_table = get("jp_skill_table", f"{base_url_global}/ja_JP/gamedata/excel/skill_table.json")
-    en_skill_table = get("en_skill_table", f"{base_url_global}/en_US/gamedata/excel/skill_table.json")
+    # cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
+    # jp_char_table = get("jp_char_table", f"{base_url_global}/ja_JP/gamedata/excel/character_table.json")
+    # en_char_table = get("en_char_table", f"{base_url_global}/en_US/gamedata/excel/character_table.json")
+    # cn_skill_table = get("cn_skill_table", f"{base_url_cn}/zh_CN/gamedata/excel/skill_table.json")
+    # jp_skill_table = get("jp_skill_table", f"{base_url_global}/ja_JP/gamedata/excel/skill_table.json")
+    # en_skill_table = get("en_skill_table", f"{base_url_global}/en_US/gamedata/excel/skill_table.json")
+
+    cn_char_table = get("cn_char_table", cn_urls.char_table)
+    jp_char_table = get("jp_char_table", jp_urls.char_table)
+    en_char_table = get("en_char_table", en_urls.char_table)
+    cn_skill_table = get("cn_skill_table", cn_urls.skill_table)
+    jp_skill_table = get("jp_skill_table", jp_urls.skill_table)
+    en_skill_table = get("en_skill_table", en_urls.skill_table)
 
     filtered_cn_char_table = {key: cn_char_table[key] for key in cn_char_table.keys()
                               if "token" not in key and "trap" not in key}

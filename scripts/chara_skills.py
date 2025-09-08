@@ -2,6 +2,7 @@ import re
 import json
 from pathlib import Path
 from util import get
+from urls import cn_urls, jp_urls, en_urls
 
 
 def replace_key(string):
@@ -61,13 +62,19 @@ def update_chara_skills():
     json_dir = script_dir.parent / 'json'
     chara_skills_path = output_path = json_dir / 'chara_skills.json'
 
-    base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
-    base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"    
+    # base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
+    # base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"    
     
-    cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
-    cn_skill_table = get("cn_skill_table", f"{base_url_cn}/zh_CN/gamedata/excel/skill_table.json")
-    jp_skill_table = get("jp_skill_table", f"{base_url_global}/ja_JP/gamedata/excel/skill_table.json")
-    en_skill_table = get("en_skill_table", f"{base_url_global}/en_US/gamedata/excel/skill_table.json")
+    # cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
+    # cn_skill_table = get("cn_skill_table", f"{base_url_cn}/zh_CN/gamedata/excel/skill_table.json")
+    # jp_skill_table = get("jp_skill_table", f"{base_url_global}/ja_JP/gamedata/excel/skill_table.json")
+    # en_skill_table = get("en_skill_table", f"{base_url_global}/en_US/gamedata/excel/skill_table.json")
+
+    cn_char_table = get("cn_char_table", cn_urls.char_table)
+    cn_skill_table = get("cn_skill_table", cn_urls.skill_table)
+    jp_skill_table = get("jp_skill_table", jp_urls.skill_table)
+    en_skill_table = get("en_skill_table", en_urls.skill_table)
+
 
     with open(chara_skills_path, encoding='utf-8') as f:
         chara_skills = json.load(f)
