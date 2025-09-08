@@ -1,5 +1,31 @@
 [
   {
+    "name": "chara_skills",
+    "newSkills": 574
+  },
+  {
+    "name": "chara_talents",
+    "newCharas": 0
+  },
+  {
+    "name": "uniequip",
+    "newEquips": 0
+  },
+  {
+    "name": "tokens",
+    "newTokens": 53
+  },
+  {
+    "name": "recruitment",
+    "updatedAt": "2025-09-08",
+    "records": {}
+  },
+  {
+    "name": "recruitment_table",
+    "updatedAt": "2025-09-08",
+    "records": {}
+  },
+  {
     "name": "characters",
     "records": {
       "characters exclusive in China": [
@@ -7,12 +33,16 @@
         "Windscoot",
         "Matsukiri",
         "Gracebearer",
+        "Yūtenji Nyamu",
         "Kichisei",
         "Miss.Christine",
         "Record Keeper",
         "Brigid",
         "Alanna",
+        "Misumi Uika",
+        "Yahata Umiri",
         "Wulfenite",
+        "Wakaba Mutsumi",
         "Tippi",
         "Lemuen",
         "Necrass",
@@ -23,6 +53,7 @@
         "Mon3tr",
         "Sankta Miksaparato",
         "Hoshiguma the Breacher",
+        "Togawa Sakiko",
         "Leizi the Thunderbringer"
       ]
     }
