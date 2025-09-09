@@ -2,10 +2,11 @@ from dataclasses import dataclass, field
 
 @dataclass
 class URLPatterns:
+    server: str
     BASE: str = "https://raw.githubusercontent.com/"
     REPO: str = "ArknightsAssets/ArknightsGamedata/"
     BRANCH: str = "refs/heads/master/"
-    server: str
+    
 
     char_table: str = field(init=False)
     patch_table: str = field(init=False)
