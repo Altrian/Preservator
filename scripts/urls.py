@@ -20,7 +20,7 @@ class URLPatterns:
     def __post_init__(self):
         prefix = f"{self.BASE}{self.REPO}{self.BRANCH}{self.server}/gamedata/excel/"
         self.char_table = f"{prefix}character_table.json"
-        self.patch_table = f"{prefix}patch_table.json"
+        self.patch_table = f"{prefix}char_patch_table.json"
         self.skill_table = f"{prefix}skill_table.json"
         self.uniequip_table = f"{prefix}uniequip_table.json"
         self.battle_equip_table = f"{prefix}battle_equip_table.json"
