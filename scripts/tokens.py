@@ -56,7 +56,7 @@ def update_tokens():
 
         skills = []
         token_skills = [skill['skillId']
-                        for skill in token_dict['skills'] if skill['skillId'] is not None]
+                        for skill in token_dict['skills'] if "skillId" in skill and skill['skillId'] is not None]
         token_skills = list(set(token_skills))
         if token_skills:
             token_skills.sort()
