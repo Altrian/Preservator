@@ -34,7 +34,7 @@ def update_tokens():
     tokens_list = []
     for id in filtered_cn_char_table:
         chara_dict = filtered_cn_char_table[id]
-        if chara_dict['displayTokenDict'] is not None:
+        if "displayTokenDict" in chara_dict and chara_dict['displayTokenDict'] is not None:
             tokens = [key for key in chara_dict['displayTokenDict']]
             tokens_list += tokens
 
