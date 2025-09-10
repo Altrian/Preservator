@@ -2,8 +2,8 @@ name: Update JSON Files
 
 on:
   workflow_dispatch: # Manual trigger
-  schedule:
-    - cron: "0 6 * * *" # every day at 06:00 UTC (optional, adjust/remove)
+#  schedule:
+#    - cron: "0 6 * * *" # every day at 06:00 UTC (optional, adjust/remove)
 
 jobs:
   update-json:
