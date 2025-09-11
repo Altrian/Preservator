@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 from util import get
-from chara_skills import replace_substrings
+from chara_skills import replace_substrings, normalize_blackboard
 from urls import cn_urls, jp_urls, en_urls
 
 
@@ -49,57 +49,57 @@ def update_uniequip():
                     if part['target'] not in ['TALENT', 'TALENT_DATA_ONLY', 'TRAIT', 'TRAIT_DATA_ONLY', 'DISPLAY']:
                         print(part['target'])
                     if 'TRAIT' in part['target'] or part['target'] == 'DISPLAY':
-                        if part['addOrOverrideTalentDataBundle']['candidates'] is not None:
+                        if part['addOrOverrideTalentDataBundle'].get('candidates') is not None:
                             print('TRAIT or DISPLAY TalentDataBundle not NONE', equip_id)
                         max_candidate = part['overrideTraitDataBundle']['candidates'][-1]
                         max_candidate_en = en_battle_equip_table[equip_id][
                             'phases'][phase_idx]['parts'][index]['overrideTraitDataBundle']['candidates'][-1] if in_global else None
                         max_candidate_jp = jp_battle_equip_table[equip_id][
                             'phases'][phase_idx]['parts'][index]['overrideTraitDataBundle']['candidates'][-1] if in_global else None
-                        if max_candidate['rangeId'] is not None:
+                        if max_candidate.get('rangeId') is not None:
                             print('TRAIT rangeId not NONE', equip_id)
                         concise_parts.append({
-                            "resKey": part['resKey'],
-                            "target": part['target'],
-                            "isToken": part['isToken'],
-                            "addDesc_zh": replace_substrings(max_candidate['additionalDescription'], max_candidate['blackboard']),
-                            "addDesc_ja": replace_substrings(max_candidate_jp['additionalDescription'], max_candidate['blackboard']) if in_global else "",
-                            "addDesc_en": replace_substrings(max_candidate_en['additionalDescription'], max_candidate['blackboard']) if in_global else "",
-                            "overrideDesc_zh": replace_substrings(max_candidate['overrideDescripton'], max_candidate['blackboard']),
-                            "overrideDesc_ja": replace_substrings(max_candidate_jp['overrideDescripton'], max_candidate['blackboard']) if in_global else "",
-                            "overrideDesc_en": replace_substrings(max_candidate_en['overrideDescripton'], max_candidate['blackboard']) if in_global else ""
+                            "resKey": part.get('resKey'),
+                            "target": part.get('target'),
+                            "isToken": part.get('isToken'),
+                            "addDesc_zh": replace_substrings(max_candidate.get('additionalDescription'), max_candidate['blackboard']),
+                            "addDesc_ja": replace_substrings(max_candidate_jp.get('additionalDescription'), max_candidate['blackboard']) if in_global else "",
+                            "addDesc_en": replace_substrings(max_candidate_en.get('additionalDescription'), max_candidate['blackboard']) if in_global else "",
+                            "overrideDesc_zh": replace_substrings(max_candidate.get('overrideDescription'), max_candidate['blackboard']),
+                            "overrideDesc_ja": replace_substrings(max_candidate_jp.get('overrideDescription'), max_candidate['blackboard']) if in_global else "",
+                            "overrideDesc_en": replace_substrings(max_candidate_en.get('overrideDescription'), max_candidate['blackboard']) if in_global else ""
                         })
                         if phase_idx == 2:
-                            blackboard = blackboard + max_candidate['blackboard']
+                            blackboard = blackboard + normalize_blackboard(max_candidate['blackboard'])
 
                     if 'TALENT' in part['target']:
-                        if part['overrideTraitDataBundle']['candidates'] is not None:
+                        if part['overrideTraitDataBundle'].get('candidates') is not None:
                             print('TALENT TraitDataBundle not NONE', equip_id)
                         max_candidate = part['addOrOverrideTalentDataBundle']['candidates'][-1]
                         max_candidate_en = en_battle_equip_table[equip_id][
                             'phases'][phase_idx]['parts'][index]['addOrOverrideTalentDataBundle']['candidates'][-1] if in_global else None
                         max_candidate_jp = jp_battle_equip_table[equip_id][
                             'phases'][phase_idx]['parts'][index]['addOrOverrideTalentDataBundle']['candidates'][-1] if in_global else None
-                        if max_candidate['description'] is not None:
+                        if max_candidate.get('description') is not None:
                             print('TALENT description not NONE', equip_id)
 
                         concise_parts.append({
-                            "resKey": part['resKey'],
-                            "target": part['target'],
-                            "isToken": part['isToken'],
-                            "name_zh": max_candidate['name'],
-                            "name_ja": max_candidate_jp['name'] if in_global else "",
-                            "name_en": max_candidate_en['name'] if in_global else "",
-                            "displayRangeId": max_candidate['displayRangeId'],
-                            "rangeId": max_candidate['rangeId'],
-                            "talentIndex": max_candidate['talentIndex'],
-                            "upgradeDesc_zh": replace_substrings(max_candidate['upgradeDescription'], max_candidate['blackboard']),
-                            "upgradeDesc_ja": replace_substrings(max_candidate_jp['upgradeDescription'], max_candidate['blackboard']) if in_global else "",
-                            "upgradeDesc_en": replace_substrings(max_candidate_en['upgradeDescription'], max_candidate['blackboard']) if in_global else "",
+                            "resKey": part.get('resKey'),
+                            "target": part.get('target'),
+                            "isToken": part.get('isToken'),
+                            "name_zh": max_candidate.get('name'),
+                            "name_ja": max_candidate_jp.get('name') if in_global else "",
+                            "name_en": max_candidate_en.get('name') if in_global else "",
+                            "displayRangeId": max_candidate.get('displayRangeId'),
+                            "rangeId": max_candidate.get('rangeId'),
+                            "talentIndex": max_candidate.get('talentIndex'),
+                            "upgradeDesc_zh": replace_substrings(max_candidate.get('upgradeDescription'), max_candidate.get('blackboard')),
+                            "upgradeDesc_ja": replace_substrings(max_candidate_jp.get('upgradeDescription'), max_candidate.get('blackboard')) if in_global else "",
+                            "upgradeDesc_en": replace_substrings(max_candidate_en.get('upgradeDescription'), max_candidate.get('blackboard')) if in_global else "",
                         })
 
                         if phase_idx == 2:
-                            blackboard = blackboard + max_candidate['blackboard']
+                            blackboard = blackboard + normalize_blackboard(max_candidate['blackboard'])
                 phases.append({
                     'parts': concise_parts,
                     'attributeBlackboard': phase['attributeBlackboard'],

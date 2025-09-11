@@ -14,6 +14,10 @@ def replace_key(string):
                             "hp_recovery_per_sec")
     return string
 
+def normalize_blackboard(blackboard):
+    if isinstance(blackboard, dict):
+        return [{"key": k, "value": v} for k, v in blackboard.items()]
+    return blackboard
 
 def replace_substrings(text, blackboard):
     if text is None:
@@ -49,6 +53,7 @@ def replace_substrings(text, blackboard):
         # Replace the matched substring with the value
 
     # Replace the substrings using the regular expression and the replace_match function
+    blackboard = normalize_blackboard(blackboard)
     text = replace_key(text)
     result = re.sub(pattern, replace_match, text)
     result = re.sub(r'<([A-Z][^>]*)>', r'&lt;\1&gt;', result)
@@ -90,7 +95,7 @@ def update_chara_skills():
         chara_list = []
         for id in cn_char_table:
             for skill_dict in cn_char_table[id]["skills"]:
-                if skill_dict["skillId"] == skill:
+                if skill_dict.get('skillId') == skill:
                     chara_list.append(cn_char_table[id]['name'])
         levels = cn_skill_table[skill]['levels']
 
@@ -116,7 +121,7 @@ def update_chara_skills():
             description_en = replace_substrings(
                 en_skill_table[skill]['levels'][index]['description'], cn_skill_table[skill]['levels'][index]['blackboard']) if in_global else ""
             data = {
-                "rangeId": level['rangeId'],
+                "rangeId": level.get('rangeId'),
                 "description_zh": description_zh,
                 "description_ja": description_ja,
                 "description_en": description_en,

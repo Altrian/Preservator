@@ -24,9 +24,9 @@ def update_chara_talents():
     cn_char_table = get("cn_char_table", cn_urls.char_table)
     jp_char_table = get("jp_char_table", jp_urls.char_table)
     en_char_table = get("en_char_table", en_urls.char_table)
-    cn_patch_table = get("cn_patch_table", cn_urls.patch_table)
-    jp_patch_table = get("jp_patch_table", jp_urls.patch_table)
-    en_patch_table = get("en_patch_table", en_urls.patch_table)
+    cn_patch_table = get("cn_patch_table", cn_urls.char_patch_table)
+    jp_patch_table = get("jp_patch_table", jp_urls.char_patch_table)
+    en_patch_table = get("en_patch_table", en_urls.char_patch_table)
 
     with open(chara_talents_path, encoding='utf-8') as f:
         chara_talents = json.load(f)

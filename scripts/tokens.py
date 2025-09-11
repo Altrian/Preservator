@@ -34,7 +34,7 @@ def update_tokens():
     tokens_list = []
     for id in filtered_cn_char_table:
         chara_dict = filtered_cn_char_table[id]
-        if "displayTokenDict" in chara_dict and chara_dict['displayTokenDict'] is not None:
+        if chara_dict.get('displayTokenDict') is not None:
             tokens = [key for key in chara_dict['displayTokenDict']]
             tokens_list += tokens
 
@@ -56,7 +56,7 @@ def update_tokens():
 
         skills = []
         token_skills = [skill['skillId']
-                        for skill in token_dict['skills'] if "skillId" in skill and skill['skillId'] is not None]
+                        for skill in token_dict['skills'] if skill.get('skillId') is not None]
         token_skills = list(set(token_skills))
         if token_skills:
             token_skills.sort()
@@ -64,51 +64,51 @@ def update_tokens():
             skill = cn_skill_table[skillId]
             level = skill['levels'][-1]
             blackboard = level['blackboard']
-            desc = cn_skill_table[skillId]['levels'][-1]['description']
+            desc = cn_skill_table[skillId]['levels'][-1].get('description')
 
-            icon_id = skill['iconId']
+            icon_id = skill.get('iconId')
             if id == "token_10012_rosmon_shield":
                 icon_id = "sktok_rosmon"
 
             if desc:
                 skills.append({"skillId": skillId,
-                               "name_zh": cn_skill_table[skillId]['levels'][-1]['name'],
-                               "name_ja":  jp_skill_table[skillId]['levels'][-1]['name'] if in_global else "",
-                               "name_en":  en_skill_table[skillId]['levels'][-1]['name'] if in_global else "",
+                               "name_zh": cn_skill_table[skillId]['levels'][-1].get('name'),
+                               "name_ja": jp_skill_table[skillId]['levels'][-1].get('name') if in_global else "",
+                               "name_en": en_skill_table[skillId]['levels'][-1].get('name') if in_global else "",
                                "iconId": icon_id,
-                               "rangeId": level['rangeId'],
-                               "desc_zh": replace_substrings(cn_skill_table[skillId]['levels'][-1]['description'], blackboard) if desc else "",
-                               "desc_ja": replace_substrings(jp_skill_table[skillId]['levels'][-1]['description'], blackboard) if in_global and desc else "",
-                               "desc_en": replace_substrings(en_skill_table[skillId]['levels'][-1]['description'], blackboard) if in_global and desc else "",
+                               "rangeId": level.get('rangeId'),
+                               "desc_zh": replace_substrings(cn_skill_table[skillId]['levels'][-1].get('description'), blackboard) if desc else "",
+                               "desc_ja": replace_substrings(jp_skill_table[skillId]['levels'][-1].get('description'), blackboard) if in_global and desc else "",
+                               "desc_en": replace_substrings(en_skill_table[skillId]['levels'][-1].get('description'), blackboard) if in_global and desc else "",
                                "skillType": level['skillType'],
                                "durationType": level['durationType'],
                                "spType": level['spData']['spType'],
                                'spData': level['spData']})
         talents = []
-        if token_dict['talents']:
+        if token_dict.get('talents') is not None:
             for talent_index, talent in enumerate(token_dict['talents']):
-                if not talent['candidates']:
+                if talent.get('candidates') is None:
                     continue
                 max_candidate_index = len(talent['candidates'])-1
                 maxed_talent = talent['candidates'][max_candidate_index]
                 talent_holder = {
-                    "prefabKey": maxed_talent["prefabKey"], "name_zh": maxed_talent["name"], "name_en": "", "name_ja": "",
-                    "desc_zh": replace_substrings(maxed_talent["description"], maxed_talent['blackboard']),
+                    "prefabKey": maxed_talent["prefabKey"], "name_zh": maxed_talent.get('name'), "name_en": "", "name_ja": "",
+                    "desc_zh": replace_substrings(maxed_talent.get('description'), maxed_talent['blackboard']),
                     "desc_ja": "", "desc_en": ""}
                 if in_global:
-                    talent_holder["name_ja"] = jp_char_table[id]['talents'][talent_index]['candidates'][max_candidate_index]["name"]
+                    talent_holder["name_ja"] = jp_char_table[id]['talents'][talent_index]['candidates'][max_candidate_index].get('name')
                     talent_holder["desc_ja"] = replace_substrings(jp_char_table[id]['talents'][
-                        talent_index]['candidates'][max_candidate_index]["description"], maxed_talent['blackboard'])
-                    talent_holder["name_en"] = en_char_table[id]['talents'][talent_index]['candidates'][max_candidate_index]["name"]
+                        talent_index]['candidates'][max_candidate_index].get('description'), maxed_talent['blackboard'])
+                    talent_holder["name_en"] = en_char_table[id]['talents'][talent_index]['candidates'][max_candidate_index].get('name')
                     talent_holder["desc_en"] = replace_substrings(en_char_table[id]['talents'][
-                        talent_index]['candidates'][max_candidate_index]["description"], maxed_talent['blackboard'])
-                if maxed_talent['name']:
+                        talent_index]['candidates'][max_candidate_index].get('description'), maxed_talent['blackboard'])
+                if maxed_talent.get('name'):
                     talents.append(talent_holder)
 
         tags = []
         blackboard = []
 
-        return_dict = {"id": id, "name_zh": token_dict['name'], "name_ja": "", "name_en": "",
+        return_dict = {"id": id, "name_zh": token_dict.get('name'), "name_ja": "", "name_en": "",
                        "desc_zh": token_dict['description'].replace("<$ba", "<ba"), "desc_ja": "", "desc_en": "",
                        "position": token_dict['position'],
                        "stats": stats,
@@ -130,6 +130,4 @@ def update_tokens():
     return {"name": "tokens", "newTokens": len(tokens_list)}
 
 if __name__ == "__main__":
-    from main import setup
-    setup()
     update_tokens()

@@ -122,11 +122,11 @@ def update_characters():
                            "levels": chara_skills[skill['skillId']]['levels'],
                            "blackboard": blackboard,})
 
-        if character_dict['talents']:
+        if character_dict.get('talents') is not None:
             for talent_index, talent in enumerate(character_dict['talents']):
                 max_candidate_index = len(talent['candidates']) - 1
                 maxed_talent = talent['candidates'][max_candidate_index]
-                if maxed_talent['name'] is None:
+                if maxed_talent.get('name') is None:
                     continue
                 talent_dict = {
                     "prefabKey": maxed_talent['prefabKey'],
@@ -202,7 +202,7 @@ def update_characters():
 
         # Handle trust/favor
         favor_data = {}
-        if character_dict['favorKeyFrames'] is not None:
+        if character_dict.get('favorKeyFrames') is not None:
             favor_last = character_dict['favorKeyFrames'][-1]['data']
             for stat, value in favor_last.items():
                 if stat in STAT_CONVERT and bool(value):
@@ -210,7 +210,7 @@ def update_characters():
         
         # Handle tokens
         tokens = []
-        if character_dict['displayTokenDict'] is not None:
+        if character_dict.get('displayTokenDict') is not None:
             tokens = [tokens_dict[key] for key in character_dict['displayTokenDict']]
         
         # Handle subprofession
@@ -223,14 +223,14 @@ def update_characters():
             
         # Handle nationality and affiliations
         powers = []
-        powers_list = character_dict['subPower'] or []
+        powers_list = character_dict.get('subPower', [])
         powers_list.append(character_dict['mainPower'])
         for power in powers_list:
-            if power['nationId'] is not None:
+            if power.get('nationId') is not None:
                 powers.append(power['nationId'])
-            if power['groupId'] is not None: 
+            if power.get('groupId') is not None: 
                 powers.append(power['groupId'])
-            if power['teamId'] is not None: 
+            if power.get('teamId') is not None: 
                 powers.append(power['teamId'])
 
         # Handle gender, birthplace, race from handbook
@@ -334,7 +334,7 @@ def update_characters():
                            "tags": chara_skills[skill['skillId']]['tags'] if skill['skillId'] in chara_skills else [],
                            "blackboard": blackboard})
 
-        if character_dict['talents']:
+        if character_dict.get('talents') is not None:
             for talent_index, talent in enumerate(character_dict['talents']):
                 max_candidate_index = len(talent['candidates']) - 1
                 maxed_talent = talent['candidates'][max_candidate_index]
@@ -408,7 +408,7 @@ def update_characters():
 
         # Handle trust/favor
         favor_data = {}
-        if character_dict['favorKeyFrames'] is not None:
+        if character_dict.get('favorKeyFrames') is not None:
             favor_last = character_dict['favorKeyFrames'][-1]['data']
             for stat, value in favor_last.items():
                 if stat in STAT_CONVERT and bool(value):
@@ -416,19 +416,19 @@ def update_characters():
 
         # Handle tokens
         tokens = []
-        if character_dict['displayTokenDict'] is not None:
+        if character_dict.get('displayTokenDict') is not None:
             tokens = [tokens_dict[key] for key in character_dict['displayTokenDict']]
 
         # Handle nationality and affiliations
         powers = []
-        powers_list = character_dict['subPower'] or []
+        powers_list = character_dict.get('subPower', [])
         powers_list.append(character_dict['mainPower'])
         for power in powers_list:
-            if power['nationId'] is not None:
+            if power.get('nationId') is not None:
                 powers.append(power['nationId'])
-            if power['groupId'] is not None: 
+            if power.get('groupId') is not None: 
                 powers.append(power['groupId'])
-            if power['teamId'] is not None: 
+            if power.get('teamId') is not None: 
                 powers.append(power['teamId'])
 
         # Handle gender, birthplace, race from handbook
