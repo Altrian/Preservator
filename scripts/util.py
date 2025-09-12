@@ -1,7 +1,8 @@
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import os
 import json
 import gzip
+import re
 from pathlib import Path
 import requests
 from typing import Any, Union
@@ -9,6 +10,36 @@ from typing import Any, Union
 
 CACHE_DIR = 'cache'
 _cache = {}
+
+def fetch_release_date(name: str, timeout=10) -> int:
+    URL=f"https://prts.wiki/w/{name}?action=raw"
+    
+    try:
+        response = requests.get(URL, timeout=timeout)
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        return {"success": False, "raw": None, "timestamp": None, "error": str(e)}
+    
+    content = response.text
+    # Match lines like: |上线时间=2025-09-04 16:00
+    match = re.search(r"\|上线时间\s*=\s*([0-9]{4}-[0-9]{2}-[0-9]{2}\s+[0-9]{2}:[0-9]{2})", content)
+    if not match:
+        return {"success": False, "raw": None, "timestamp": None, "error": "上线时间 not found"}
+    
+    raw_date = match.group(1).strip()
+
+    try:
+        # Parse the date and set timezone to UTC+8
+        dt = datetime.strptime(raw_date, "%Y-%m-%d %H:%M")
+        dt = dt.replace(tzinfo=timezone(timedelta(hours=8)))  # China Standard Time
+        unix_time = int(dt.timestamp())
+    except Exception as e:
+        return {"success": False, "raw": raw_date, "timestamp": None, "error": f"Date parse error: {e}"}
+
+    return {"success": True, "raw": raw_date, "timestamp": unix_time, "error": None}
+
+
+
 
 def get(name, url):
     if name in _cache:

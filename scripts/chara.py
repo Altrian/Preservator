@@ -1,7 +1,7 @@
 import re
 import json
 from pathlib import Path
-from util import get, Report
+from util import get, Report, fetch_release_date
 from chara_skills import replace_substrings
 from urls import cn_urls, jp_urls, en_urls
 
@@ -107,6 +107,18 @@ def update_characters():
         if id in existing_data and in_global and existing_data[id]['name']['en'] == "":
             character_report.setdefault("characters arrived in Global", []).append(character_dict['appellation'])
 
+        # Handle release date
+        release_date = imple_dates.get(id, 0)
+        if release_date == 0:
+            release_date_dict = fetch_release_date(character_dict['name'])
+            if release_date_dict['sucess']:
+                imple_dates[id] = release_date_dict['timestamp']
+                release_date = release_date_dict['timestamp']
+                character_report.setdefault("release date added", []).append(f"{character_dict['appellation']}: {release_date_dict['date']}")
+            else:
+                print(f"Warning: Release date not found for {character_dict['appellation']}\nError: {release_date_dict['error']}")
+                character_report.setdefault("release date not found", []).append(character_dict['appellation'])
+                
         skills = []
         talents = []
         for skill in character_dict['skills']:
@@ -474,7 +486,7 @@ def update_characters():
         desc_zh = character_dict['description'].replace("<$ba", "<ba")
 
         result_dict = {"id": id, "appellation": character_dict['appellation'],
-                       "releaseDate": imple_dates.get(id, 0),
+                       "releaseDate": release_date,
                        "name": {"zh": character_dict['name'], "ja": "", "en": ""},
                        "desc": {"zh": desc_zh, "ja": "", "en": ""},  
                        "gender": gender, "birthplace": birthplace, "race": race, "powers": powers,
