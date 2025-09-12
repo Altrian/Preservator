@@ -111,7 +111,7 @@ def update_characters():
         release_date = imple_dates.get(id, 0)
         if release_date == 0:
             release_date_dict = fetch_release_date(character_dict['name'])
-            if release_date_dict['sucess']:
+            if release_date_dict['success']:
                 imple_dates[id] = release_date_dict['timestamp']
                 release_date = release_date_dict['timestamp']
                 character_report.setdefault("release date added", []).append(f"{character_dict['appellation']}: {release_date_dict['date']}")
