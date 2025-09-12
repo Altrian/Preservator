@@ -11,7 +11,7 @@ from typing import Any, Union
 CACHE_DIR = 'cache'
 _cache = {}
 
-def fetch_release_date(name: str, timeout=10) -> int:
+def fetch_release_date(name: str, timeout=10) -> dict[str, Any]:
     URL=f"https://prts.wiki/w/{name}?action=raw"
     
     try:
