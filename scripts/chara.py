@@ -114,7 +114,7 @@ def update_characters():
             if release_date_dict['success']:
                 imple_dates[id] = release_date_dict['timestamp']
                 release_date = release_date_dict['timestamp']
-                character_report.setdefault("release date added", []).append(f"{character_dict['appellation']}: {release_date_dict['date']}")
+                character_report.setdefault("release date added", []).append(f"{character_dict['appellation']}: {release_date_dict['raw']}")
             else:
                 print(f"Warning: Release date not found for {character_dict['appellation']}\nError: {release_date_dict['error']}")
                 character_report.setdefault("release date not found", []).append(character_dict['appellation'])
