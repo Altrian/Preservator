@@ -1,5 +1,34 @@
 [
   {
+<<<<<<< HEAD
+=======
+    "name": "chara_skills",
+    "newSkills": 574
+  },
+  {
+    "name": "chara_talents",
+    "newCharas": 0
+  },
+  {
+    "name": "uniequip",
+    "newEquips": 0
+  },
+  {
+    "name": "tokens",
+    "newTokens": 53
+  },
+  {
+    "name": "recruitment",
+    "updatedAt": "2025-09-11",
+    "records": {}
+  },
+  {
+    "name": "recruitment_table",
+    "updatedAt": "2025-09-11",
+    "records": {}
+  },
+  {
+>>>>>>> parent of e96f164 (Update JSON files: json/characters.json)
     "name": "characters",
     "records": {
       "characters exclusive in China": [
@@ -26,13 +55,6 @@
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
-      ],
-      "release date added": [
-        "Yūtenji Nyamu: 2025-09-04 16:00",
-        "Misumi Uika: 2025-09-04 16:00",
-        "Yahata Umiri: 2025-09-04 16:00",
-        "Wakaba Mutsumi: 2025-09-04 16:00",
-        "Togawa Sakiko: 2025-09-04 16:00"
       ]
     }
   }
