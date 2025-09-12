@@ -17,12 +17,12 @@
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-09-11",
+    "updatedAt": "2025-09-12",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-09-11",
+    "updatedAt": "2025-09-12",
     "records": {}
   },
   {
@@ -52,6 +52,13 @@
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
+      ],
+      "release date added": [
+        "Yūtenji Nyamu: 2025-09-04 16:00",
+        "Misumi Uika: 2025-09-04 16:00",
+        "Yahata Umiri: 2025-09-04 16:00",
+        "Wakaba Mutsumi: 2025-09-04 16:00",
+        "Togawa Sakiko: 2025-09-04 16:00"
       ]
     }
   }
