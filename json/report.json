@@ -1,33 +1,33 @@
 {
   "recruitment": {
-    "timestamp": "2025-09-11T06:23:23.526077+00:00",
+    "timestamp": "2025-09-12T13:38:36.080662+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-09-11",
+    "updatedAt": "2025-09-12",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-09-11T06:23:23.526080+00:00",
+    "timestamp": "2025-09-12T13:38:36.080665+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-09-11",
+    "updatedAt": "2025-09-12",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-09-11T06:23:23.526047+00:00",
+    "timestamp": "2025-09-12T13:38:36.080634+00:00",
     "name": "chara_skills",
     "newSkills": 574
   },
   "chara_talents": {
-    "timestamp": "2025-09-11T06:23:23.526068+00:00",
+    "timestamp": "2025-09-12T13:38:36.080653+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-09-11T06:23:23.526072+00:00",
+    "timestamp": "2025-09-12T13:38:36.080657+00:00",
     "name": "uniequip",
     "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2025-09-11T06:23:23.526075+00:00",
+    "timestamp": "2025-09-12T13:38:36.080659+00:00",
     "name": "tokens",
     "newTokens": 53
   },
@@ -63,6 +63,13 @@
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
+      ],
+      "release date added": [
+        "Yūtenji Nyamu: 2025-09-04 16:00",
+        "Misumi Uika: 2025-09-04 16:00",
+        "Yahata Umiri: 2025-09-04 16:00",
+        "Wakaba Mutsumi: 2025-09-04 16:00",
+        "Togawa Sakiko: 2025-09-04 16:00"
       ]
     }
   }
