@@ -10,6 +10,8 @@ SUBPROFESSIONS = ['physician', 'fearless', 'executor', 'fastshot', 'bombarder', 
                     'merchant', 'hookmaster', 'ringhealer', 'healer', 'wandermedic', 'unyield', 'artsprotector', 'summoner', 'craftsman', 'stalker', 'pusher', 'dollkeeper', 'skywalker', 'agent', 'fighter', 'librator', 'hammer', 'phalanx', 'blastcaster', 'primcaster', 'incantationmedic', 'chainhealer', 'shotprotector', 'fortress', 'duelist', 'primprotector', 'hunter', 'geek', 'underminer', 'blessing', 'traper', 
                     'alchemist','soulcaster','primguard']
 
+CLASSES_TRANSLATE_TABLE = {'WARRIOR': '近卫', 'MEDIC': '医疗'}
+
 STAT_CONVERT = {'maxHp': "hp", "magicResistance": "res", "attackSpeed": "aspd",
                 "moveSpeed": "ms", "respawnTime": "respawnTime", "atk": 'atk', "def": "def", "cost": "cost"}
 
@@ -44,19 +46,6 @@ def update_characters():
     imple_dates_path = json_dir / 'chara_imple_dates.json'
     recruitment_table_path = json_dir / 'recruitment_table.json'
     recruitment_path = output_recruitment_path = json_dir / 'recruitment.json'
-
-    # base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
-    # base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
-
-    # cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
-    # jp_char_table = get("jp_char_table", f"{base_url_global}/ja_JP/gamedata/excel/character_table.json")
-    # en_char_table = get("en_char_table", f"{base_url_global}/en_US/gamedata/excel/character_table.json")
-    # cn_patch_table = get("cn_patch_table", f"{base_url_cn}/zh_CN/gamedata/excel/char_patch_table.json")
-    # jp_patch_table = get("jp_patch_table", f"{base_url_global}/ja_JP/gamedata/excel/char_patch_table.json")
-    # en_patch_table = get("en_patch_table", f"{base_url_global}/en_US/gamedata/excel/char_patch_table.json")
-    # cn_handbook_info_table = get("cn_handbook_info_table", f"{base_url_cn}/zh_CN/gamedata/excel/handbook_info_table.json")
-    # jp_handbook_info_table = get("jp_handbook_info_table", f"{base_url_global}/ja_JP/gamedata/excel/handbook_info_table.json")
-    # en_handbook_info_table = get("en_handbook_info_table", f"{base_url_global}/en_US/gamedata/excel/handbook_info_table.json")
 
     cn_char_table = get("cn_char_table", cn_urls.char_table)
     jp_char_table = get("jp_char_table", jp_urls.char_table)
@@ -296,7 +285,7 @@ def update_characters():
             character_report.setdefault("new subprofession added", []).append(f"{character_dict['subProfessionId']} ({character_dict['profession']})")
 
         result_dict = {"id": id, "appellation": character_dict['appellation'],
-                       "releaseDate": imple_dates.get(id, 0),
+                       "releaseDate": release_date,
                        "name": {"zh": character_dict['name'], "ja": "", "en": ""},
                        "desc": {"zh": desc_zh, "ja": "", "en": ""},  
                        "gender": gender, "birthplace": birthplace, "race": race, "powers": powers,
@@ -327,6 +316,19 @@ def update_characters():
     # Patch table for Amiya
     for id, character_dict in cn_patch_table['patchChars'].items():
         in_global = id in en_patch_table['patchChars']
+
+        # Handle release date
+        release_date = imple_dates.get(id, 0)
+        if release_date == 0:
+            release_date_dict = fetch_release_date(f"{character_dict['name']}({CLASSES_TRANSLATE_TABLE[character_dict['profession']]})")
+            if release_date_dict['success']:
+                imple_dates[id] = release_date_dict['timestamp']
+                release_date = release_date_dict['timestamp']
+                character_report.setdefault("release date added", []).append(f"{character_dict['appellation']}: {release_date_dict['raw']}")
+            else:
+                print(f"Warning: Release date not found for {character_dict['appellation']}\nError: {release_date_dict['error']}")
+                character_report.setdefault("release date not found", []).append(character_dict['appellation'])
+
         skills = []
         talents = []
         for skill in character_dict['skills']:
@@ -512,6 +514,9 @@ def update_characters():
 
     with open(output_recruitment_path, 'w', encoding='utf-8') as f:
         json.dump(recruitment_utilities, f, ensure_ascii=False, indent=4)
+
+    with open(imple_dates_path, 'w', encoding='utf-8') as f:
+        json.dump(imple_dates, f, ensure_ascii=False, indent=4)
 
     return {"name": "characters", "records":character_report}
 
