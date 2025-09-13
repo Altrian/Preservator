@@ -1,33 +1,33 @@
 {
   "recruitment": {
-    "timestamp": "2025-09-12T13:38:36.080662+00:00",
+    "timestamp": "2025-09-13T06:20:12.944524+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-09-12",
+    "updatedAt": "2025-09-13",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-09-12T13:38:36.080665+00:00",
+    "timestamp": "2025-09-13T06:20:12.944528+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-09-12",
+    "updatedAt": "2025-09-13",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-09-12T13:38:36.080634+00:00",
+    "timestamp": "2025-09-13T06:20:12.944495+00:00",
     "name": "chara_skills",
     "newSkills": 574
   },
   "chara_talents": {
-    "timestamp": "2025-09-12T13:38:36.080653+00:00",
+    "timestamp": "2025-09-13T06:20:12.944515+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-09-12T13:38:36.080657+00:00",
+    "timestamp": "2025-09-13T06:20:12.944520+00:00",
     "name": "uniequip",
     "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2025-09-12T13:38:36.080659+00:00",
+    "timestamp": "2025-09-13T06:20:12.944522+00:00",
     "name": "tokens",
     "newTokens": 53
   },
