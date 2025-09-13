@@ -33,40 +33,42 @@ jobs:
           set -o pipefail
           python scripts/update_json.py 2>&1 | tee script.log
 
-      - name: Check for changes
-        id: git_status
+      - name: Check for relevant changes
         run: |
-          if [[ -n "$(git status --porcelain)" ]]; then
-            echo "changed=true" >> $GITHUB_OUTPUT
+          git add .
+          # Collect changed files excluding latest_report.json and report.json
+          CHANGED_FILES=$(git status --porcelain | awk '{print $2}' | grep -E '\.(json|gz)$' | grep -v -E '(^|/)(latest_report\.json|report\.json)$' || true)
+
+          if [[ -n "$CHANGED_FILES" ]]; then
+            echo "CHANGED=true" >> $GITHUB_ENV
+            # collapse into single line space-separated
+            FILES_ONE_LINE=$(echo $CHANGED_FILES | xargs)
+            echo "FILES=$FILES_ONE_LINE" >> $GITHUB_ENV
           else
-            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "CHANGED=false" >> $GITHUB_ENV
           fi
 
       - name: Commit and push changes
-        if: steps.git_status.outputs.changed == 'true'
+        if: env.CHANGED == 'true'
         run: |
-          git config user.name "json-bot"
-          git config user.email "json-bot@users.noreply.github.com"
-          
-          # Get all changed JSON or GZ files
-          ALL_FILES=$(git status --porcelain | awk '{print $2}' | grep -E '\.(json|gz)$' || true)
+          git config user.name "preservator[bot]"
+          git config user.email "preservator[bot]@users.noreply.github.com"
 
-          # Get relevant files for commit message (exclude latest.json and reports.json)
-          FILES_FOR_MSG=$(echo "$ALL_FILES" | grep -v 'latest.json' | grep -v 'reports.json' || true)
-          
-          if [ -n "$ALL_FILES" ]; then
-            git add $ALL_FILES
-            git commit -m "Update JSON files: $FILES_FOR_MSG"
-            git push origin HEAD:${GITHUB_REF}
-          else
-            echo "No relevant JSON files to commit."
-          fi
+          git add $FILES
+          git commit --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>" -m "Update JSON files: $FILES" 
+          git push origin HEAD:${GITHUB_REF}
 
-      - name: Send logs to Discord
+      - name: Send logs and report to Discord
         if: always()
         run: |
-          LOG_CONTENT=$(sed 's/"/\\"/g' script.log | sed 's/$/\\n/' | tr -d '\n')
-          curl -H "Content-Type: application/json" \
-               -X POST \
-               -d "{\"content\": \"\`\`\`$LOG_CONTENT\`\`\`\"}" \
-               ${{ secrets.DISCORD_WEBHOOK }}
+          if [ "${{ job.status }}" = "success" ]; then
+            STATUS="✅ Success"
+          else
+            STATUS="❌ Failure"
+          fi
+
+          curl -X POST \
+            -F "payload_json={\"content\": \"Workflow finished with status: $STATUS\"}" \
+            -F "file1=@script.log" \
+            -F "file2=@latest_report.json" \
+            ${{ secrets.DISCORD_WEBHOOK }}
