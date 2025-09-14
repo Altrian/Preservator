@@ -1,34 +1,5 @@
 [
   {
-<<<<<<< HEAD
-=======
-    "name": "chara_skills",
-    "newSkills": 574
-  },
-  {
-    "name": "chara_talents",
-    "newCharas": 0
-  },
-  {
-    "name": "uniequip",
-    "newEquips": 0
-  },
-  {
-    "name": "tokens",
-    "newTokens": 53
-  },
-  {
-    "name": "recruitment",
-    "updatedAt": "2025-09-13",
-    "records": {}
-  },
-  {
-    "name": "recruitment_table",
-    "updatedAt": "2025-09-13",
-    "records": {}
-  },
-  {
->>>>>>> parent of e96f164 (Update JSON files: json/characters.json)
     "name": "characters",
     "records": {
       "characters exclusive in China": [

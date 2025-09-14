@@ -32,11 +32,7 @@
     "newTokens": 53
   },
   "characters": {
-<<<<<<< HEAD
     "timestamp": "2025-09-12T14:54:04.445997+00:00",
-=======
-    "timestamp": "2025-09-11T06:23:23.526082+00:00",
->>>>>>> parent of e96f164 (Update JSON files: json/characters.json)
     "name": "characters",
     "records": {
       "characters exclusive in China": [
