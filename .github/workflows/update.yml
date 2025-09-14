@@ -70,5 +70,5 @@ jobs:
           curl -X POST \
             -F "payload_json={\"content\": \"Workflow finished with status: $STATUS\"}" \
             -F "file1=@script.log" \
-            -F "file2=@latest_report.json" \
+            -F "file2=@json/latest_report.json" \
             ${{ secrets.DISCORD_WEBHOOK }}
