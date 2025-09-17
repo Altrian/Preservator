@@ -1,17 +1,41 @@
 [
   {
+    "name": "chara_skills",
+    "newSkills": 574
+  },
+  {
+    "name": "chara_talents",
+    "newCharas": 0
+  },
+  {
+    "name": "uniequip",
+    "newEquips": 0
+  },
+  {
+    "name": "tokens",
+    "newTokens": 53
+  },
+  {
+    "name": "recruitment",
+    "updatedAt": "2025-09-17",
+    "records": {}
+  },
+  {
+    "name": "recruitment_table",
+    "updatedAt": "2025-09-17",
+    "records": {}
+  },
+  {
     "name": "characters",
     "records": {
       "characters exclusive in China": [
         "CONFESS-47",
-        "Windscoot",
         "Matsukiri",
         "Gracebearer",
         "Yūtenji Nyamu",
         "Kichisei",
         "Miss.Christine",
         "Record Keeper",
-        "Alanna",
         "Misumi Uika",
         "Yahata Umiri",
         "Wakaba Mutsumi",
@@ -21,18 +45,15 @@
         "Haruka",
         "Tragodia",
         "Exusiai the New Covenant",
-        "Mon3tr",
         "Sankta Miksaparato",
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
       ],
-      "release date added": [
-        "Yūtenji Nyamu: 2025-09-04 16:00",
-        "Misumi Uika: 2025-09-04 16:00",
-        "Yahata Umiri: 2025-09-04 16:00",
-        "Wakaba Mutsumi: 2025-09-04 16:00",
-        "Togawa Sakiko: 2025-09-04 16:00"
+      "characters arrived in Global": [
+        "Windscoot",
+        "Alanna",
+        "Mon3tr"
       ]
     }
   }

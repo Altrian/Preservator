@@ -1,50 +1,48 @@
 {
   "recruitment": {
-    "timestamp": "2025-09-13T06:20:12.944524+00:00",
+    "timestamp": "2025-09-17T06:23:24.732137+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-09-13",
+    "updatedAt": "2025-09-17",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-09-13T06:20:12.944528+00:00",
+    "timestamp": "2025-09-17T06:23:24.732140+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-09-13",
+    "updatedAt": "2025-09-17",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-09-13T06:20:12.944495+00:00",
+    "timestamp": "2025-09-17T06:23:24.732107+00:00",
     "name": "chara_skills",
     "newSkills": 574
   },
   "chara_talents": {
-    "timestamp": "2025-09-13T06:20:12.944515+00:00",
+    "timestamp": "2025-09-17T06:23:24.732127+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-09-13T06:20:12.944520+00:00",
+    "timestamp": "2025-09-17T06:23:24.732132+00:00",
     "name": "uniequip",
     "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2025-09-13T06:20:12.944522+00:00",
+    "timestamp": "2025-09-17T06:23:24.732134+00:00",
     "name": "tokens",
     "newTokens": 53
   },
   "characters": {
-    "timestamp": "2025-09-12T14:54:04.445997+00:00",
+    "timestamp": "2025-09-17T06:23:24.732143+00:00",
     "name": "characters",
     "records": {
       "characters exclusive in China": [
         "CONFESS-47",
-        "Windscoot",
         "Matsukiri",
         "Gracebearer",
         "Yūtenji Nyamu",
         "Kichisei",
         "Miss.Christine",
         "Record Keeper",
-        "Alanna",
         "Misumi Uika",
         "Yahata Umiri",
         "Wakaba Mutsumi",
@@ -54,18 +52,15 @@
         "Haruka",
         "Tragodia",
         "Exusiai the New Covenant",
-        "Mon3tr",
         "Sankta Miksaparato",
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
       ],
-      "release date added": [
-        "Yūtenji Nyamu: 2025-09-04 16:00",
-        "Misumi Uika: 2025-09-04 16:00",
-        "Yahata Umiri: 2025-09-04 16:00",
-        "Wakaba Mutsumi: 2025-09-04 16:00",
-        "Togawa Sakiko: 2025-09-04 16:00"
+      "characters arrived in Global": [
+        "Windscoot",
+        "Alanna",
+        "Mon3tr"
       ]
     }
   }
