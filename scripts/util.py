@@ -116,6 +116,9 @@ class Report:
 
 
 def split_characters_by_language(input_file='characters.json', languages=None, output_gz=True):
+    script_dir = Path(__file__).parent
+    json_dir = script_dir.parent / 'json'
+
     if languages is None:
         languages = ['zh', 'ja', 'en']
 
@@ -123,6 +126,7 @@ def split_characters_by_language(input_file='characters.json', languages=None, o
         chara_list = json.load(f)
 
     for lang in languages:
+        print(f"Processing language: {lang}")
         data = []
         for chara_dict in chara_list:
             skills = []
@@ -247,9 +251,10 @@ def split_characters_by_language(input_file='characters.json', languages=None, o
                            'potential': potential, "favorData": favor_data, "tokens": tokens,
                            "skills": skills, "talents": talents, 'uniequip': uniequip_list, }
             data.append(return_dict)
-        out_json = f'characters_{lang}.json'
+        out_json = json_dir / f'characters_{lang}.json'
         with open(out_json, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
+            print(f"Wrote {out_json}")
         if output_gz:
             json_to_gz(out_json, f'characters_{lang}.gz')
 
