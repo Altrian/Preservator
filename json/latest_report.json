@@ -1,7 +1,7 @@
 [
   {
     "name": "chara_skills",
-    "newSkills": 574
+    "newSkills": 602
   },
   {
     "name": "chara_talents",
@@ -17,12 +17,12 @@
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-09-17",
+    "updatedAt": "2025-09-25",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-09-17",
+    "updatedAt": "2025-09-25",
     "records": {}
   },
   {
@@ -49,11 +49,6 @@
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
-      ],
-      "characters arrived in Global": [
-        "Windscoot",
-        "Alanna",
-        "Mon3tr"
       ]
     }
   }

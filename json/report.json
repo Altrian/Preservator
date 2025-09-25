@@ -1,38 +1,38 @@
 {
   "recruitment": {
-    "timestamp": "2025-09-17T06:23:24.732137+00:00",
+    "timestamp": "2025-09-25T20:30:02.691892+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-09-17",
+    "updatedAt": "2025-09-25",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-09-17T06:23:24.732140+00:00",
+    "timestamp": "2025-09-25T20:30:02.691895+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-09-17",
+    "updatedAt": "2025-09-25",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-09-17T06:23:24.732107+00:00",
+    "timestamp": "2025-09-25T20:30:02.691863+00:00",
     "name": "chara_skills",
-    "newSkills": 574
+    "newSkills": 602
   },
   "chara_talents": {
-    "timestamp": "2025-09-17T06:23:24.732127+00:00",
+    "timestamp": "2025-09-25T20:30:02.691882+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-09-17T06:23:24.732132+00:00",
+    "timestamp": "2025-09-25T20:30:02.691886+00:00",
     "name": "uniequip",
     "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2025-09-17T06:23:24.732134+00:00",
+    "timestamp": "2025-09-25T20:30:02.691889+00:00",
     "name": "tokens",
     "newTokens": 53
   },
   "characters": {
-    "timestamp": "2025-09-17T06:23:24.732143+00:00",
+    "timestamp": "2025-09-25T20:30:02.691897+00:00",
     "name": "characters",
     "records": {
       "characters exclusive in China": [
@@ -56,11 +56,6 @@
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
-      ],
-      "characters arrived in Global": [
-        "Windscoot",
-        "Alanna",
-        "Mon3tr"
       ]
     }
   }
