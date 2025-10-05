@@ -138,6 +138,10 @@ def update_recruitment():
         cn_gacha_table['recruitDetail'], flags=re.IGNORECASE | re.MULTILINE
     )))
 
+    recruit_only_matches = (list(re.finditer(r"(?<!>\s)<@rc\.eml>([^,，]*?)<\/>|(?:\/\s*|\n\s*|\\n\s*)((?!-)[^\r\/>★]+?(?<!-))(?=\/|$)", 
+        cn_gacha_table['recruitOnlyDetail'], flags=re.IGNORECASE | re.MULTILINE))
+    )
+
     en_matches = {(m.group(1) or m.group(2)).strip() for m in re.finditer(
         r"(?<!>\s)<@rc\.eml>([^,，]*?)<\/>|(?:\/\s*|\n\s*|\\n\s*)((?!-)[^\r\/>★]+?(?<!-))(?=\/|$)",
         en_gacha_table['recruitDetail'], flags=re.IGNORECASE | re.MULTILINE
@@ -151,7 +155,8 @@ def update_recruitment():
     for match in cn_matches:
         # Extract the character name from the match
         name_zh = match.group(1).strip() if match.group(1) else match.group(2).strip()
-        recruit_only = bool(match.group(1)) # If group 1 is not None, set recruit_only to True
+        # If any match in recruit_only_matches has this name in group 1 return True
+        recruit_only = any(name_zh in (m.group(1) or "") for m in recruit_only_matches)
         
         if name_zh in filtered_cn_char_table:
             charaId = filtered_cn_char_table[name_zh]
