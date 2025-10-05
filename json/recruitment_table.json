@@ -2439,7 +2439,7 @@
         "rarity": "TIER_6",
         "profession": "SNIPER",
         "subProfessionId": "closerange",
-        "IsRecruitOnly": false,
+        "IsRecruitOnly": true,
         "tags": [
             "RANGED",
             "TIER_6",
@@ -2863,7 +2863,7 @@
         "rarity": "TIER_3",
         "profession": "TANK",
         "subProfessionId": "guardian",
-        "IsRecruitOnly": true,
+        "IsRecruitOnly": false,
         "tags": [
             "MELEE",
             "TANK",
@@ -2882,7 +2882,7 @@
         "rarity": "TIER_4",
         "profession": "PIONEER",
         "subProfessionId": "tactician",
-        "IsRecruitOnly": true,
+        "IsRecruitOnly": false,
         "tags": [
             "RANGED",
             "PIONEER",
@@ -2901,7 +2901,7 @@
         "rarity": "TIER_5",
         "profession": "SNIPER",
         "subProfessionId": "siegesniper",
-        "IsRecruitOnly": true,
+        "IsRecruitOnly": false,
         "tags": [
             "RANGED",
             "TIER_5",
