@@ -139,7 +139,7 @@ def update_recruitment():
     )))
 
     recruit_only_matches = (list(re.finditer(r"(?<!>\s)<@rc\.eml>([^,，]*?)<\/>|(?:\/\s*|\n\s*|\\n\s*)((?!-)[^\r\/>★]+?(?<!-))(?=\/|$)", 
-        cn_gacha_table['recruitOnlyDetail'], flags=re.IGNORECASE | re.MULTILINE))
+        cn_gacha_table['recruitDetail'], flags=re.IGNORECASE | re.MULTILINE))
     )
 
     en_matches = {(m.group(1) or m.group(2)).strip() for m in re.finditer(
