@@ -32,19 +32,6 @@ def update_recruitment():
     json_dir = script_dir.parent / 'json'
     recruitment_path = output_recruitment_path = json_dir / 'recruitment.json'
     recruitment_table_path = output_recruitment_table_path = json_dir / 'recruitment_table.json'
-
-    # base_url_cn = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master"
-    # base_url_global = "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar/main"
-
-    # cn_char_table = get("cn_char_table", f"{base_url_cn}/zh_CN/gamedata/excel/character_table.json")
-    # jp_char_table = get("jp_char_table", f"{base_url_global}/ja_JP/gamedata/excel/character_table.json")
-    # en_char_table = get("en_char_table", f"{base_url_global}/en_US/gamedata/excel/character_table.json")
-    # cn_gacha_table = get("cn_gacha_table", f"{base_url_cn}/zh_CN/gamedata/excel/gacha_table.json")
-    # jp_gacha_table = get("jp_gacha_table", f"{base_url_global}/ja_JP/gamedata/excel/gacha_table.json")
-    # en_gacha_table = get("en_gacha_table", f"{base_url_global}/en_US/gamedata/excel/gacha_table.json")
-    # cn_handbook_team_table = get("cn_handbook_team_table", f"{base_url_cn}/zh_CN/gamedata/excel/handbook_team_table.json")
-    # jp_handbook_team_table = get("jp_handbook_team_table", f"{base_url_global}/ja_JP/gamedata/excel/handbook_team_table.json")
-    # en_handbook_team_table = get("en_handbook_team_table", f"{base_url_global}/en_US/gamedata/excel/handbook_team_table.json")
     
     cn_char_table = get("cn_char_table", cn_urls.char_table)
     jp_char_table = get("jp_char_table", jp_urls.char_table)

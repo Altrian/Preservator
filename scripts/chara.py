@@ -274,7 +274,14 @@ def update_characters():
         recruitment = None
         recruitment_info = recruitment_dict.get(id, None)
         if recruitment_info is not None:
-            recruitment = True if recruitment_info['IsRecruitOnly'] else False
+            if recruitment_info['name'].get('en') is not None and recruitment_info['IsRecruitOnly'] is False:
+                recruitment = 0 # In global, not recruit-only
+            elif recruitment_info['name'].get('en') is not None and recruitment_info['IsRecruitOnly'] is True:
+                recruitment = 1 # In global, and recruit-only
+            elif recruitment_info['name'].get('en') is None and recruitment_info['IsRecruitOnly'] is False:
+                recruitment = 2 # CN exlusive, not recruit-only
+            elif recruitment_info['name'].get('en') is None and recruitment_info['IsRecruitOnly'] is True:
+                recruitment = 3 # CN exlusive, and recruit-only
 
         if recruitment_utilities['branch']['data'].get(character_dict['profession']) is None:
             recruitment_utilities['branch']['data'][character_dict['profession']] = []
@@ -483,7 +490,14 @@ def update_characters():
         recruitment = None
         recruitment_info = recruitment_dict.get(id, None)
         if recruitment_info is not None:
-            recruitment = True if recruitment_info['IsRecruitOnly'] else False
+            if recruitment_info['name'].get('en') is not None and recruitment_info['IsRecruitOnly'] is False:
+                recruitment = 0 # In global, not recruit-only
+            elif recruitment_info['name'].get('en') is not None and recruitment_info['IsRecruitOnly'] is True:
+                recruitment = 1 # In global, and recruit-only
+            elif recruitment_info['name'].get('en') is None and recruitment_info['IsRecruitOnly'] is False:
+                recruitment = 2 # CN exlusive, not recruit-only
+            elif recruitment_info['name'].get('en') is None and recruitment_info['IsRecruitOnly'] is True:
+                recruitment = 3 # CN exlusive, and recruit-only
 
         desc_zh = character_dict['description'].replace("<$ba", "<ba")
 
