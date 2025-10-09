@@ -1,7 +1,7 @@
 [
   {
     "name": "chara_skills",
-    "newSkills": 602
+    "newSkills": 610
   },
   {
     "name": "chara_talents",
@@ -9,7 +9,7 @@
   },
   {
     "name": "uniequip",
-    "newEquips": 0
+    "newEquips": 14
   },
   {
     "name": "tokens",
@@ -17,12 +17,12 @@
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-10-05",
+    "updatedAt": "2025-10-09",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-10-05",
+    "updatedAt": "2025-10-09",
     "records": {}
   },
   {
@@ -49,6 +49,16 @@
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
+      ],
+      "new characters added": [
+        "Снегyрочка",
+        "Веточки",
+        "Mantra"
+      ],
+      "release date added": [
+        "Снегyрочка: 2025-10-09 12:00",
+        "Веточки: 2025-10-09 12:00",
+        "Mantra: 2025-10-09 12:00"
       ]
     }
   }

@@ -10017,5 +10017,71 @@
                 }
             }
         ]
+    },
+    "char_4208_wintim": {
+        "appellation": "Снегyрочка",
+        "talents": [
+            {
+                "prefabKey": "1",
+                "name_zh": "疾笔撰录",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "攻击速度+12<@ba.talpu>（+2）</>，自身受到伤害后失去该效果",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": {
+                    "attack_speed": 12.0
+                }
+            }
+        ]
+    },
+    "char_4207_branch": {
+        "appellation": "Веточки",
+        "talents": [
+            {
+                "prefabKey": "1",
+                "name_zh": "简易包扎",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "技能结束时恢复自身60%<@ba.talpu>（+10%）</>最大生命值",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": {
+                    "hp_ratio": 0.6
+                }
+            }
+        ]
+    },
+    "char_4204_mantra": {
+        "appellation": "Mantra",
+        "talents": [
+            {
+                "prefabKey": "1",
+                "name_zh": "噤声限域",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "场上敌人触发<ba.palsy>麻痹</>效果时立即受到相当于真言攻击力145%<@ba.talpu>（+10%）</>的元素伤害，且触发<ba.palsy>麻痹</>时有13%<@ba.talpu>（+3%）</>概率不消耗<ba.palsy>麻痹</>层数",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": {
+                    "atk_scale": 1.45,
+                    "prob": 0.13
+                }
+            },
+            {
+                "prefabKey": "2",
+                "name_zh": "全局洞悉",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "距离真言最近的一个侵入点出场的敌人出现时立刻获得1层<ba.palsy>麻痹</>",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": {}
+            }
+        ]
     }
 }
