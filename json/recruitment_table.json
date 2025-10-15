@@ -118,8 +118,8 @@
         "appellation": "CONFESS-47",
         "name": {
             "zh": "CONFESS-47",
-            "ja": "",
-            "en": ""
+            "ja": "CONFESS-47",
+            "en": "CONFESS-47"
         },
         "rarity": "TIER_1",
         "profession": "PIONEER",
@@ -2213,8 +2213,8 @@
         "appellation": "Mr.Nothing",
         "name": {
             "zh": "乌有",
-            "ja": "",
-            "en": ""
+            "ja": "ウユウ",
+            "en": "Mr. Nothing"
         },
         "rarity": "TIER_5",
         "profession": "SPECIAL",
@@ -2818,8 +2818,8 @@
         "appellation": "Saga",
         "name": {
             "zh": "嵯峨",
-            "ja": "",
-            "en": ""
+            "ja": "サガ",
+            "en": "Saga"
         },
         "rarity": "TIER_6",
         "profession": "PIONEER",

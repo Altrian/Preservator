@@ -1,7 +1,7 @@
 [
   {
     "name": "chara_skills",
-    "newSkills": 610
+    "newSkills": 603
   },
   {
     "name": "chara_talents",
@@ -9,7 +9,7 @@
   },
   {
     "name": "uniequip",
-    "newEquips": 14
+    "newEquips": 0
   },
   {
     "name": "tokens",
@@ -17,48 +17,49 @@
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-10-09",
+    "updatedAt": "2025-10-15",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-10-09",
-    "records": {}
+    "updatedAt": "2025-10-15",
+    "records": {
+      "character updated": [
+        "CONFESS-47",
+        "Mr.Nothing",
+        "Saga"
+      ]
+    }
   },
   {
     "name": "characters",
     "records": {
-      "characters exclusive in China": [
+      "characters arrived in Global": [
         "CONFESS-47",
-        "Matsukiri",
         "Gracebearer",
+        "Miss.Christine",
+        "Lemuen",
+        "Exusiai the New Covenant",
+        "Sankta Miksaparato"
+      ],
+      "characters exclusive in China": [
+        "Снегyрочка",
+        "Matsukiri",
         "Yūtenji Nyamu",
         "Kichisei",
-        "Miss.Christine",
         "Record Keeper",
+        "Веточки",
         "Misumi Uika",
         "Yahata Umiri",
         "Wakaba Mutsumi",
         "Tippi",
-        "Lemuen",
+        "Mantra",
         "Raidian",
         "Haruka",
         "Tragodia",
-        "Exusiai the New Covenant",
-        "Sankta Miksaparato",
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
-      ],
-      "new characters added": [
-        "Снегyрочка",
-        "Веточки",
-        "Mantra"
-      ],
-      "release date added": [
-        "Снегyрочка: 2025-10-09 12:00",
-        "Веточки: 2025-10-09 12:00",
-        "Mantra: 2025-10-09 12:00"
       ]
     }
   }
