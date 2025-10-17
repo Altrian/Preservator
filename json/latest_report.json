@@ -1,7 +1,7 @@
 [
   {
     "name": "chara_skills",
-    "newSkills": 603
+    "newSkills": 604
   },
   {
     "name": "chara_talents",
@@ -9,7 +9,7 @@
   },
   {
     "name": "uniequip",
-    "newEquips": 0
+    "newEquips": 1
   },
   {
     "name": "tokens",
@@ -17,33 +17,19 @@
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-10-15",
+    "updatedAt": "2025-10-17",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-10-15",
-    "records": {
-      "character updated": [
-        "CONFESS-47",
-        "Mr.Nothing",
-        "Saga"
-      ]
-    }
+    "updatedAt": "2025-10-17",
+    "records": {}
   },
   {
     "name": "characters",
     "records": {
-      "characters arrived in Global": [
-        "CONFESS-47",
-        "Gracebearer",
-        "Miss.Christine",
-        "Lemuen",
-        "Exusiai the New Covenant",
-        "Sankta Miksaparato"
-      ],
       "characters exclusive in China": [
-        "Снегyрочка",
+        "Снегурочка",
         "Matsukiri",
         "Yūtenji Nyamu",
         "Kichisei",

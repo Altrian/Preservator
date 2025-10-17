@@ -1,56 +1,42 @@
 {
   "recruitment": {
-    "timestamp": "2025-10-15T06:24:00.391143+00:00",
+    "timestamp": "2025-10-17T06:22:49.743565+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-10-15",
+    "updatedAt": "2025-10-17",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-10-15T06:24:00.391146+00:00",
+    "timestamp": "2025-10-17T06:22:49.743568+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-10-15",
-    "records": {
-      "character updated": [
-        "CONFESS-47",
-        "Mr.Nothing",
-        "Saga"
-      ]
-    }
+    "updatedAt": "2025-10-17",
+    "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-10-15T06:24:00.391113+00:00",
+    "timestamp": "2025-10-17T06:22:49.743521+00:00",
     "name": "chara_skills",
-    "newSkills": 603
+    "newSkills": 604
   },
   "chara_talents": {
-    "timestamp": "2025-10-15T06:24:00.391133+00:00",
+    "timestamp": "2025-10-17T06:22:49.743556+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-10-15T06:24:00.391137+00:00",
+    "timestamp": "2025-10-17T06:22:49.743560+00:00",
     "name": "uniequip",
-    "newEquips": 0
+    "newEquips": 1
   },
   "tokens": {
-    "timestamp": "2025-10-15T06:24:00.391140+00:00",
+    "timestamp": "2025-10-17T06:22:49.743563+00:00",
     "name": "tokens",
     "newTokens": 53
   },
   "characters": {
-    "timestamp": "2025-10-15T06:24:00.391148+00:00",
+    "timestamp": "2025-10-17T06:22:49.743571+00:00",
     "name": "characters",
     "records": {
-      "characters arrived in Global": [
-        "CONFESS-47",
-        "Gracebearer",
-        "Miss.Christine",
-        "Lemuen",
-        "Exusiai the New Covenant",
-        "Sankta Miksaparato"
-      ],
       "characters exclusive in China": [
-        "Снегyрочка",
+        "Снегурочка",
         "Matsukiri",
         "Yūtenji Nyamu",
         "Kichisei",
