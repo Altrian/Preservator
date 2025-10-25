@@ -118,8 +118,8 @@
         "appellation": "CONFESS-47",
         "name": {
             "zh": "CONFESS-47",
-            "ja": "",
-            "en": ""
+            "ja": "CONFESS-47",
+            "en": "CONFESS-47"
         },
         "rarity": "TIER_1",
         "profession": "PIONEER",
@@ -2213,8 +2213,8 @@
         "appellation": "Mr.Nothing",
         "name": {
             "zh": "乌有",
-            "ja": "",
-            "en": ""
+            "ja": "ウユウ",
+            "en": "Mr. Nothing"
         },
         "rarity": "TIER_5",
         "profession": "SPECIAL",
@@ -2439,7 +2439,7 @@
         "rarity": "TIER_6",
         "profession": "SNIPER",
         "subProfessionId": "closerange",
-        "IsRecruitOnly": false,
+        "IsRecruitOnly": true,
         "tags": [
             "RANGED",
             "TIER_6",
@@ -2818,8 +2818,8 @@
         "appellation": "Saga",
         "name": {
             "zh": "嵯峨",
-            "ja": "",
-            "en": ""
+            "ja": "サガ",
+            "en": "Saga"
         },
         "rarity": "TIER_6",
         "profession": "PIONEER",
@@ -2863,7 +2863,7 @@
         "rarity": "TIER_3",
         "profession": "TANK",
         "subProfessionId": "guardian",
-        "IsRecruitOnly": true,
+        "IsRecruitOnly": false,
         "tags": [
             "MELEE",
             "TANK",
@@ -2882,7 +2882,7 @@
         "rarity": "TIER_4",
         "profession": "PIONEER",
         "subProfessionId": "tactician",
-        "IsRecruitOnly": true,
+        "IsRecruitOnly": false,
         "tags": [
             "RANGED",
             "PIONEER",
@@ -2901,7 +2901,7 @@
         "rarity": "TIER_5",
         "profession": "SNIPER",
         "subProfessionId": "siegesniper",
-        "IsRecruitOnly": true,
+        "IsRecruitOnly": false,
         "tags": [
             "RANGED",
             "TIER_5",
