@@ -224,7 +224,7 @@ def update_characters():
             
         # Handle nationality and affiliations
         powers = []
-        powers_list = character_dict.get('subPower', [])
+        powers_list = character_dict.get('subPower') or []
         powers_list.append(character_dict['mainPower'])
         for power in powers_list:
             if power.get('nationId') is not None:
@@ -442,7 +442,7 @@ def update_characters():
 
         # Handle nationality and affiliations
         powers = []
-        powers_list = character_dict.get('subPower', [])
+        powers_list = character_dict.get('subPower') or []
         powers_list.append(character_dict['mainPower'])
         for power in powers_list:
             if power.get('nationId') is not None:
