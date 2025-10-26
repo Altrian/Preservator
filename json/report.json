@@ -1,38 +1,38 @@
 {
   "recruitment": {
-    "timestamp": "2025-10-22T06:25:00.349636+00:00",
+    "timestamp": "2025-10-26T06:21:57.287916+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-10-22",
+    "updatedAt": "2025-10-26",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-10-22T06:25:00.349639+00:00",
+    "timestamp": "2025-10-26T06:21:57.287920+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-10-22",
+    "updatedAt": "2025-10-26",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-10-22T06:25:00.349607+00:00",
+    "timestamp": "2025-10-26T06:21:57.287888+00:00",
     "name": "chara_skills",
     "newSkills": 609
   },
   "chara_talents": {
-    "timestamp": "2025-10-22T06:25:00.349628+00:00",
+    "timestamp": "2025-10-26T06:21:57.287907+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-10-22T06:25:00.349632+00:00",
+    "timestamp": "2025-10-26T06:21:57.287911+00:00",
     "name": "uniequip",
     "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2025-10-22T06:25:00.349634+00:00",
+    "timestamp": "2025-10-26T06:21:57.287914+00:00",
     "name": "tokens",
     "newTokens": 53
   },
   "characters": {
-    "timestamp": "2025-10-22T06:25:00.349641+00:00",
+    "timestamp": "2025-10-26T06:21:57.287923+00:00",
     "name": "characters",
     "records": {
       "characters exclusive in China": [
@@ -40,7 +40,6 @@
         "Matsukiri",
         "Yūtenji Nyamu",
         "Kichisei",
-        "Miss.Christine",
         "Record Keeper",
         "Веточки",
         "Misumi Uika",
@@ -54,6 +53,9 @@
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
+      ],
+      "characters arrived in Global": [
+        "Miss.Christine"
       ]
     }
   }

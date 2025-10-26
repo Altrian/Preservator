@@ -17,12 +17,12 @@
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-10-22",
+    "updatedAt": "2025-10-26",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-10-22",
+    "updatedAt": "2025-10-26",
     "records": {}
   },
   {
@@ -33,7 +33,6 @@
         "Matsukiri",
         "Yūtenji Nyamu",
         "Kichisei",
-        "Miss.Christine",
         "Record Keeper",
         "Веточки",
         "Misumi Uika",
@@ -47,6 +46,9 @@
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
+      ],
+      "characters arrived in Global": [
+        "Miss.Christine"
       ]
     }
   }
