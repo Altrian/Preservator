@@ -5,6 +5,8 @@ from chara_skills import replace_substrings
 from urls import cn_urls, jp_urls, en_urls
 
 
+IDS_TO_IGNORE = ['token_10057_svash2_eagle']
+
 def update_tokens():
 
     script_dir = Path(__file__).parent
@@ -41,6 +43,8 @@ def update_tokens():
     data = {}
     for id in tokens_list:
         in_global = id in en_char_table
+        if id in IDS_TO_IGNORE:
+            continue
         token_dict = cn_char_table[id]
         stats = {}
         stats['rangeId'] = token_dict['phases'][-1]['rangeId']
