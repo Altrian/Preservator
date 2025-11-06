@@ -2228,6 +2228,25 @@
             "输出"
         ]
     },
+    "char_363_toddi": {
+        "id": "char_363_toddi",
+        "appellation": "Toddifons",
+        "name": {
+            "zh": "熔泉",
+            "ja": "",
+            "en": ""
+        },
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "siegesniper",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_5",
+            "SNIPER",
+            "输出"
+        ]
+    },
     "char_103_angel": {
         "id": "char_103_angel",
         "appellation": "Exusiai",
@@ -2852,6 +2871,26 @@
             "输出"
         ]
     },
+    "char_003_kalts": {
+        "id": "char_003_kalts",
+        "appellation": "Kal'tsit",
+        "name": {
+            "zh": "凯尔希",
+            "ja": "",
+            "en": ""
+        },
+        "rarity": "TIER_6",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "IsRecruitOnly": false,
+        "tags": [
+            "RANGED",
+            "TIER_6",
+            "MEDIC",
+            "召唤",
+            "治疗"
+        ]
+    },
     "char_284_spot": {
         "id": "char_284_spot",
         "appellation": "Spot",
@@ -2890,22 +2929,23 @@
             "召唤"
         ]
     },
-    "char_363_toddi": {
-        "id": "char_363_toddi",
-        "appellation": "Toddifons",
+    "char_475_akafyu": {
+        "id": "char_475_akafyu",
+        "appellation": "Akafuyu",
         "name": {
-            "zh": "熔泉",
+            "zh": "赤冬",
             "ja": "",
             "en": ""
         },
         "rarity": "TIER_5",
-        "profession": "SNIPER",
-        "subProfessionId": "siegesniper",
+        "profession": "WARRIOR",
+        "subProfessionId": "musha",
         "IsRecruitOnly": false,
         "tags": [
-            "RANGED",
+            "MELEE",
             "TIER_5",
-            "SNIPER",
+            "WARRIOR",
+            "生存",
             "输出"
         ]
     }

@@ -1,7 +1,7 @@
 [
   {
     "name": "chara_skills",
-    "newSkills": 609
+    "newSkills": 632
   },
   {
     "name": "chara_talents",
@@ -9,25 +9,46 @@
   },
   {
     "name": "uniequip",
-    "newEquips": 0
+    "newEquips": 21
   },
   {
     "name": "tokens",
-    "newTokens": 53
+    "newTokens": 58
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-10-26",
+    "updatedAt": "2025-11-06",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-10-26",
-    "records": {}
+    "updatedAt": "2025-11-06",
+    "records": {
+      "new character added": [
+        "Kal'tsit",
+        "Akafuyu"
+      ]
+    }
   },
   {
     "name": "characters",
     "records": {
+      "new characters added": [
+        "Akkord",
+        "Hadiya",
+        "Snow Hunter",
+        "SilverAsh the Reignfrost",
+        "Pramanix the Prerita",
+        "Astgenne the Lightchaser"
+      ],
+      "release date added": [
+        "Akkord: 2025-11-01 12:00",
+        "Hadiya: 2025-11-01 12:00",
+        "Snow Hunter: 2025-11-01 12:00",
+        "SilverAsh the Reignfrost: 2025-11-01 12:00",
+        "Pramanix the Prerita: 2025-11-01 12:00",
+        "Astgenne the Lightchaser: 2025-11-01 12:00"
+      ],
       "characters exclusive in China": [
         "Снегурочка",
         "Matsukiri",
@@ -47,8 +68,8 @@
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
       ],
-      "characters arrived in Global": [
-        "Miss.Christine"
+      "new subprofession added": [
+        "mercenary (WARRIOR)"
       ]
     }
   }
