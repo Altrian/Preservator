@@ -4,6 +4,7 @@ from pathlib import Path
 from util import get, Report, fetch_release_date
 from chara_skills import replace_substrings
 from urls import cn_urls, jp_urls, en_urls
+from tokens import IDS_TO_IGNORE
 
 
 SUBPROFESSIONS = ['physician', 'fearless', 'executor', 'fastshot', 'bombarder', 'bard', 'protector', 'ritualist', 'pioneer', 'corecaster', 'splashcaster', 'charger', 'centurion', 'guardian', 'slower', 'funnel', 'mystic', 'chain', 'aoesniper', 'reaperrange', 'longrange', 'closerange', 'siegesniper', 'loopshooter', 'bearer', 'tactician', 'instructor', 'lord', 'artsfghter', 'sword', 'musha', 'crusher', 'reaper',
@@ -212,7 +213,8 @@ def update_characters():
         # Handle tokens
         tokens = []
         if character_dict.get('displayTokenDict') is not None:
-            tokens = [tokens_dict[key] for key in character_dict['displayTokenDict']]
+            tokens = [tokens_dict[key]
+                    for key in character_dict['displayTokenDict'] if key not in IDS_TO_IGNORE]
         
         # Handle subprofession
         desc_zh = character_dict['description'].replace("<$ba", "<ba")
@@ -438,7 +440,8 @@ def update_characters():
         # Handle tokens
         tokens = []
         if character_dict.get('displayTokenDict') is not None:
-            tokens = [tokens_dict[key] for key in character_dict['displayTokenDict']]
+            tokens = [tokens_dict[key]
+                    for key in character_dict['displayTokenDict'] if key not in IDS_TO_IGNORE]
 
         # Handle nationality and affiliations
         powers = []
