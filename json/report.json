@@ -1,82 +1,66 @@
 {
   "recruitment": {
-    "timestamp": "2025-11-06T18:29:32.512772+00:00",
+    "timestamp": "2025-11-14T06:25:16.446946+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-11-06",
+    "updatedAt": "2025-11-14",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-11-06T18:29:32.512775+00:00",
+    "timestamp": "2025-11-14T06:25:16.446948+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-11-06",
-    "records": {
-      "new character added": [
-        "Kal'tsit",
-        "Akafuyu"
-      ]
-    }
+    "updatedAt": "2025-11-14",
+    "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-11-06T18:29:32.512743+00:00",
+    "timestamp": "2025-11-14T06:25:16.446912+00:00",
     "name": "chara_skills",
-    "newSkills": 632
+    "newSkills": 617
   },
   "chara_talents": {
-    "timestamp": "2025-11-06T18:29:32.512763+00:00",
+    "timestamp": "2025-11-14T06:25:16.446936+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-11-06T18:29:32.512767+00:00",
+    "timestamp": "2025-11-14T06:25:16.446940+00:00",
     "name": "uniequip",
-    "newEquips": 21
+    "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2025-11-06T18:29:32.512770+00:00",
+    "timestamp": "2025-11-14T06:25:16.446943+00:00",
     "name": "tokens",
     "newTokens": 58
   },
   "characters": {
-    "timestamp": "2025-11-06T18:29:32.512777+00:00",
+    "timestamp": "2025-11-14T06:25:16.446951+00:00",
     "name": "characters",
     "records": {
-      "new characters added": [
-        "Akkord",
-        "Hadiya",
-        "Snow Hunter",
-        "SilverAsh the Reignfrost",
-        "Pramanix the Prerita",
-        "Astgenne the Lightchaser"
-      ],
-      "release date added": [
-        "Akkord: 2025-11-01 12:00",
-        "Hadiya: 2025-11-01 12:00",
-        "Snow Hunter: 2025-11-01 12:00",
-        "SilverAsh the Reignfrost: 2025-11-01 12:00",
-        "Pramanix the Prerita: 2025-11-01 12:00",
-        "Astgenne the Lightchaser: 2025-11-01 12:00"
-      ],
       "characters exclusive in China": [
+        "Akkord",
         "Снегурочка",
         "Matsukiri",
         "Yūtenji Nyamu",
+        "Hadiya",
         "Kichisei",
         "Record Keeper",
         "Веточки",
+        "Snow Hunter",
         "Misumi Uika",
         "Yahata Umiri",
         "Wakaba Mutsumi",
-        "Tippi",
+        "SilverAsh the Reignfrost",
+        "Pramanix the Prerita",
         "Mantra",
+        "Astgenne the Lightchaser",
         "Raidian",
         "Haruka",
-        "Tragodia",
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
       ],
-      "new subprofession added": [
-        "mercenary (WARRIOR)"
+      "characters arrived in Global": [
+        "Tippi",
+        "Tragodia"
       ]
     }
   }
