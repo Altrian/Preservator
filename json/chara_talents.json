@@ -10435,5 +10435,87 @@
                 ]
             }
         ]
+    },
+    "char_616_pithst": {
+        "appellation": "Alliance/Supportive Opertator",
+        "talents": [
+            {
+                "prefabKey": "1",
+                "name_zh": "迭代元素",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "攻击同时附带18%攻击力的<ba.dt.neural2>神经损伤</>（优先）、<ba.dt.burning2>灼燃损伤</>、<ba.dt.apoptosis2>凋亡损伤</>；优先攻击未处于损伤爆发的目标",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": [
+                    {
+                        "key": "ep_damage_ratio",
+                        "value": 0.18,
+                        "valueStr": null
+                    }
+                ]
+            },
+            {
+                "prefabKey": "-1",
+                "name_zh": "灵便条约",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "在【卫戍协议】中，隶属于盟约【调和】",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": {}
+            }
+        ]
+    },
+    "char_617_sharp2": {
+        "appellation": "Lord/Sharp",
+        "talents": [
+            {
+                "prefabKey": "1",
+                "name_zh": "无声之锋",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "攻击力+20%，获得25%的法术闪避",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": [
+                    {
+                        "key": "atk",
+                        "value": 0.2,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "prob",
+                        "value": 0.25,
+                        "valueStr": null
+                    }
+                ]
+            },
+            {
+                "prefabKey": "2",
+                "name_zh": "陷阵勇气",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "攻击范围内存在2名及以上敌人时，攻击速度+12",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": [
+                    {
+                        "key": "cnt",
+                        "value": 2.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "attack_speed",
+                        "value": 12.0,
+                        "valueStr": null
+                    }
+                ]
+            }
+        ]
     }
 }

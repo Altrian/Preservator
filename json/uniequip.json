@@ -66474,5 +66474,358 @@
                 }
             ]
         }
+    },
+    "uniequip_001_pithst": {
+        "uniEquipId": "uniequip_001_pithst",
+        "name_zh": "盟约·辅助干员证章",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "original",
+        "charId": "char_616_pithst",
+        "combatData": null
+    },
+    "uniequip_002_pithst": {
+        "uniEquipId": "uniequip_002_pithst",
+        "name_zh": "盟约·辅助干员证章",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "rit-x",
+        "charId": "char_616_pithst",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": "对精英和领袖敌人造成的元素损伤提升<@ba.kw>18%</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "pithst_equip_1_1_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": "迭代元素",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "攻击同时附带18%攻击力的<ba.dt.neural2>神经损伤</>（优先）、<ba.dt.burning2>灼燃损伤</>、<ba.dt.apoptosis2>凋亡损伤</>；优先攻击未处于损伤爆发的目标",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 90.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 23.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": "对精英和领袖敌人造成的元素损伤提升<@ba.kw>18%</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "pithst_equip_1_2_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": "迭代元素",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "攻击同时附带19%攻击力的<ba.dt.neural2>神经损伤</>（优先）、<ba.dt.burning2>灼燃损伤</>、<ba.dt.apoptosis2>凋亡损伤</>；优先攻击未处于损伤爆发的目标",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 110.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 28.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": "对精英和领袖敌人造成的元素损伤提升<@ba.kw>18%</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "pithst_equip_1_3_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": "迭代元素",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "攻击同时附带20%攻击力的<ba.dt.neural2>神经损伤</>（优先）、<ba.dt.burning2>灼燃损伤</>、<ba.dt.apoptosis2>凋亡损伤</>；优先攻击未处于损伤爆发的目标",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 135.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 30.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "ep_damage_ratio",
+                    "value": 0.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "ep_damage_ratio_boss",
+                    "value": 0.236,
+                    "valueStr": null
+                }
+            ]
+        }
+    },
+    "uniequip_001_sharp2": {
+        "uniEquipId": "uniequip_001_sharp2",
+        "name_zh": "领主·Sharp证章",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "original",
+        "charId": "char_617_sharp2",
+        "combatData": null
+    },
+    "uniequip_002_sharp2": {
+        "uniEquipId": "uniequip_002_sharp2",
+        "name_zh": "领主·Sharp证章",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "lor-x",
+        "charId": "char_617_sharp2",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": "攻击附带<@ba.vup>10%</>攻击力的法术伤害",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "sharp2_equip_1_1_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 180.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 38.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": "攻击附带<@ba.vup>10%</>攻击力的法术伤害",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "无声之锋",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "攻击力+23%，获得30%的法术闪避",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": "sharp2_equip_1_2_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 250.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 54.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": "攻击附带<@ba.vup>10%</>攻击力的法术伤害",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "无声之锋",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "攻击力+25%，获得35%的法术闪避",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": "sharp2_equip_1_3_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 300.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 63.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "atk",
+                    "value": 0.25,
+                    "valueStr": null
+                },
+                {
+                    "key": "prob",
+                    "value": 0.35,
+                    "valueStr": null
+                },
+                {
+                    "key": "magic_atk_scale",
+                    "value": 0.1,
+                    "valueStr": null
+                }
+            ]
+        }
     }
 }

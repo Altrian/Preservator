@@ -1,7 +1,7 @@
 [
   {
     "name": "chara_skills",
-    "newSkills": 617
+    "newSkills": 712
   },
   {
     "name": "chara_talents",
@@ -9,7 +9,7 @@
   },
   {
     "name": "uniequip",
-    "newEquips": 0
+    "newEquips": 4
   },
   {
     "name": "tokens",
@@ -17,12 +17,12 @@
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-11-14",
+    "updatedAt": "2025-11-15",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-11-14",
+    "updatedAt": "2025-11-15",
     "records": {}
   },
   {
@@ -51,9 +51,13 @@
         "Togawa Sakiko",
         "Leizi the Thunderbringer"
       ],
-      "characters arrived in Global": [
-        "Tippi",
-        "Tragodia"
+      "new characters added": [
+        "Alliance/Supportive Opertator",
+        "Lord/Sharp"
+      ],
+      "release date not found": [
+        "Alliance/Supportive Opertator",
+        "Lord/Sharp"
       ]
     }
   }
