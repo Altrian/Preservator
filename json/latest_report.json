@@ -1,7 +1,7 @@
 [
   {
     "name": "chara_skills",
-    "newSkills": 712
+    "newSkills": 710
   },
   {
     "name": "chara_talents",
@@ -9,7 +9,7 @@
   },
   {
     "name": "uniequip",
-    "newEquips": 4
+    "newEquips": 0
   },
   {
     "name": "tokens",
@@ -17,12 +17,12 @@
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-11-15",
+    "updatedAt": "2025-11-20",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-11-15",
+    "updatedAt": "2025-11-20",
     "records": {}
   },
   {
@@ -31,6 +31,7 @@
       "characters exclusive in China": [
         "Akkord",
         "Снегурочка",
+        "Alliance/Supportive Opertator",
         "Matsukiri",
         "Yūtenji Nyamu",
         "Hadiya",
@@ -49,15 +50,12 @@
         "Haruka",
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
+        "Lord/Sharp",
         "Leizi the Thunderbringer"
       ],
-      "new characters added": [
-        "Alliance/Supportive Opertator",
-        "Lord/Sharp"
-      ],
-      "release date not found": [
-        "Alliance/Supportive Opertator",
-        "Lord/Sharp"
+      "release date added": [
+        "Alliance/Supportive Opertator: 2025-11-14 16:00",
+        "Lord/Sharp: 2025-11-14 16:00"
       ]
     }
   }

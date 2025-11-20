@@ -1,43 +1,44 @@
 {
   "recruitment": {
-    "timestamp": "2025-11-15T06:22:42.973263+00:00",
+    "timestamp": "2025-11-20T06:24:06.584869+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-11-15",
+    "updatedAt": "2025-11-20",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-11-15T06:22:42.973266+00:00",
+    "timestamp": "2025-11-20T06:24:06.584872+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-11-15",
+    "updatedAt": "2025-11-20",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-11-15T06:22:42.973233+00:00",
+    "timestamp": "2025-11-20T06:24:06.584840+00:00",
     "name": "chara_skills",
-    "newSkills": 712
+    "newSkills": 710
   },
   "chara_talents": {
-    "timestamp": "2025-11-15T06:22:42.973253+00:00",
+    "timestamp": "2025-11-20T06:24:06.584860+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-11-15T06:22:42.973258+00:00",
+    "timestamp": "2025-11-20T06:24:06.584864+00:00",
     "name": "uniequip",
-    "newEquips": 4
+    "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2025-11-15T06:22:42.973260+00:00",
+    "timestamp": "2025-11-20T06:24:06.584867+00:00",
     "name": "tokens",
     "newTokens": 58
   },
   "characters": {
-    "timestamp": "2025-11-15T06:22:42.973269+00:00",
+    "timestamp": "2025-11-20T06:24:06.584875+00:00",
     "name": "characters",
     "records": {
       "characters exclusive in China": [
         "Akkord",
         "Снегурочка",
+        "Alliance/Supportive Opertator",
         "Matsukiri",
         "Yūtenji Nyamu",
         "Hadiya",
@@ -56,15 +57,12 @@
         "Haruka",
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
+        "Lord/Sharp",
         "Leizi the Thunderbringer"
       ],
-      "new characters added": [
-        "Alliance/Supportive Opertator",
-        "Lord/Sharp"
-      ],
-      "release date not found": [
-        "Alliance/Supportive Opertator",
-        "Lord/Sharp"
+      "release date added": [
+        "Alliance/Supportive Opertator: 2025-11-14 16:00",
+        "Lord/Sharp: 2025-11-14 16:00"
       ]
     }
   }
