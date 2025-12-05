@@ -10517,5 +10517,109 @@
                 ]
             }
         ]
+    },
+    "char_4213_skybx": {
+        "appellation": "Skybox",
+        "talents": [
+            {
+                "prefabKey": "1",
+                "name_zh": "开门！管理局",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "对每个敌人首次造成伤害后，使目标的特殊能力失效，持续7秒",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": [
+                    {
+                        "key": "silence",
+                        "value": 7.0,
+                        "valueStr": null
+                    }
+                ]
+            },
+            {
+                "prefabKey": "-1",
+                "name_zh": null,
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": null,
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": {}
+            }
+        ]
+    },
+    "char_4212_nasti": {
+        "appellation": "Nasti",
+        "talents": [
+            {
+                "prefabKey": "1",
+                "name_zh": "前方施工",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "可以携带3个<支援装置>(最多可部署2个)，效果根据技能改变而改变",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": [
+                    {
+                        "key": "cnt",
+                        "value": 3.0,
+                        "valueStr": null
+                    }
+                ]
+            },
+            {
+                "prefabKey": "2",
+                "name_zh": "注意安全",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "获得12%<@ba.talpu>（+2%）</><ba.protect>庇护</>；远程敌人出现后，改为使自身和场上的高台干员获得18%<@ba.talpu>（+3%）</><ba.protect>庇护</>，且每6秒获得1点技力",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": [
+                    {
+                        "key": "nasti_t2[add_sp].interval",
+                        "value": 6.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "nasti_t2[res_plus].damage_resistance",
+                        "value": 0.18,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "nasti_t2[res].damage_resistance",
+                        "value": 0.12,
+                        "valueStr": null
+                    }
+                ]
+            }
+        ]
+    },
+    "char_4214_cairn": {
+        "appellation": "Cairn",
+        "talents": [
+            {
+                "prefabKey": "1",
+                "name_zh": "过饱和讲解",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "对自身阻挡的敌人每秒造成相当于攻击力10%<@ba.talpu>（+1%）</>的<ba.dt.neural2>神经损伤</>",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": [
+                    {
+                        "key": "ep_damage_ratio",
+                        "value": 0.1,
+                        "valueStr": null
+                    }
+                ]
+            }
+        ]
     }
 }

@@ -1,7 +1,7 @@
 [
   {
     "name": "chara_skills",
-    "newSkills": 710
+    "newSkills": 720
   },
   {
     "name": "chara_talents",
@@ -9,20 +9,20 @@
   },
   {
     "name": "uniequip",
-    "newEquips": 0
+    "newEquips": 9
   },
   {
     "name": "tokens",
-    "newTokens": 58
+    "newTokens": 61
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-11-20",
+    "updatedAt": "2025-12-05",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-11-20",
+    "updatedAt": "2025-12-05",
     "records": {}
   },
   {
@@ -53,9 +53,18 @@
         "Lord/Sharp",
         "Leizi the Thunderbringer"
       ],
+      "new characters added": [
+        "Skybox",
+        "Nasti",
+        "Cairn"
+      ],
       "release date added": [
-        "Alliance/Supportive Opertator: 2025-11-14 16:00",
-        "Lord/Sharp: 2025-11-14 16:00"
+        "Skybox: 2025-12-05 12:00",
+        "Nasti: 2025-12-05 12:00",
+        "Cairn: 2025-12-05 12:00"
+      ],
+      "new subprofession added": [
+        "skybreaker (SNIPER)"
       ]
     }
   }

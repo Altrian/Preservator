@@ -1,38 +1,38 @@
 {
   "recruitment": {
-    "timestamp": "2025-11-20T06:24:06.584869+00:00",
+    "timestamp": "2025-12-05T06:26:55.228582+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-11-20",
+    "updatedAt": "2025-12-05",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-11-20T06:24:06.584872+00:00",
+    "timestamp": "2025-12-05T06:26:55.228585+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-11-20",
+    "updatedAt": "2025-12-05",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-11-20T06:24:06.584840+00:00",
+    "timestamp": "2025-12-05T06:26:55.228551+00:00",
     "name": "chara_skills",
-    "newSkills": 710
+    "newSkills": 720
   },
   "chara_talents": {
-    "timestamp": "2025-11-20T06:24:06.584860+00:00",
+    "timestamp": "2025-12-05T06:26:55.228572+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-11-20T06:24:06.584864+00:00",
+    "timestamp": "2025-12-05T06:26:55.228577+00:00",
     "name": "uniequip",
-    "newEquips": 0
+    "newEquips": 9
   },
   "tokens": {
-    "timestamp": "2025-11-20T06:24:06.584867+00:00",
+    "timestamp": "2025-12-05T06:26:55.228579+00:00",
     "name": "tokens",
-    "newTokens": 58
+    "newTokens": 61
   },
   "characters": {
-    "timestamp": "2025-11-20T06:24:06.584875+00:00",
+    "timestamp": "2025-12-05T06:26:55.228588+00:00",
     "name": "characters",
     "records": {
       "characters exclusive in China": [
@@ -60,9 +60,18 @@
         "Lord/Sharp",
         "Leizi the Thunderbringer"
       ],
+      "new characters added": [
+        "Skybox",
+        "Nasti",
+        "Cairn"
+      ],
       "release date added": [
-        "Alliance/Supportive Opertator: 2025-11-14 16:00",
-        "Lord/Sharp: 2025-11-14 16:00"
+        "Skybox: 2025-12-05 12:00",
+        "Nasti: 2025-12-05 12:00",
+        "Cairn: 2025-12-05 12:00"
+      ],
+      "new subprofession added": [
+        "skybreaker (SNIPER)"
       ]
     }
   }

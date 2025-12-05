@@ -66827,5 +66827,1110 @@
                 }
             ]
         }
+    },
+    "uniequip_001_monstr": {
+        "uniEquipId": "uniequip_001_monstr",
+        "name_zh": "Mon3tr证章",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "original",
+        "charId": "char_4179_monstr",
+        "combatData": null
+    },
+    "uniequip_002_monstr": {
+        "uniEquipId": "uniequip_002_monstr",
+        "name_zh": "记忆存档",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "xah-x",
+        "charId": "char_4179_monstr",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "monstr_equip_1_1_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "atk",
+                            "value": 40.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 30.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "monstr_equip_1_2_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "自我修复",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+25%<@ba.talpu>（+5%）</>，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "atk",
+                            "value": 55.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 35.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "monstr_equip_1_3_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "自我修复",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+30%<@ba.talpu>（+5%）</>，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃，且下次跳跃也不衰减",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "atk",
+                            "value": 65.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 40.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "attack@chain.max_target",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@chain.atk_scale",
+                    "value": 0.85,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@chain.max_target",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@chain.atk_scale",
+                    "value": 0.85,
+                    "valueStr": null
+                },
+                {
+                    "key": "cnt",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "atk",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@chain.extra_cnt",
+                    "value": 1.0,
+                    "valueStr": null
+                }
+            ]
+        }
+    },
+    "uniequip_001_peper": {
+        "uniEquipId": "uniequip_001_peper",
+        "name_zh": "明椒证章",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "original",
+        "charId": "char_4071_peper",
+        "combatData": null
+    },
+    "uniequip_002_peper": {
+        "uniEquipId": "uniequip_002_peper",
+        "name_zh": "“多彩人生”",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "xah-x",
+        "charId": "char_4071_peper",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "peper_equip_1_1_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 160.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 36.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "peper_equip_1_2_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "重点关照",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "治疗时，若目标生命少于40%则为其额外恢复180<@ba.talpu>（+10）</>点生命",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 180.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 51.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "peper_equip_1_3_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "重点关照",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "治疗时，若目标生命少于50%则为其额外恢复210<@ba.talpu>（+10）</>点生命",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 200.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 61.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "attack@chain.max_target",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@chain.atk_scale",
+                    "value": 0.85,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@chain.max_target",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@chain.atk_scale",
+                    "value": 0.85,
+                    "valueStr": null
+                },
+                {
+                    "key": "hp_ratio",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "value",
+                    "value": 210.0,
+                    "valueStr": null
+                }
+            ]
+        }
+    },
+    "uniequip_001_papyrs": {
+        "uniEquipId": "uniequip_001_papyrs",
+        "name_zh": "莎草证章",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "original",
+        "charId": "char_4139_papyrs",
+        "combatData": null
+    },
+    "uniequip_002_papyrs": {
+        "uniEquipId": "uniequip_002_papyrs",
+        "name_zh": "小小的种子",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "xah-x",
+        "charId": "char_4139_papyrs",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "papyrs_equip_1_1_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "atk",
+                            "value": 38.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 23.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "papyrs_equip_1_2_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "博览古卷",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "治疗会为目标干员附加相当于自身25%<@ba.talpu>（+2%）</>攻击力的<ba.barrier>屏障</>，持续8秒",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "atk",
+                            "value": 50.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 28.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "DISPLAY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "papyrs_equip_1_3_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "博览古卷",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "治疗会为目标干员附加相当于自身29%<@ba.talpu>（+2%）</>攻击力的<ba.barrier>屏障</>，持续10秒",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "atk",
+                            "value": 60.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 33.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "attack@chain.max_target",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@chain.atk_scale",
+                    "value": 0.85,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@chain.max_target",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@chain.atk_scale",
+                    "value": 0.85,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@scale",
+                    "value": 0.29,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@shield_duration",
+                    "value": 10.0,
+                    "valueStr": null
+                }
+            ]
+        }
+    },
+    "uniequip_001_nasti": {
+        "uniEquipId": "uniequip_001_nasti",
+        "name_zh": "娜斯提证章",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "original",
+        "charId": "char_4212_nasti",
+        "combatData": null
+    },
+    "uniequip_002_nasti": {
+        "uniEquipId": "uniequip_002_nasti",
+        "name_zh": "工程师们",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "cra-x",
+        "charId": "char_4212_nasti",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": "nasti_equip_1_1_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "<支援装置>的持有上限<@ba.kw>+1</>且部署费用<@ba.kw>减少</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 78.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 26.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 25.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {
+                        "token_10059_nasti_nstdef": [
+                            {
+                                "key": "cost",
+                                "value": -2.0,
+                                "valueStr": null
+                            },
+                            {
+                                "key": "max_deck_stack_cnt",
+                                "value": 1.0,
+                                "valueStr": null
+                            }
+                        ],
+                        "token_10060_nasti_nstchr": [
+                            {
+                                "key": "cost",
+                                "value": -2.0,
+                                "valueStr": null
+                            },
+                            {
+                                "key": "max_deck_stack_cnt",
+                                "value": 1.0,
+                                "valueStr": null
+                            }
+                        ],
+                        "token_10061_nasti_nstbld": [
+                            {
+                                "key": "cost",
+                                "value": -3.0,
+                                "valueStr": null
+                            },
+                            {
+                                "key": "max_deck_stack_cnt",
+                                "value": 1.0,
+                                "valueStr": null
+                            }
+                        ]
+                    }
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": "nasti_equip_1_2_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "<支援装置>的持有上限<@ba.kw>+1</>且部署费用<@ba.kw>减少</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "前方施工",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "可以携带3个<支援装置>(最多可部署2个)，效果根据技能改变而改变，首个装置部署费用减少",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": "nasti_equip_1_2_p2",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 102.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 32.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 35.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {
+                        "token_10059_nasti_nstdef": [
+                            {
+                                "key": "cost",
+                                "value": -2.0,
+                                "valueStr": null
+                            },
+                            {
+                                "key": "max_deck_stack_cnt",
+                                "value": 1.0,
+                                "valueStr": null
+                            }
+                        ],
+                        "token_10060_nasti_nstchr": [
+                            {
+                                "key": "cost",
+                                "value": -2.0,
+                                "valueStr": null
+                            },
+                            {
+                                "key": "max_deck_stack_cnt",
+                                "value": 1.0,
+                                "valueStr": null
+                            }
+                        ],
+                        "token_10061_nasti_nstbld": [
+                            {
+                                "key": "cost",
+                                "value": -3.0,
+                                "valueStr": null
+                            },
+                            {
+                                "key": "max_deck_stack_cnt",
+                                "value": 1.0,
+                                "valueStr": null
+                            }
+                        ]
+                    }
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": "nasti_equip_1_3_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "<支援装置>的持有上限<@ba.kw>+1</>且部署费用<@ba.kw>减少</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "前方施工",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "可以携带3个<支援装置>(最多可部署2个)，效果根据技能改变而改变，首个装置部署费用减少；装置可与攻击范围内其他装置共同提供效果",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": "nasti_equip_1_3_p2",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": "nasti_equip_1_3_p3",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 145.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 40.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 45.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {
+                        "token_10059_nasti_nstdef": [
+                            {
+                                "key": "cost",
+                                "value": -2.0,
+                                "valueStr": null
+                            },
+                            {
+                                "key": "max_deck_stack_cnt",
+                                "value": 1.0,
+                                "valueStr": null
+                            }
+                        ],
+                        "token_10060_nasti_nstchr": [
+                            {
+                                "key": "cost",
+                                "value": -2.0,
+                                "valueStr": null
+                            },
+                            {
+                                "key": "max_deck_stack_cnt",
+                                "value": 1.0,
+                                "valueStr": null
+                            }
+                        ],
+                        "token_10061_nasti_nstbld": [
+                            {
+                                "key": "cost",
+                                "value": -3.0,
+                                "valueStr": null
+                            },
+                            {
+                                "key": "max_deck_stack_cnt",
+                                "value": 1.0,
+                                "valueStr": null
+                            }
+                        ]
+                    }
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "cnt",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "value",
+                    "value": -3.0,
+                    "valueStr": null
+                }
+            ]
+        }
+    },
+    "uniequip_003_ray": {
+        "uniEquipId": "uniequip_003_ray",
+        "name_zh": "证明什么？",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "hun-y",
+        "charId": "char_4117_ray",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "TRAIT_DATA_ONLY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 100.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 60.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "attack_speed",
+                            "value": 5.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "TRAIT_DATA_ONLY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "入神",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 1,
+                            "upgradeDesc_zh": "攻击相同目标时每次攻击提高自身攻击力9%<@ba.talpu>（+1%）</>，最多4层",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 160.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 65.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "attack_speed",
+                            "value": 6.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "TRAIT_DATA_ONLY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "入神",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 1,
+                            "upgradeDesc_zh": "攻击相同目标时每次攻击提高自身攻击力10%<@ba.talpu>（+1%）</>，最多4层",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 200.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 75.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "attack_speed",
+                            "value": 7.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "value",
+                    "value": 8.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "atk_scale",
+                    "value": 1.33,
+                    "valueStr": null
+                },
+                {
+                    "key": "max_stack_cnt",
+                    "value": 4.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "atk",
+                    "value": 0.1,
+                    "valueStr": null
+                }
+            ]
+        }
     }
 }
