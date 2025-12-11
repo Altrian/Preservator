@@ -1,7 +1,7 @@
 [
   {
     "name": "chara_skills",
-    "newSkills": 720
+    "newSkills": 713
   },
   {
     "name": "chara_talents",
@@ -9,7 +9,7 @@
   },
   {
     "name": "uniequip",
-    "newEquips": 9
+    "newEquips": 0
   },
   {
     "name": "tokens",
@@ -17,12 +17,12 @@
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-12-05",
+    "updatedAt": "2025-12-11",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-12-05",
+    "updatedAt": "2025-12-11",
     "records": {}
   },
   {
@@ -36,6 +36,7 @@
         "Yūtenji Nyamu",
         "Hadiya",
         "Kichisei",
+        "Skybox",
         "Record Keeper",
         "Веточки",
         "Snow Hunter",
@@ -48,23 +49,12 @@
         "Astgenne the Lightchaser",
         "Raidian",
         "Haruka",
+        "Nasti",
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Lord/Sharp",
-        "Leizi the Thunderbringer"
-      ],
-      "new characters added": [
-        "Skybox",
-        "Nasti",
+        "Leizi the Thunderbringer",
         "Cairn"
-      ],
-      "release date added": [
-        "Skybox: 2025-12-05 12:00",
-        "Nasti: 2025-12-05 12:00",
-        "Cairn: 2025-12-05 12:00"
-      ],
-      "new subprofession added": [
-        "skybreaker (SNIPER)"
       ]
     }
   }

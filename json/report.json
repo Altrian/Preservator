@@ -1,38 +1,38 @@
 {
   "recruitment": {
-    "timestamp": "2025-12-05T06:26:55.228582+00:00",
+    "timestamp": "2025-12-11T06:28:14.199652+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-12-05",
+    "updatedAt": "2025-12-11",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-12-05T06:26:55.228585+00:00",
+    "timestamp": "2025-12-11T06:28:14.199655+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-12-05",
+    "updatedAt": "2025-12-11",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-12-05T06:26:55.228551+00:00",
+    "timestamp": "2025-12-11T06:28:14.199623+00:00",
     "name": "chara_skills",
-    "newSkills": 720
+    "newSkills": 713
   },
   "chara_talents": {
-    "timestamp": "2025-12-05T06:26:55.228572+00:00",
+    "timestamp": "2025-12-11T06:28:14.199643+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-12-05T06:26:55.228577+00:00",
+    "timestamp": "2025-12-11T06:28:14.199647+00:00",
     "name": "uniequip",
-    "newEquips": 9
+    "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2025-12-05T06:26:55.228579+00:00",
+    "timestamp": "2025-12-11T06:28:14.199650+00:00",
     "name": "tokens",
     "newTokens": 61
   },
   "characters": {
-    "timestamp": "2025-12-05T06:26:55.228588+00:00",
+    "timestamp": "2025-12-11T06:28:14.199658+00:00",
     "name": "characters",
     "records": {
       "characters exclusive in China": [
@@ -43,6 +43,7 @@
         "Yūtenji Nyamu",
         "Hadiya",
         "Kichisei",
+        "Skybox",
         "Record Keeper",
         "Веточки",
         "Snow Hunter",
@@ -55,23 +56,12 @@
         "Astgenne the Lightchaser",
         "Raidian",
         "Haruka",
+        "Nasti",
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Lord/Sharp",
-        "Leizi the Thunderbringer"
-      ],
-      "new characters added": [
-        "Skybox",
-        "Nasti",
+        "Leizi the Thunderbringer",
         "Cairn"
-      ],
-      "release date added": [
-        "Skybox: 2025-12-05 12:00",
-        "Nasti: 2025-12-05 12:00",
-        "Cairn: 2025-12-05 12:00"
-      ],
-      "new subprofession added": [
-        "skybreaker (SNIPER)"
       ]
     }
   }
