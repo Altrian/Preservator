@@ -17,12 +17,12 @@
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-12-11",
+    "updatedAt": "2025-12-12",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-12-11",
+    "updatedAt": "2025-12-12",
     "records": {}
   },
   {
@@ -37,7 +37,6 @@
         "Hadiya",
         "Kichisei",
         "Skybox",
-        "Record Keeper",
         "Веточки",
         "Snow Hunter",
         "Misumi Uika",
@@ -53,8 +52,11 @@
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Lord/Sharp",
-        "Leizi the Thunderbringer",
         "Cairn"
+      ],
+      "characters arrived in Global": [
+        "Record Keeper",
+        "Leizi the Thunderbringer"
       ]
     }
   }

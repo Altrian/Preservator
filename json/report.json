@@ -1,38 +1,38 @@
 {
   "recruitment": {
-    "timestamp": "2025-12-11T06:28:14.199652+00:00",
+    "timestamp": "2025-12-12T06:27:38.379892+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-12-11",
+    "updatedAt": "2025-12-12",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-12-11T06:28:14.199655+00:00",
+    "timestamp": "2025-12-12T06:27:38.379895+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-12-11",
+    "updatedAt": "2025-12-12",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-12-11T06:28:14.199623+00:00",
+    "timestamp": "2025-12-12T06:27:38.379860+00:00",
     "name": "chara_skills",
     "newSkills": 713
   },
   "chara_talents": {
-    "timestamp": "2025-12-11T06:28:14.199643+00:00",
+    "timestamp": "2025-12-12T06:27:38.379883+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-12-11T06:28:14.199647+00:00",
+    "timestamp": "2025-12-12T06:27:38.379887+00:00",
     "name": "uniequip",
     "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2025-12-11T06:28:14.199650+00:00",
+    "timestamp": "2025-12-12T06:27:38.379889+00:00",
     "name": "tokens",
     "newTokens": 61
   },
   "characters": {
-    "timestamp": "2025-12-11T06:28:14.199658+00:00",
+    "timestamp": "2025-12-12T06:27:38.379898+00:00",
     "name": "characters",
     "records": {
       "characters exclusive in China": [
@@ -44,7 +44,6 @@
         "Hadiya",
         "Kichisei",
         "Skybox",
-        "Record Keeper",
         "Веточки",
         "Snow Hunter",
         "Misumi Uika",
@@ -60,8 +59,11 @@
         "Hoshiguma the Breacher",
         "Togawa Sakiko",
         "Lord/Sharp",
-        "Leizi the Thunderbringer",
         "Cairn"
+      ],
+      "characters arrived in Global": [
+        "Record Keeper",
+        "Leizi the Thunderbringer"
       ]
     }
   }
