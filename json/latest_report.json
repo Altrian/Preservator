@@ -1,7 +1,7 @@
 [
   {
     "name": "chara_skills",
-    "newSkills": 713
+    "newSkills": 714
   },
   {
     "name": "chara_talents",
@@ -17,12 +17,12 @@
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-12-12",
+    "updatedAt": "2025-12-19",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-12-12",
+    "updatedAt": "2025-12-19",
     "records": {}
   },
   {
@@ -46,7 +46,6 @@
         "Pramanix the Prerita",
         "Mantra",
         "Astgenne the Lightchaser",
-        "Raidian",
         "Haruka",
         "Nasti",
         "Hoshiguma the Breacher",
@@ -55,8 +54,7 @@
         "Cairn"
       ],
       "characters arrived in Global": [
-        "Record Keeper",
-        "Leizi the Thunderbringer"
+        "Raidian"
       ]
     }
   }

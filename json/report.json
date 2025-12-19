@@ -1,38 +1,38 @@
 {
   "recruitment": {
-    "timestamp": "2025-12-12T06:27:38.379892+00:00",
+    "timestamp": "2025-12-19T06:26:43.429525+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-12-12",
+    "updatedAt": "2025-12-19",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-12-12T06:27:38.379895+00:00",
+    "timestamp": "2025-12-19T06:26:43.429528+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-12-12",
+    "updatedAt": "2025-12-19",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-12-12T06:27:38.379860+00:00",
+    "timestamp": "2025-12-19T06:26:43.429495+00:00",
     "name": "chara_skills",
-    "newSkills": 713
+    "newSkills": 714
   },
   "chara_talents": {
-    "timestamp": "2025-12-12T06:27:38.379883+00:00",
+    "timestamp": "2025-12-19T06:26:43.429516+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-12-12T06:27:38.379887+00:00",
+    "timestamp": "2025-12-19T06:26:43.429520+00:00",
     "name": "uniequip",
     "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2025-12-12T06:27:38.379889+00:00",
+    "timestamp": "2025-12-19T06:26:43.429523+00:00",
     "name": "tokens",
     "newTokens": 61
   },
   "characters": {
-    "timestamp": "2025-12-12T06:27:38.379898+00:00",
+    "timestamp": "2025-12-19T06:26:43.429530+00:00",
     "name": "characters",
     "records": {
       "characters exclusive in China": [
@@ -53,7 +53,6 @@
         "Pramanix the Prerita",
         "Mantra",
         "Astgenne the Lightchaser",
-        "Raidian",
         "Haruka",
         "Nasti",
         "Hoshiguma the Breacher",
@@ -62,8 +61,7 @@
         "Cairn"
       ],
       "characters arrived in Global": [
-        "Record Keeper",
-        "Leizi the Thunderbringer"
+        "Raidian"
       ]
     }
   }
