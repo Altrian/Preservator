@@ -1,38 +1,38 @@
 {
   "recruitment": {
-    "timestamp": "2025-12-19T06:26:43.429525+00:00",
+    "timestamp": "2026-01-09T06:28:36.748028+00:00",
     "name": "recruitment",
-    "updatedAt": "2025-12-19",
+    "updatedAt": "2026-01-09",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2025-12-19T06:26:43.429528+00:00",
+    "timestamp": "2026-01-09T06:28:36.748030+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2025-12-19",
+    "updatedAt": "2026-01-09",
     "records": {}
   },
   "chara_skills": {
-    "timestamp": "2025-12-19T06:26:43.429495+00:00",
+    "timestamp": "2026-01-09T06:28:36.747999+00:00",
     "name": "chara_skills",
-    "newSkills": 714
+    "newSkills": 723
   },
   "chara_talents": {
-    "timestamp": "2025-12-19T06:26:43.429516+00:00",
+    "timestamp": "2026-01-09T06:28:36.748018+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2025-12-19T06:26:43.429520+00:00",
+    "timestamp": "2026-01-09T06:28:36.748023+00:00",
     "name": "uniequip",
-    "newEquips": 0
+    "newEquips": 10
   },
   "tokens": {
-    "timestamp": "2025-12-19T06:26:43.429523+00:00",
+    "timestamp": "2026-01-09T06:28:36.748025+00:00",
     "name": "tokens",
     "newTokens": 61
   },
   "characters": {
-    "timestamp": "2025-12-19T06:26:43.429530+00:00",
+    "timestamp": "2026-01-09T06:28:36.748033+00:00",
     "name": "characters",
     "records": {
       "characters exclusive in China": [
@@ -60,8 +60,15 @@
         "Lord/Sharp",
         "Cairn"
       ],
-      "characters arrived in Global": [
-        "Raidian"
+      "new characters added": [
+        "Varkáris",
+        "Perfumer the Distilled",
+        "Titi"
+      ],
+      "release date added": [
+        "Varkáris: 2026-01-09 12:00",
+        "Perfumer the Distilled: 2026-01-09 12:00",
+        "Titi: 2026-01-09 12:00"
       ]
     }
   }

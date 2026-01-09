@@ -67932,5 +67932,1214 @@
                 }
             ]
         }
+    },
+    "uniequip_001_titi": {
+        "uniEquipId": "uniequip_001_titi",
+        "name_zh": "缇缇证章",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "original",
+        "charId": "char_4056_titi",
+        "combatData": null
+    },
+    "uniequip_002_titi": {
+        "uniEquipId": "uniequip_002_titi",
+        "name_zh": "远方的礼物",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "inc-x",
+        "charId": "char_4056_titi",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "TRAIT_DATA_ONLY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 100.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 35.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "TRAIT_DATA_ONLY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "凝固的时光",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "自身可以攻击<ba.sleep>沉睡</>的敌人，且攻击非移动敌人时对其额外造成相当于攻击力21%<@ba.talpu>（+1%）</>的法术伤害，在场时<ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力37%<@ba.talpu>（+2%）</>的法术伤害",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 125.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 45.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "TRAIT_DATA_ONLY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "凝固的时光",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "自身可以攻击<ba.sleep>沉睡</>的敌人，且攻击非移动敌人时对其额外造成相当于攻击力31%<@ba.talpu>（+1%）</>的法术伤害，在场时<ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力42%<@ba.talpu>（+2%）</>的法术伤害",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 150.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 53.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "scale",
+                    "value": 0.6,
+                    "valueStr": null
+                },
+                {
+                    "key": "damage_atk_scale",
+                    "value": 0.42,
+                    "valueStr": null
+                },
+                {
+                    "key": "extra_atk_scale",
+                    "value": 0.31,
+                    "valueStr": null
+                }
+            ]
+        }
+    },
+    "uniequip_001_flwr2": {
+        "uniEquipId": "uniequip_001_flwr2",
+        "name_zh": "撷英调香师证章",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "original",
+        "charId": "char_1022_flwr2",
+        "combatData": null
+    },
+    "uniequip_002_flwr2": {
+        "uniEquipId": "uniequip_002_flwr2",
+        "name_zh": "“双月的呼吸”",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "bls-y",
+        "charId": "char_1022_flwr2",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "TRAIT_DATA_ONLY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": "flwr2_equip_1_1_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 100.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 25.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "TRAIT_DATA_ONLY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "百里香",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得20%<@ba.talpu>（+2%）</>的<ba.protect>庇护</>",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": "flwr2_equip_1_2_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 130.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 40.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": null,
+                            "target": "TRAIT_DATA_ONLY",
+                            "isToken": false,
+                            "addDesc_zh": null,
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "百里香",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得22%<@ba.talpu>（+2%）</>的<ba.protect>庇护</>",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": "flwr2_equip_1_3_p1",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 150.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 50.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "attack@max_target",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@max_target_heal",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "heal_scale",
+                    "value": 0.75,
+                    "valueStr": null
+                },
+                {
+                    "key": "damage_resistance",
+                    "value": 0.22,
+                    "valueStr": null
+                },
+                {
+                    "key": "max_target_heal",
+                    "value": 2.0,
+                    "valueStr": null
+                }
+            ]
+        }
+    },
+    "uniequip_001_varkis": {
+        "uniEquipId": "uniequip_001_varkis",
+        "name_zh": "摆渡人证章",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "original",
+        "charId": "char_4166_varkis",
+        "combatData": null
+    },
+    "uniequip_002_varkis": {
+        "uniEquipId": "uniequip_002_varkis",
+        "name_zh": "回家的路",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "cen-y",
+        "charId": "char_4166_varkis",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": "varkis_equip_1_1_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "生命值高于50%时受到的物理伤害降低<@ba.kw>20%</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 120.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 48.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": "varkis_equip_1_2_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "生命值高于50%时受到的物理伤害降低<@ba.kw>20%</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "永志不忘",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "在场时，所有【米诺斯】干员攻击生命比例不高于自身的敌人时攻击力提升至115%<@ba.talpu>（+2%）</>",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 170.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 58.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": "varkis_equip_1_3_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "生命值高于50%时受到的物理伤害降低<@ba.kw>20%</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "永志不忘",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "在场时，所有【米诺斯】干员攻击生命比例不高于自身的敌人时攻击力提升至118%<@ba.talpu>（+2%）</>",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 200.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 66.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "hp_ratio",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "damage_resistance",
+                    "value": 0.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "talent_atk_scale",
+                    "value": 1.18,
+                    "valueStr": null
+                }
+            ]
+        }
+    },
+    "uniequip_003_vvana": {
+        "uniEquipId": "uniequip_003_vvana",
+        "name_zh": "“最后一行”",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "aft-y",
+        "charId": "char_4098_vvana",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": "vvana_equip_2_1_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "自身阻挡的敌人受到<@ba.kw>10%</>的<ba.magicfragile>法术脆弱</>效果",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 240.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 30.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 30.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": "vvana_equip_2_2_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "自身阻挡的敌人受到<@ba.kw>10%</>的<ba.magicfragile>法术脆弱</>效果",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "散华",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 1,
+                            "upgradeDesc_zh": "攻击精英或领袖敌人时，有25%<@ba.talpu>（+2%）</>概率获得一层仅抵挡近战攻击的<ba.shield>护盾</>（最多1层）",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 280.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 38.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 38.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": "vvana_equip_2_3_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "自身阻挡的敌人受到<@ba.kw>10%</>的<ba.magicfragile>法术脆弱</>效果",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "散华",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 1,
+                            "upgradeDesc_zh": "攻击精英或领袖敌人时，有27%<@ba.talpu>（+2%）</>概率获得一层仅抵挡近战攻击的<ba.shield>护盾</>（最多2层）",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 300.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 45.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 45.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "damage_scale",
+                    "value": 1.1,
+                    "valueStr": null
+                },
+                {
+                    "key": "prob",
+                    "value": 0.27,
+                    "valueStr": null
+                },
+                {
+                    "key": "max_stack_cnt",
+                    "value": 2.0,
+                    "valueStr": null
+                }
+            ]
+        }
+    },
+    "uniequip_003_etlchi": {
+        "uniEquipId": "uniequip_003_etlchi",
+        "name_zh": "玫瑰色故事集",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "rea-y",
+        "charId": "char_4010_etlchi",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": "etlchi_equip_2_1_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "攻击范围内存在2名及以上敌人时攻击速度<@ba.kw>+12</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 220.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 62.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "attack_speed",
+                            "value": 5.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": "etlchi_equip_2_2_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "攻击范围内存在2名及以上敌人时攻击速度<@ba.kw>+12</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "萃血",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "每次攻击敌人时<ba.steal>偷取</>目标100点生命上限（最高1800）并使目标每秒受到400<@ba.talpu>（+50）</>点法术伤害持续5秒，场上存在该法术伤害效果时，自身每秒回复2.5%最大生命值",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 270.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 70.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "attack_speed",
+                            "value": 6.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": "etlchi_equip_2_3_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "攻击范围内存在2名及以上敌人时攻击速度<@ba.kw>+12</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "萃血",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "每次攻击敌人时<ba.steal>偷取</>目标120点生命上限（最高2160）并使目标每秒受到500<@ba.talpu>（+50）</>点法术伤害持续6秒，场上存在该法术伤害效果时，自身每秒回复3.5%最大生命值",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 300.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 75.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "attack_speed",
+                            "value": 7.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "attack_speed",
+                    "value": 12.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "cnt",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "value",
+                    "value": 50.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@steal_hp",
+                    "value": 120.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attack@steal_hp_max",
+                    "value": 2160.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "magic_value",
+                    "value": 500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hp_recovery_per_sec_by_max_hp_ratio",
+                    "value": 0.035,
+                    "valueStr": null
+                },
+                {
+                    "key": "interval",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "dot_duration",
+                    "value": 6.0,
+                    "valueStr": null
+                }
+            ]
+        }
+    },
+    "uniequip_003_poca": {
+        "uniEquipId": "uniequip_003_poca",
+        "name_zh": "“心”",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "sie-y",
+        "charId": "char_197_poca",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": "poca_equip_2_1_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "攻击越远的敌人造成的伤害越高（最高提升<@ba.kw>12%</>）",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "atk",
+                            "value": 70.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 20.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": "poca_equip_2_2_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "攻击越远的敌人造成的伤害越高（最高提升<@ba.kw>12%</>）",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "学生楷模",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 1,
+                            "upgradeDesc_zh": "编入队伍时，所有【乌萨斯学生自治团】干员攻击力+12%<@ba.talpu>（+2%）</>，每有一名【乌萨斯学生自治团】干员处于技能期间时，【乌萨斯学生自治团】干员的攻击力额外+11%（最多+33%）",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": "poca_equip_2_2_p2",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "atk",
+                            "value": 90.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 25.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": "poca_equip_2_3_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "攻击越远的敌人造成的伤害越高（最高提升<@ba.kw>12%</>）",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "学生楷模",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 1,
+                            "upgradeDesc_zh": "编入队伍时，所有【乌萨斯学生自治团】干员攻击力+14%<@ba.talpu>（+2%）</>，每有一名【乌萨斯学生自治团】干员处于技能期间时，【乌萨斯学生自治团】干员的攻击力额外+15%（最多+45%）",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": "poca_equip_2_3_p2",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "atk",
+                            "value": 100.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": 30.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "max_dist",
+                    "value": 4.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "min_dist",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "damage_scale",
+                    "value": 0.12,
+                    "valueStr": null
+                },
+                {
+                    "key": "atk",
+                    "value": 0.14,
+                    "valueStr": null
+                },
+                {
+                    "key": "init_atk",
+                    "value": 0.15,
+                    "valueStr": null
+                },
+                {
+                    "key": "max_atk",
+                    "value": 0.45,
+                    "valueStr": null
+                }
+            ]
+        }
+    },
+    "uniequip_003_hodrer": {
+        "uniEquipId": "uniequip_003_hodrer",
+        "name_zh": "笔迹",
+        "name_ja": "",
+        "name_en": "",
+        "typeIcon": "cru-y",
+        "charId": "char_4088_hodrer",
+        "combatData": {
+            "phases": [
+                {
+                    "parts": [
+                        {
+                            "resKey": "hodrer_equip_2_1_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "对被阻挡的敌人伤害提升至<@ba.kw>10%</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 300.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 110.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": "hodrer_equip_2_2_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "对被阻挡的敌人伤害提升至<@ba.kw>10%</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "及锋而试",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "攻击敌人时攻击力提升至120%，若目标处于<ba.stun>晕眩</>、<ba.root>束缚</>则改为提升至150%，且对阻挡的敌人首次造成伤害时对其造成1.5秒<ba.stun>晕眩</>效果",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": "hodrer_equip_2_2_p2",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 350.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 140.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                },
+                {
+                    "parts": [
+                        {
+                            "resKey": "hodrer_equip_2_3_p1",
+                            "target": "TRAIT",
+                            "isToken": false,
+                            "addDesc_zh": "对被阻挡的敌人伤害提升至<@ba.kw>10%</>",
+                            "addDesc_ja": "",
+                            "addDesc_en": "",
+                            "overrideDesc_zh": null,
+                            "overrideDesc_ja": "",
+                            "overrideDesc_en": ""
+                        },
+                        {
+                            "resKey": null,
+                            "target": "TALENT_DATA_ONLY",
+                            "isToken": false,
+                            "name_zh": "及锋而试",
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": 0,
+                            "upgradeDesc_zh": "攻击敌人时攻击力提升至130%，若目标处于<ba.stun>晕眩</>、<ba.root>束缚</>则改为提升至160%，且对阻挡的敌人首次造成伤害时对其造成2.5秒<ba.stun>晕眩</>效果",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        },
+                        {
+                            "resKey": "hodrer_equip_2_3_p2",
+                            "target": "TALENT",
+                            "isToken": false,
+                            "name_zh": null,
+                            "name_ja": "",
+                            "name_en": "",
+                            "displayRangeId": false,
+                            "rangeId": null,
+                            "talentIndex": -1,
+                            "upgradeDesc_zh": "",
+                            "upgradeDesc_ja": "",
+                            "upgradeDesc_en": ""
+                        }
+                    ],
+                    "attributeBlackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 400.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 160.0,
+                            "valueStr": null
+                        }
+                    ],
+                    "tokenAttributeBlackboard": {}
+                }
+            ],
+            "tags": [],
+            "blackboard": [
+                {
+                    "key": "damage_scale",
+                    "value": 1.1,
+                    "valueStr": null
+                },
+                {
+                    "key": "atk_scale",
+                    "value": 1.6,
+                    "valueStr": null
+                },
+                {
+                    "key": "atk_scale_2",
+                    "value": 1.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "stun",
+                    "value": 2.5,
+                    "valueStr": null
+                }
+            ]
+        }
     }
 }

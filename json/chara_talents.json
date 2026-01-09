@@ -10621,5 +10621,98 @@
                 ]
             }
         ]
+    },
+    "char_4166_varkis": {
+        "appellation": "Varkáris",
+        "talents": [
+            {
+                "prefabKey": "1",
+                "name_zh": "永志不忘",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "在场时，所有【米诺斯】干员攻击生命比例不高于自身的敌人时攻击力提升至112%<@ba.talpu>（+2%）</>",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": [
+                    {
+                        "key": "talent_atk_scale",
+                        "value": 1.12,
+                        "valueStr": null
+                    }
+                ]
+            }
+        ]
+    },
+    "char_1022_flwr2": {
+        "appellation": "Perfumer the Distilled",
+        "talents": [
+            {
+                "prefabKey": "1",
+                "name_zh": "百里香",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得16%<@ba.talpu>（+2%）</>的<ba.protect>庇护</>",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": [
+                    {
+                        "key": "damage_resistance",
+                        "value": 0.16,
+                        "valueStr": null
+                    }
+                ]
+            }
+        ]
+    },
+    "char_4056_titi": {
+        "appellation": "Titi",
+        "talents": [
+            {
+                "prefabKey": "1",
+                "name_zh": "凝固的时光",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "自身可以攻击<ba.sleep>沉睡</>的敌人，且攻击非移动敌人时对其额外造成相当于攻击力16%<@ba.talpu>（+1%）</>的法术伤害，在场时<ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力32%<@ba.talpu>（+2%）</>的法术伤害",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": [
+                    {
+                        "key": "damage_atk_scale",
+                        "value": 0.32,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "extra_atk_scale",
+                        "value": 0.16,
+                        "valueStr": null
+                    }
+                ]
+            },
+            {
+                "prefabKey": "2",
+                "name_zh": "勇气的报偿",
+                "name_en": "",
+                "name_ja": "",
+                "desc_zh": "场上的【米诺斯】或【萨尔贡】干员生命值高于50%时，获得+22<@ba.talpu>（+2）</>攻速的<ba.strong>精力充沛</>",
+                "desc_ja": "",
+                "desc_en": "",
+                "tags": [],
+                "blackboard": [
+                    {
+                        "key": "attack_speed",
+                        "value": 22.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "hp_ratio",
+                        "value": 0.5,
+                        "valueStr": null
+                    }
+                ]
+            }
+        ]
     }
 }

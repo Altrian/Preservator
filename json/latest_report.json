@@ -1,7 +1,7 @@
 [
   {
     "name": "chara_skills",
-    "newSkills": 714
+    "newSkills": 723
   },
   {
     "name": "chara_talents",
@@ -9,7 +9,7 @@
   },
   {
     "name": "uniequip",
-    "newEquips": 0
+    "newEquips": 10
   },
   {
     "name": "tokens",
@@ -17,12 +17,12 @@
   },
   {
     "name": "recruitment",
-    "updatedAt": "2025-12-19",
+    "updatedAt": "2026-01-09",
     "records": {}
   },
   {
     "name": "recruitment_table",
-    "updatedAt": "2025-12-19",
+    "updatedAt": "2026-01-09",
     "records": {}
   },
   {
@@ -53,8 +53,15 @@
         "Lord/Sharp",
         "Cairn"
       ],
-      "characters arrived in Global": [
-        "Raidian"
+      "new characters added": [
+        "Varkáris",
+        "Perfumer the Distilled",
+        "Titi"
+      ],
+      "release date added": [
+        "Varkáris: 2026-01-09 12:00",
+        "Perfumer the Distilled: 2026-01-09 12:00",
+        "Titi: 2026-01-09 12:00"
       ]
     }
   }
