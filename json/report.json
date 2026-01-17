@@ -1,74 +1,74 @@
 {
   "recruitment": {
-    "timestamp": "2026-01-09T06:28:36.748028+00:00",
+    "timestamp": "2026-01-17T06:25:40.783602+00:00",
     "name": "recruitment",
-    "updatedAt": "2026-01-09",
+    "updatedAt": "2026-01-17",
     "records": {}
   },
   "recruitment_table": {
-    "timestamp": "2026-01-09T06:28:36.748030+00:00",
+    "timestamp": "2026-01-17T06:25:40.783605+00:00",
     "name": "recruitment_table",
-    "updatedAt": "2026-01-09",
-    "records": {}
+    "updatedAt": "2026-01-17",
+    "records": {
+      "character updated": [
+        "Toddifons",
+        "Passenger"
+      ]
+    }
   },
   "chara_skills": {
-    "timestamp": "2026-01-09T06:28:36.747999+00:00",
+    "timestamp": "2026-01-17T06:25:40.783573+00:00",
     "name": "chara_skills",
-    "newSkills": 723
+    "newSkills": 716
   },
   "chara_talents": {
-    "timestamp": "2026-01-09T06:28:36.748018+00:00",
+    "timestamp": "2026-01-17T06:25:40.783593+00:00",
     "name": "chara_talents",
     "newCharas": 0
   },
   "uniequip": {
-    "timestamp": "2026-01-09T06:28:36.748023+00:00",
+    "timestamp": "2026-01-17T06:25:40.783597+00:00",
     "name": "uniequip",
-    "newEquips": 10
+    "newEquips": 0
   },
   "tokens": {
-    "timestamp": "2026-01-09T06:28:36.748025+00:00",
+    "timestamp": "2026-01-17T06:25:40.783600+00:00",
     "name": "tokens",
     "newTokens": 61
   },
   "characters": {
-    "timestamp": "2026-01-09T06:28:36.748033+00:00",
+    "timestamp": "2026-01-17T06:25:40.783607+00:00",
     "name": "characters",
     "records": {
       "characters exclusive in China": [
         "Akkord",
         "Снегурочка",
         "Alliance/Supportive Opertator",
-        "Matsukiri",
+        "Varkáris",
         "Yūtenji Nyamu",
         "Hadiya",
-        "Kichisei",
         "Skybox",
         "Веточки",
         "Snow Hunter",
         "Misumi Uika",
+        "Perfumer the Distilled",
         "Yahata Umiri",
         "Wakaba Mutsumi",
         "SilverAsh the Reignfrost",
         "Pramanix the Prerita",
         "Mantra",
         "Astgenne the Lightchaser",
-        "Haruka",
         "Nasti",
-        "Hoshiguma the Breacher",
+        "Titi",
         "Togawa Sakiko",
         "Lord/Sharp",
         "Cairn"
       ],
-      "new characters added": [
-        "Varkáris",
-        "Perfumer the Distilled",
-        "Titi"
-      ],
-      "release date added": [
-        "Varkáris: 2026-01-09 12:00",
-        "Perfumer the Distilled: 2026-01-09 12:00",
-        "Titi: 2026-01-09 12:00"
+      "characters arrived in Global": [
+        "Matsukiri",
+        "Kichisei",
+        "Haruka",
+        "Hoshiguma the Breacher"
       ]
     }
   }

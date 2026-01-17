@@ -2233,8 +2233,8 @@
         "appellation": "Toddifons",
         "name": {
             "zh": "熔泉",
-            "ja": "",
-            "en": ""
+            "ja": "トギフォンス",
+            "en": "Toddifons"
         },
         "rarity": "TIER_5",
         "profession": "SNIPER",
@@ -2857,8 +2857,8 @@
         "appellation": "Passenger",
         "name": {
             "zh": "异客",
-            "ja": "",
-            "en": ""
+            "ja": "パッセンジャー",
+            "en": "Passenger"
         },
         "rarity": "TIER_6",
         "profession": "CASTER",
